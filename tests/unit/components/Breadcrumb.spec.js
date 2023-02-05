@@ -29,18 +29,18 @@ const routes = [
         meta: { title: 'menu1-1' }
       },
       {
-        path: 'menu1-2',
-        name: 'menu1-2',
+        path: 'note',
+        name: 'note',
         redirect: 'noredirect',
-        meta: { title: 'menu1-2' },
+        meta: { title: 'note' },
         children: [{
-          path: 'menu1-2-1',
-          name: 'menu1-2-1',
-          meta: { title: 'menu1-2-1' }
+          path: 'survivor',
+          name: 'survivor',
+          meta: { title: 'survivor' }
         },
         {
-          path: 'menu1-2-2',
-          name: 'menu1-2-2'
+          path: 'hunter',
+          name: 'hunter'
         }]
       }]
     }]
@@ -66,17 +66,17 @@ describe('Breadcrumb.vue', () => {
     expect(len).toBe(2)
   })
   it('nested route', () => {
-    router.push('/menu/menu1/menu1-2/menu1-2-1')
+    router.push('/menu/menu1/note/survivor')
     const len = wrapper.findAll('.el-breadcrumb__inner').length
     expect(len).toBe(4)
   })
   it('no meta.title', () => {
-    router.push('/menu/menu1/menu1-2/menu1-2-2')
+    router.push('/menu/menu1/note/hunter')
     const len = wrapper.findAll('.el-breadcrumb__inner').length
     expect(len).toBe(3)
   })
   // it('click link', () => {
-  //   router.push('/menu/menu1/menu1-2/menu1-2-2')
+  //   router.push('/menu/menu1/note/hunter')
   //   const breadcrumbArray = wrapper.findAll('.el-breadcrumb__inner')
   //   const second = breadcrumbArray.at(1)
   //   console.log(breadcrumbArray)
@@ -84,13 +84,13 @@ describe('Breadcrumb.vue', () => {
   //   expect(href).toBe('#/menu/menu1')
   // })
   // it('noRedirect', () => {
-  //   router.push('/menu/menu1/menu1-2/menu1-2-1')
+  //   router.push('/menu/menu1/note/survivor')
   //   const breadcrumbArray = wrapper.findAll('.el-breadcrumb__inner')
   //   const redirectBreadcrumb = breadcrumbArray.at(2)
   //   expect(redirectBreadcrumb.contains('a')).toBe(false)
   // })
   it('last breadcrumb', () => {
-    router.push('/menu/menu1/menu1-2/menu1-2-1')
+    router.push('/menu/menu1/note/survivor')
     const breadcrumbArray = wrapper.findAll('.el-breadcrumb__inner')
     const redirectBreadcrumb = breadcrumbArray.at(3)
     expect(redirectBreadcrumb.contains('a')).toBe(false)
