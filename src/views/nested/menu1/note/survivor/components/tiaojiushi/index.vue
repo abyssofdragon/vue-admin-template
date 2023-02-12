@@ -1,15 +1,17 @@
 <template>
     <div style="padding:16px;">
-        <h2>求生者侧写</h2>
+        <h2>调酒师</h2>
+        <iframe src="//player.bilibili.com/player.html?aid=266761451&bvid=BV1xY411i7NE&cid=1004776172&page=1" scrolling="no"
+            border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
         <el-row :gutter="12">
             <el-col v-for="survivor in survivors" :key="survivor.id" :span="4">
                 <el-card shadow="hover" class="box-card">
                     <div slot="header" class="clearfix">
-                        <span>{{ hunter.job }}</span>
+                        <span>{{ survivor.job }}</span>
                         <el-button style="float: right; padding: 3px 0" type="text"
                             @click="survivor.method">详情</el-button>
                     </div>
-                    {{ hunter.name }}
+                    {{ survivor.name }}
                 </el-card>
             </el-col>
         </el-row>

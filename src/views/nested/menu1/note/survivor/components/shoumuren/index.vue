@@ -1,0 +1,85 @@
+<template>
+    <div style="padding:16px;">
+        <h2>守墓人</h2>
+        <el-collapse v-model="activeNames">
+            <el-collapse-item title="角色日信件" name="1">
+                <el-row >
+                    <el-col :span="24">
+                        <el-table :data="letterCN" style="width: 100%">
+                            <el-table-column type="expand">
+                                <template slot-scope="props">
+                                    <el-form label-position="left" inline class="demo-table-expand">
+                                        <el-form-item>
+                                            <v-html contenteditable="true">{{ props.row.letter }}</v-html>
+                                        </el-form-item>
+                                    </el-form>
+                                </template>
+                            </el-table-column>
+                            <el-table-column label="NO" prop="id">
+                            </el-table-column>
+                            <el-table-column label="年份" prop="year">
+                            </el-table-column>
+                            <el-table-column label="标题" prop="title">
+                            </el-table-column>
+                        </el-table>
+                    </el-col>
+                </el-row>
+            </el-collapse-item>
+        </el-collapse>
+        <router-view />
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            letterCN: [
+                {
+                    id: 'I',
+                    year: '2022',
+                    title: '一封无署名的打印信',
+                    letter: '尊敬的克雷斯先生:\n又一次合作愉快。\n昨晚依旧是个忙碌的夜晚，不知你回家后是否有个好梦？\n这批“石板”有些“松软”，甚至过于松软了。\n——检验结果告诉我，“它们”晚于你所记录的“石板”出产时间。\n虽然博士并不在意，他只想试验顺利进行，但我不得不慎重一些，我是说，你知道的，昨晚的交易与以往任何一晚都不同，暴露之后的惩罚会严厉得多，不是花钱就能解决的。\n我们当然可以帮你处理掉这批“石板”，但这意味着，我们的合作性质将发生改变，不再是单纯的利益关系，而是更强绑定更亲密的关系。你明白我的意思，克雷斯先生。\n最后，为了你我双方都好，我建议你暂时离开这个地方，信封里额外的报酬算是本人的一点心意。如果你不知道去哪，可以拆开最下面的封袋，里面有一张车票，背面标注的地点是我一位老朋友废弃多年的住宅，我想他不介意借你躲一躲。那么，再见克雷斯先生。\n你我这段时间就不用联系了。\n\n祝好\nM.S',
+                },
+                {
+                    id: 'II',
+                    year: '2023',
+                    title: '安德鲁的庄园日记',
+                    letter: '到达老宅的第三周：\n生活再次恢复了平静，因阳光直射而被灼烧的皮肤也已痊愈。\n在我走投无路之时，宅子的主人提供了避难所，并完美地履行了承诺——\n没有冗杂的工作和恼人的噪音，圣洁的引路人只需将时不时出现在宅子附近的多块“石板”处理殆尽——\n与圣殿中的工作略有不同，这些“石板”多数残缺，似乎经历过来自高处的坠落和撞击。\n虽未收到明确的指令，但这或许是我能够表达感谢的唯一方式了……\n然而，每当我为新的“石板”制作墓碑，那句话便再次出现在眼前：\n“安德鲁·克雷斯，鸢尾凋零，长眠于下。”\n 留存在石碑上的墓志铭，在我心中千百遍地镌刻，令我无时无刻不想回到那个地方。\n真的没有机会了吗……\n“石板”如期而至，但伴随而来的，还有一封新的邀请函。\n细沙正在缓缓流逝，但我不该再犹豫了……\n或许……这是我回到圣殿的唯一方式。',
+                },
+                {
+                    id: 'III',
+                    year: '2024',
+                    title: 'Coming Soon',
+                    letter: 'Coming Soon',
+                },
+                {
+                    id: 'IV',
+                    year: '2025',
+                    title: 'Coming Soon',
+                    letter: 'Coming Soon',
+                },
+                {
+                    id: 'V',
+                    year: '2026',
+                    title: 'Coming Soon',
+                    letter: 'Coming Soon',
+                },
+            ],
+        }
+    }
+}
+</script>
+
+<style>
+.demo-table-expand {
+    font-size: 0;
+}
+
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+    white-space: pre-wrap;
+}
+</style>

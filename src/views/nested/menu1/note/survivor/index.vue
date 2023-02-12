@@ -1,25 +1,29 @@
 <template>
   <div style="padding:16px;">
     <h2>求生者侧写</h2>
-    <el-row :gutter="12">
-      <el-col v-for="survivor in survivors" :key="survivor.id" :span="4">
-        <el-card shadow="hover" class="box-card">
-          <div slot="header" class="clearfix">
-            <span>{{ hunter.job }}</span>
-            <el-button style="float: right; padding: 3px 0" type="text">详情</el-button>
-          </div>
-          {{ hunter.name }}
-        </el-card>
-      </el-col>
-    </el-row>
-    <router-view />
+        <router-view />
+    <el-collapse v-model="activeNames">
+      <el-collapse-item title="求生者" name="1">
+        <el-row :gutter="12">
+          <el-col v-for="survivor in survivors" :key="survivor.id" :span="4">
+            <el-card shadow="hover" class="box-card">
+              <div slot="header" class="clearfix">
+                <span>{{ survivor.job }}</span>
+                <el-button style="float: right; padding: 3px 0" type="text">详情</el-button>
+              </div>
+              {{ survivor.name }}
+            </el-card>
+          </el-col>
+        </el-row>
+      </el-collapse-item>
+    </el-collapse>
   </div>
 </template>
-
 <script>
 export default {
   data() {
     return {
+      activeNames: ['0'],
       survivors: [
         {
           job: '作曲家',

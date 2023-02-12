@@ -122,7 +122,21 @@ export const constantRoutes = [
                 path: 'survivor',
                 component: () => import('@/views/nested/menu1/note/survivor'),
                 name: 'Survivor',
-                meta: { title: '求生者侧写' }
+                meta: { title: '求生者侧写' },
+                children: [
+                  {
+                    path: 'shoumuren',
+                    component: () => import('@/views/nested/menu1/note/survivor/components/shoumuren'),
+                    name: 'Shoumuren',
+                    meta: { title: '守墓人' }
+                  },
+                  {
+                    path: 'tiaojiushi',
+                    component: () => import('@/views/nested/menu1/note/survivor/components/tiaojiushi'),
+                    name: 'Tiaojiushi',
+                    meta: { title: '调酒师' }
+                  },
+                ],
               },
               {
                 path: 'hunter',
