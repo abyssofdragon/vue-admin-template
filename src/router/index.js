@@ -5,6 +5,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
+import survivor from './modules/survivor'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -118,26 +119,7 @@ export const constantRoutes = [
             name: 'Note',
             meta: { title: '查看笔记' },
             children: [
-              {
-                path: 'survivor',
-                component: () => import('@/views/nested/menu1/note/survivor'),
-                name: 'Survivor',
-                meta: { title: '求生者侧写' },
-                children: [
-                  {
-                    path: 'shoumuren',
-                    component: () => import('@/views/nested/menu1/note/survivor/components/shoumuren'),
-                    name: 'Shoumuren',
-                    meta: { title: '守墓人' }
-                  },
-                  {
-                    path: 'tiaojiushi',
-                    component: () => import('@/views/nested/menu1/note/survivor/components/tiaojiushi'),
-                    name: 'Tiaojiushi',
-                    meta: { title: '调酒师' }
-                  },
-                ],
-              },
+              survivor,
               {
                 path: 'hunter',
                 component: () => import('@/views/nested/menu1/note/hunter'),

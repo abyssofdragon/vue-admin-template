@@ -1,20 +1,31 @@
 <template>
     <div style="padding:16px;">
         <h2>调酒师</h2>
-        <iframe src="//player.bilibili.com/player.html?aid=266761451&bvid=BV1xY411i7NE&cid=1004776172&page=1" scrolling="no"
-            border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-        <el-row :gutter="12">
-            <el-col v-for="survivor in survivors" :key="survivor.id" :span="4">
-                <el-card shadow="hover" class="box-card">
-                    <div slot="header" class="clearfix">
-                        <span>{{ survivor.job }}</span>
-                        <el-button style="float: right; padding: 3px 0" type="text"
-                            @click="survivor.method">详情</el-button>
-                    </div>
-                    {{ survivor.name }}
-                </el-card>
-            </el-col>
-        </el-row>
+        <el-collapse v-model="activeNames">
+            <el-collapse-item title="角色日信件" name="1">
+                <el-row>
+                    <el-col :span="24">
+                        <el-table :data="letterCN" style="width: 100%">
+                            <el-table-column type="expand">
+                                <template slot-scope="props">
+                                    <el-form label-position="left" inline class="demo-table-expand">
+                                        <el-form-item>
+                                            <v-html contenteditable="true">{{ props.row.letter }}</v-html>
+                                        </el-form-item>
+                                    </el-form>
+                                </template>
+                            </el-table-column>
+                            <el-table-column label="NO" prop="id">
+                            </el-table-column>
+                            <el-table-column label="年份" prop="year">
+                            </el-table-column>
+                            <el-table-column label="标题" prop="title">
+                            </el-table-column>
+                        </el-table>
+                    </el-col>
+                </el-row>
+            </el-collapse-item>
+        </el-collapse>
         <router-view />
     </div>
 </template>
@@ -23,193 +34,51 @@
 export default {
     data() {
         return {
-            survivors: [
+            letterCN: [
                 {
-                    job: '作曲家',
-                    name: '阿尔瓦',
-                    method: () => {
-                        this.add()
-                    }
+                    id: 'I',
+                    year: '2021',
+                    title: '一封无署名的打印信',
+                    letter: '尊敬的克雷斯先生:\n又一次合作愉快。\n昨晚依旧是个忙碌的夜晚，不知你回家后是否有个好梦？\n这批“石板”有些“松软”，甚至过于松软了。\n——检验结果告诉我，“它们”晚于你所记录的“石板”出产时间。\n虽然博士并不在意，他只想试验顺利进行，但我不得不慎重一些，我是说，你知道的，昨晚的交易与以往任何一晚都不同，暴露之后的惩罚会严厉得多，不是花钱就能解决的。\n我们当然可以帮你处理掉这批“石板”，但这意味着，我们的合作性质将发生改变，不再是单纯的利益关系，而是更强绑定更亲密的关系。你明白我的意思，克雷斯先生。\n最后，为了你我双方都好，我建议你暂时离开这个地方，信封里额外的报酬算是本人的一点心意。如果你不知道去哪，可以拆开最下面的封袋，里面有一张车票，背面标注的地点是我一位老朋友废弃多年的住宅，我想他不介意借你躲一躲。那么，再见克雷斯先生。\n你我这段时间就不用联系了。\n\n祝好\nM.S',
                 },
                 {
-                    job: '古董商',
-                    name: '柯根'
+                    id: 'II',
+                    year: '2022',
+                    title: '安德鲁的庄园日记',
+                    letter: '到达老宅的第三周：\n生活再次恢复了平静，因阳光直射而被灼烧的皮肤也已痊愈。\n在我走投无路之时，宅子的主人提供了避难所，并完美地履行了承诺——\n没有冗杂的工作和恼人的噪音，圣洁的引路人只需将时不时出现在宅子附近的多块“石板”处理殆尽——\n与圣殿中的工作略有不同，这些“石板”多数残缺，似乎经历过来自高处的坠落和撞击。\n虽未收到明确的指令，但这或许是我能够表达感谢的唯一方式了……\n然而，每当我为新的“石板”制作墓碑，那句话便再次出现在眼前：\n“安德鲁·克雷斯，鸢尾凋零，长眠于下。”\n 留存在石碑上的墓志铭，在我心中千百遍地镌刻，令我无时无刻不想回到那个地方。\n真的没有机会了吗……\n“石板”如期而至，但伴随而来的，还有一封新的邀请函。\n细沙正在缓缓流逝，但我不该再犹豫了……\n或许……这是我回到圣殿的唯一方式。',
                 },
                 {
-                    job: '教授',
-                    name: '“奥尔菲斯”'
+                    id: 'III',
+                    year: '2023',
+                    title: '黛米·波本的一页实验档案',
+                    letter: '编号：6-？-3（编号第二位数字经过反复涂改，最终标注为？）\n姓名：黛米·波本\n\n【测试标记】\n1、耐药性？\n2、无畏的“棋子”\n\n【测试倾向】\n错误的“正确的答案”\n\n【测试结果】\n1. 整体评价\n从学识角度来说，6-？- 3远不及她的兄长，但显然，挑战规则的无畏或者说疯狂，并不需要通过血缘维系。\n2. 流程说明\n6 -？-3的到来，比我预想的早了许多。\n起初，我尝试使用药物对其个体进行控制，但在进行到第二组试剂时，本已在多次实验过程中效果稳定的药效出现了一些小的波动，对于这种情况，我不得不做出一些冒险的选择：一方面，我无法舍弃这个独特的实验对象。\n另一方面，将这位稀有的“知情者”长时间留滞于庄园内，极易引来不必要的麻烦，让整个实验都毁于一旦。\n而从以往的重复实验中可以看出，重复实验次数越多，药物作用于实验对象的稳定性就会越差。\n因此，即便上一组善后事故并未完全解决，我仍开启了新一组测试，并为了尽快补齐实验对象，将上一组实验中留存的样本第二次投入，同时启用了备用实验对象新的6 - 1 - 4。\n在这场被真相包裹着的谎言实验中，6 -？-3全程都表现出了无畏到冲动、直接到残忍的行为模式。\n最直接的表现是实验过程中，出于对稳定性的考虑，我曾向6 - 1 - 2、6 - 1 - 4和6 -？-3都做出引导干预，但与其他其他实验对象不同，6 -？-3并未对指引内容做出任何修正。\n在如何赢得这场游戏的策略选择上，6 -？-3从一开始实际上就放弃了对真相与谎言的识别，而是选择了摧毁谎言与真相本身。\n3. 实验总结：\n在针对6 -？-3的实验规划初期，我预期将她作为两类研发试剂的比对组，投入到游戏中。\n但显然，我对我前同僚的“杰作”做出了错误的预估。\n虽然最终药效截然不同（甚至可以说相反），但这两类研发试剂的核心元素都萃取自相同的原料。这应该就是它们彼此作用产生了强大的耐药性的原因，因为我对这种耐药性影响的错误预估，这场实验从头到尾都充满了我未能及时察觉的变数。\n而这些变数最终让我意识到，6 -？-3确实是一颗出色的实验棋子，但我并不是唯一的棋手。\n但或许，我是更优秀的那个，毕竟我最终找到了属于我的答案，而他甚至永远不会知道，\n我们需要解决的从来都不是同样的问题了。',},
+                {
+                    id: 'IV',
+                    year: '2024',
+                    title: 'Coming Soon',
+                    letter: 'Coming Soon',
                 },
                 {
-                    job: '哭泣小丑',
-                    name: '菲利普'
+                    id: 'V',
+                    year: '2025',
+                    title: 'Coming Soon',
+                    letter: 'Coming Soon',
                 },
-                {
-                    job: '“小女孩”',
-                    name: '格蕾丝'
-                },
-                {
-                    job: '小说家',
-                    name: '威尔三兄弟'
-                },
-                {
-                    job: '病患',
-                    name: '珀西'
-                },
-                {
-                    job: '“心理学家”',
-                    name: '伽拉泰亚'
-                },
-                {
-                    job: '玩具商',
-                    name: '安东尼奥'
-                },
-                {
-                    job: '击球手',
-                    name: '安'
-                },
-                {
-                    job: '画家',
-                    name: '邦邦'
-                },
-                {
-                    job: '昆虫学者',
-                    name: '玛丽'
-                },
-                {
-                    job: '“囚徒”',
-                    name: '卢基诺'
-                },
-                {
-                    job: '守墓人',
-                    name: '罗比'
-                },
-                {
-                    job: '邮差',
-                    name: '伊德海拉'
-                },
-                {
-                    job: '调酒师',
-                    name: '巴尔克'
-                },
-                {
-                    job: '大副',
-                    name: '约瑟夫'
-                },
-                {
-                    job: '杂技演员',
-                    name: '谢必安/范无咎'
-                },
-                {
-                    job: '野人',
-                    name: '哈斯塔'
-                },
-                {
-                    job: '咒术师',
-                    name: '美智子'
-                },
-                {
-                    job: '勘探员',
-                    name: '瓦尔莱塔'
-                },
-                {
-                    job: '入殓师',
-                    name: '杰克'
-                },
-                {
-                    job: '先知',
-                    name: '班恩'
-                },
-                {
-                    job: '舞女',
-                    name: '裘克'
-                },
-                {
-                    job: '牛仔',
-                    name: '里奥'
-                },
-                {
-                    job: '调香师',
-                    name: '里奥'
-                },
-                {
-                    job: '祭司',
-                    name: '里奥'
-                },
-                {
-                    job: '盲女',
-                    name: '里奥'
-                },
-                {
-                    job: '前锋',
-                    name: '里奥'
-                },
-                {
-                    job: '机械师',
-                    name: '里奥'
-                },
-                {
-                    job: '空军',
-                    name: '里奥'
-                },
-                {
-                    job: '佣兵',
-                    name: '里奥'
-                },
-                {
-                    job: '冒险家',
-                    name: '里奥'
-                },
-                {
-                    job: '魔术师',
-                    name: '里奥'
-                },
-                {
-                    job: '园丁',
-                    name: '里奥'
-                },
-                {
-                    job: '“慈善家”',
-                    name: '里奥'
-                },
-                {
-                    job: '律师',
-                    name: '里奥'
-                },
-                {
-                    job: '医生',
-                    name: '里奥'
-                },
-                {
-                    job: '幸运儿',
-                    name: '里奥'
-                }
-            ]
+            ],
         }
     }
 }
 </script>
 
 <style>
-.text {
-    font-size: 14px;
+.demo-table-expand {
+    font-size: 0;
 }
 
-.item {
-    margin-bottom: 18px;
-}
-
-.clearfix:before,
-.clearfix:after {
-    display: table;
-    content: "";
-}
-
-.clearfix:after {
-    clear: both
-}
-
-.box-card {
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
     width: 100%;
-    margin-bottom: 18px;
+    white-space: pre-wrap;
 }
 </style>
