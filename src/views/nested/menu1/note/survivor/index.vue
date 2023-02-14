@@ -1,7 +1,7 @@
 <template>
   <div style="padding:16px;">
     <h2>求生者侧写</h2>
-        <router-view />
+    <router-view />
     <el-collapse v-model="activeNames">
       <el-collapse-item title="求生者" name="1">
         <el-row :gutter="12">
@@ -9,7 +9,7 @@
             <el-card shadow="hover" class="box-card">
               <div slot="header" class="clearfix">
                 <span>{{ survivor.job }}</span>
-                <el-button style="float: right; padding: 3px 0" type="text">详情</el-button>
+                <el-button style="float: right; padding: 3px 0" type="text" @click="$router.push('survivor/'+survivor.py)">详情</el-button>
               </div>
               {{ survivor.name }}
             </el-card>
@@ -103,7 +103,8 @@ export default {
         },
         {
           job: '咒术师',
-          name: '美智子'
+          name: '美智子',
+          py: 'zhoushushi'
         },
         {
           job: '勘探员',

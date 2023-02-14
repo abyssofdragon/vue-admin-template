@@ -6,7 +6,7 @@
         <el-card shadow="hover" class="box-card">
           <div slot="header" class="clearfix">
             <span>{{ hunter.job }}</span>
-            <el-button style="float: right; padding: 3px 0" type="text">详情</el-button>
+            <el-button style="float: right; padding: 3px 0" type="text" @click="$router.push('hunter/'+hunter.py)">详情</el-button>
           </div>
           {{ hunter.name }}
         </el-card>
