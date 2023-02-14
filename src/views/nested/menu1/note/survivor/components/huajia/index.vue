@@ -1,6 +1,6 @@
 <template>
   <div style="padding:8px;">
-    <h5>律师</h5>
+    <h5>画家</h5>
     <el-collapse v-model="activeNames">
       <el-collapse-item title="角色日信件" name="1">
         <el-row>

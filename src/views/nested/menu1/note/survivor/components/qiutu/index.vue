@@ -1,0 +1,82 @@
+<template>
+  <div style="padding:8px;">
+    <h5>“囚徒”</h5>
+    <el-collapse v-model="activeNames">
+      <el-collapse-item title="角色日信件" name="1">
+        <el-row>
+          <el-col :span="24">
+            <el-table :data="letterCN" style="width: 100%">
+              <el-table-column type="expand">
+                <template slot-scope="props">
+                  <el-form label-position="left" inline class="demo-table-expand">
+                    <el-form-item>
+                      <v-html contenteditable="true">{{ props.row.letter }}</v-html>
+                    </el-form-item>
+                  </el-form>
+                </template>
+              </el-table-column>
+              <el-table-column label="NO" prop="id" />
+              <el-table-column label="年份" prop="year" />
+              <el-table-column label="标题" prop="title" />
+            </el-table>
+          </el-col>
+        </el-row>
+      </el-collapse-item>
+    </el-collapse>
+    <router-view />
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      letterCN: [
+        {
+          id: 'I',
+          year: '2021',
+          title: '一封陈旧的自荐信',
+          letter: '尊敬的洛伦兹教授：\n您好。我是前日在莱顿工业与艺术博览会上与您交谈的学生，卢卡斯·巴尔萨克。自展会一别后，我实在无法抑制内心的激动与对您的景仰！冒昧致信，望请海涵。\n在博览会之前，我就有幸拜读过教授的文章，对您在电磁学方面的研究及您的电子论初步猜想产生了极其浓重的兴趣。而展会上与您简单而宝贵的交流，更是坚定了我想要加入您的研究室的决心。事实上，当我看到展台上那件伟大作品的瞬间，我就确信，它将成为我毕生的追求！虽然目前它只是个模型构想，但我坚信在您的理论指导及实验论证下，终有一日，“永恒的完美机器”将不再是空谈。\n另外，想必您已听闻又有一国科学院通过了类似“拒绝审理倍立方，三等分角，以及表现永恒运动的任何机器”这样的决议，这也许会使我们今后研究所付出的代价翻倍，但我绝不会退缩，毕竟献身科学的代价，我、或者说我的家族早就尝过了。我是说，我绝不认为这一系列研究是他们所谓的浪费工具、时间与才智。我们也并非是一无所获的！虽然并不想提及那个人，但他，我的父亲，在为这项研究耗尽家业后总算是得出了一些也许还不太成熟的理论猜想……至于那些试验记录和理论猜想的手稿，都附于信末。敬请教授审阅，也望您能给予宝贵的指导意见。\n感谢您于百忙之中阅读我的自荐信，期盼能成为您的学生。\n\n您诚挚的\n卢卡斯·巴尔萨克'
+        },
+        {
+          id: 'II',
+          year: '2022',
+          title: '一页字迹凌乱的日记',
+          letter: '真相被记录在那些繁密的计算缝隙里，我不会看错，的确是赫尔曼·巴尔萨克的笔迹。\n难怪拍卖会上洛伦兹不惜斥以巨资，难怪那个人的手稿全被他锁了起来，原来只不过因为手稿字里行间全是他背叛那个人的证据!\n虽然我不在乎那个人死亡的真相，但阿尔瓦·洛伦兹，这个盛誉在外的大发明家，“完美机器” 的第一推动者，我的导师，竟然是个彻头彻尾沽名钓誉的伪善者！居然要靠剽窃合作者的成果立足?\n抄袭对象还偏偏是……令人作呕。\n从时间上看，也许他腐烂得比那个人还要久。\n我不该忘的，老鼠总是群居，鬣狗才急需合作。阿尔瓦·洛伦兹可是和那个抛家弃子的败类合作多年的人，能是什么好东西?\n今天之前会因为“小洛伦兹”这个称号而自得的我真是蠢透了，我不想也不可能成为他，没有自我思考的人只是动物，不，甚至比不过昆虫，这个蚤蝼，沙蝗，尺蠖，拟叶的螽斯！'
+        },
+        {
+          id: 'III',
+          year: '2023',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        },
+        {
+          id: 'IV',
+          year: '2024',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        },
+        {
+          id: 'V',
+          year: '2025',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style>
+.demo-table-expand {
+    font-size: 0;
+}
+
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+    white-space: pre-wrap;
+}
+</style>

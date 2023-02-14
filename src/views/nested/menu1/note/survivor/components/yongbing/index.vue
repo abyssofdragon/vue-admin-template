@@ -1,0 +1,82 @@
+<template>
+  <div style="padding:8px;">
+    <h5>佣兵</h5>
+    <el-collapse v-model="activeNames">
+      <el-collapse-item title="角色日信件" name="1">
+        <el-row>
+          <el-col :span="24">
+            <el-table :data="letterCN" style="width: 100%">
+              <el-table-column type="expand">
+                <template slot-scope="props">
+                  <el-form label-position="left" inline class="demo-table-expand">
+                    <el-form-item>
+                      <v-html contenteditable="true">{{ props.row.letter }}</v-html>
+                    </el-form-item>
+                  </el-form>
+                </template>
+              </el-table-column>
+              <el-table-column label="NO" prop="id" />
+              <el-table-column label="年份" prop="year" />
+              <el-table-column label="标题" prop="title" />
+            </el-table>
+          </el-col>
+        </el-row>
+      </el-collapse-item>
+    </el-collapse>
+    <router-view />
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      letterCN: [
+        {
+          id: 'I',
+          year: '2020',
+          title: '给亚瑟·罗素的电报',
+          letter: '野猪仍在活动，位置已确定，即日启程。'
+        },
+        {
+          id: 'II',
+          year: '2021',
+          title: '贴身携带的信',
+          letter: '任务已完成，除我以外，还剩一人。\n受“鹿人”袭击，难以脱身。佣金转付至加德满都。'
+        },
+        {
+          id: 'III',
+          year: '2022',
+          title: '奈布·萨贝达的两页实验档案',
+          letter: '编号： 9-？-3\n姓名：奈布·萨贝达\n\n【测试标记】\n1、亡命之徒\n2、违背规则者\n\n【测试倾向】\n压制全员的猎杀者，失控的实验对象\n\n【测试结果】\n1、整体评价\n9-？ -3是本组最危险的实验对象。他拥有较强的身体素质和心理素质，全程为完成追杀8-？ -5的任务而来，期间除去了一切阻碍行动的同局者。在游戏开始前9-？ -3就无视规则，破坏了整组秩序。他的行为会受到严厉的惩罚。\n2、流程说明\n9-？ -3是一名自由雇佣兵，因此他与同组其他参与者不同，他并不关注游戏本身，一切行为只为保障任务顺利完成。\n在成功处理8-？ -5后，他又除去了可能使计划败露的9-？ -1，并蒙骗9-？ -2与他合作，一同除去了9-？ -4。游戏未开始前本组已有两人出局，本组“四人进入游戏”的规则被打破，使得游戏无法照常进行。9-？ -3手段之敏捷利落，大大超出了最初对实验对象行为的预估，他对阻碍自己的人毫不留情地下手铲除，亡命之徒的特质绝非常人可比。9-？ -3将实验导向了预料之外的发展，造成了整局失控。因此，将在实验后派出行刑人对9-？ -3进行处理，协助他的9-？- 2也会付出代价。\n3、实验总结\n作为曾经的雇佣兵、现在的自由雇佣兵，9-？ -3目标明确、心理素质较强。单方面压制全局，斗兽场成为了独属于他的狩猎场。尽管最终实验结果不理想，但本组可以总结经验：有差异的实验对象能导向更多可能性，但差异过大者并不适合投入同一场游戏。在挑选实验对象时，也需要更谨慎地评估该实验对象是否可控。\n\n附：后续记录\n作为少数被行刑者带回的实验对象，实验结束后，在9-？ -3身上有了额外的发现。\n9-？ -3身上携带了疑似留给接应者的文字信息。结合对9-？ -3的调查，所述内容与其经历有关。9-？ -3童年家庭环境贫困、父亲早逝，成年后成为雇佣兵，其佣金收入是家中主要的经济来源。相似经历在当地并不少见：人们因生活所迫走上亡命之徒的道路，逐渐习惯杀戮，努力远离贫穷的故乡。\n而在9-？ -3身 上，能观察到两个十分有趣的行为：一边是毫不犹豫地下手铲除异已，一边是濒临绝境时仍挂念家乡的绝笔信。该说是穷凶极恶之人能被濒死的绝望唤醒良知，还是说对家的情感是支撑他在杀戮中存活、保持清醒的主要动力？\n实验至今已记录了多种“恶”的样本，其中那些危险的、矛盾的、有趣的，也许可以再次投入游戏、进行融合，进行更深层的研究……'
+        },
+        {
+          id: 'IV',
+          year: '2023',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        },
+        {
+          id: 'V',
+          year: '2024',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style>
+.demo-table-expand {
+    font-size: 0;
+}
+
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+    white-space: pre-wrap;
+}
+</style>

@@ -1,0 +1,82 @@
+<template>
+  <div style="padding:8px;">
+    <h5>空军</h5>
+    <el-collapse v-model="activeNames">
+      <el-collapse-item title="角色日信件" name="1">
+        <el-row>
+          <el-col :span="24">
+            <el-table :data="letterCN" style="width: 100%">
+              <el-table-column type="expand">
+                <template slot-scope="props">
+                  <el-form label-position="left" inline class="demo-table-expand">
+                    <el-form-item>
+                      <v-html contenteditable="true">{{ props.row.letter }}</v-html>
+                    </el-form-item>
+                  </el-form>
+                </template>
+              </el-table-column>
+              <el-table-column label="NO" prop="id" />
+              <el-table-column label="年份" prop="year" />
+              <el-table-column label="标题" prop="title" />
+            </el-table>
+          </el-col>
+        </el-row>
+      </el-collapse-item>
+    </el-collapse>
+    <router-view />
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      letterCN: [
+        {
+          id: 'I',
+          year: '2020',
+          title: '给德罗斯男爵的一封信',
+          letter: '尊敬的德罗斯男爵：\n我收到了您的来信，并为此万分感激您，您信中的提议极大地引起了我的兴趣。\n正如您说的那样，我的确在为上一桩差事的收尾问题而苦恼加入到您的“游戏”并为您工作，也许能够解决我现在的烦恼。\n但同时，我需要您为我提供安全保障：一个崭新的身份，一份拥有充足动机的可信经历。\n我可以成为任何人，只要不是现在的“我”。\n别忘记发生在您家人身上的惨剧。\n我不希望惊动那一位大人，至少现在不行。\n期待您的回信。\n\n祝好\n知名不具'
+        },
+        {
+          id: 'II',
+          year: '2021',
+          title: '两张身份证明',
+          letter: '第一张身份证明,已被撕成四片,拼凑起来勉强可以还原上面的记录:\n姓名:玛嘉蕾莎·哈丽\n职业:教师\n年龄:20\n出生地:英格兰\n瞳孔颜色:褐色\n签字:字体娟秀的的签名\n纸张背面写着一串奇怪的字符:\nksoqsklpwgvab\n第二张身份证明,纸张完整,有折痕,正面文字:\n姓名:玛尔塔·贝坦菲尔\n职业:空军\n年龄:20\n出生地:英格兰\n瞳孔颜色:褐色\n签字:笔锋刚硬的签名\n背面写着一些笔记,从字体与书写习惯看跟两份记录上的签名都不同:\n一个合适的新身份\n她是谁?\n与她一起来的同伴呢?\n胜利者?牺牲者?\n还是和那个酗酒的女人一样?\n弃权退出?\n(最后一行字迹潦草) \n无关紧要, 这已是唯一选择。'
+        },
+        {
+          id: 'III',
+          year: '2022',
+          title: '？？？的一页实验档案',
+          letter: '编号：6-1-4\n姓名：？？？\n\n【测试标记】\n1、伪装者\n2、真实中的谎言\n3、身份扮演\n\n【测试倾向】\n遗忘本我之人。\n\n【测试结果】\n1、整体评价：最难伪装的身份是自己。\n\n2、流程说明：\n该组被设计成“匹诺曹”小游戏，四个试验品均被要求将“真与假”反过来演绎。\n按照规则，6-1-4号需在游戏中使用真实身份。但在自我介绍的时候，她依旧使用虚假身份，且她的虚假身份得到了同组其他三个实验体的认可。当晚6-1-4号便受到警告。于是第二天她重新自我介绍，但是她的真实身份反而被其他三个实验体推断为虚假信息。她在游戏内的“撒谎”行为，使得6-1-2号认定她为预言中那个造成最后“悲剧”的“谎言”。以至于，当她在游戏最后尝试向6-1-2号阐述“真相”时候，未能得到信任。造成她与6-1-2号的悲剧。\n\n3、分析总结：\n6-1-4号自身就是一个“假”的人，这也导致该组实验出现了一个有趣的现象：同组的实验体可以接受6-1-4号的谎言，但当她决定坦诚后，她吐露的真相在别人眼里却漏洞百出。\n6-1-4号在生活中一直以他人的身份出现，对她而言，“假身份”反而是真实的存在，而真实的她自己才是那个“假身份”。她与同组其他人在“真与假”的心理感知上存在偏差，所以当要求她用真实的自己出现时，对同组其他人以及她自己而言，反倒成为了一个谎言。\n事实也证明，当6-1-4号以“假身份”示人的时候，她表现得淡定从容，仿佛她就是这个人。而在游戏中要求她用真实的自己登场时，却表现得手足无措。\n由此推断，6-1-4号准备好了去假扮任何一个身份，唯独没有准备好做她自己。\n她就像是受到惩罚的厄科，永远无法自主地说话，只能靠模仿别人的声音来发声。\n而该组实验，最后造成四个实验体悲剧结果的原因也正在于此。并非如6-1-2号所预言那般源于谎言，相反，是那个每一次被当作谎言而未能被相信的真相。'
+        },
+        {
+          id: 'IV',
+          year: '2023',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        },
+        {
+          id: 'V',
+          year: '2024',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style>
+.demo-table-expand {
+    font-size: 0;
+}
+
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+    white-space: pre-wrap;
+}
+</style>

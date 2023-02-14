@@ -1,6 +1,6 @@
 <template>
   <div id="app" style="padding:16px;">
-    <h2>调酒师</h2>
+    <h5>调酒师</h5>
     <Letter :title="t" :letter-c-n="letterCN" />
     <el-collapse v-model="activeNames">
       <el-collapse-item title="角色日信件" name="1">

@@ -1,0 +1,82 @@
+<template>
+  <div style="padding:8px;">
+    <h5>大副</h5>
+    <el-collapse v-model="activeNames">
+      <el-collapse-item title="角色日信件" name="1">
+        <el-row>
+          <el-col :span="24">
+            <el-table :data="letterCN" style="width: 100%">
+              <el-table-column type="expand">
+                <template slot-scope="props">
+                  <el-form label-position="left" inline class="demo-table-expand">
+                    <el-form-item>
+                      <v-html contenteditable="true">{{ props.row.letter }}</v-html>
+                    </el-form-item>
+                  </el-form>
+                </template>
+              </el-table-column>
+              <el-table-column label="NO" prop="id" />
+              <el-table-column label="年份" prop="year" />
+              <el-table-column label="标题" prop="title" />
+            </el-table>
+          </el-col>
+        </el-row>
+      </el-collapse-item>
+    </el-collapse>
+    <router-view />
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      letterCN: [
+        {
+          id: 'I',
+          year: '2020',
+          title: '一篇航海日志',
+          letter: '9月24日 天气:多云\n因为巴登子爵错过了登船的最后时间，这次航程中，我将代替他履行帕耳塞洛珀号的航行当值记录。\n这次航行的目的地并非此前商贸航线的港口，而是一个位于地中海东北角上的坐标。此前我们从未前往过那片海域，因此，为了保险起见，船上除了航行所需的必需品外，并未装载其他货物，而是装备了足以让我们应对任何敌人的枪械与火炮，但希望我们没有用上的机会。\n国王万岁\n…………\n一行扭曲的字迹:火炮无法杀死它们…'
+        },
+        {
+          id: 'II',
+          year: '2021',
+          title: '最后一页日记',
+          letter: '矜贵的少爷有了新的发现。\n驶向胜利的航标在我们各自收到的邀请函里，那个属于我们自己的关键词。\n而属于我的是——Boat。\n这个发现让我想起了一个之前一直忽略的细节，那个关键词奇怪的首字母写法。\n它跟前几天出现在大厅里的手写字条，有些不同，或许我该对这个“附加规则”更警惕一些。\n但不管发出那张纸条的人动机是什么，让不可控的异类退出，对我而言，并无坏处。\n而那个写法我并非第一次看到，父亲那张货物清单的验货人签名栏里，它也曾经出现过。\n那个签名的人，叫作Bourbon。'
+        },
+        {
+          id: 'III',
+          year: '2022',
+          title: '何塞·巴登的一页实验档案',
+          letter: '编号: 5-0-3\n\n【测试标记】\n1、障眼法\n2、认知博弈\n3、自我审判\n\n【测试倾向】\n自我救赎的“救赎”者\n\n【测试结果】\n1、整体评价:\n当自我认知的偏差威胁到生存时,出于防御目的,实验用例自身会给出一套平衡认知的解法,并使自己相信它,无论真假。\n2、流程说明\n5-0-3曾学习催眠,这让他在实验开始之初短暂地占领了先机。他主观地为整个实验划定了初期阵营,同时暂时找到了最强的盟友。\n但5-0-3作用于其他实验用例的催眠效果短暂而不稳定,而5-0-3对此浑然不知。5-?-1与5-0-2正是利用了这一点,蒙蔽了5-0-3。\n5-?-4出人意料的牺牲行为,让5-0-3摇摆不定的善恶观出现了裂缝,5-?-1和5-0-2抓住这个时机,将5-0-3指认为唯一罪魁,这勾起了5-0-3最痛苦的记忆,陷入自我审判,几乎击溃了他的精神,让他实质上提前出局。\n3、分析总结:\n作为故人的“遗赠”,我非常珍惜对5-0-3的使用,所以在负责监视的行刑者判定其精神即将崩溃时,我本已做好暂时中止对其进行实验的计划。\n但曾经对他进行深度催眠的人显然为他埋下了特殊的精神锚点, 在他已无法对其他实验用例形成威胁、完全暴露于危险之中时, 支撑起了他最后的精神防御, 使他最终完成了所有为他准备的实验流程, 并借助5- 0 - 3 - U的能量再次完成自我催眠, 从自我审判中豁免。\n从此次实验结果中, 仍无法明确判断药物控制与精神控制谁在认知操控上有更强的主导能力, 或许我应该更耐心的等待那个来自我更慷慨的友人的“礼物”。'
+        },
+        {
+          id: 'IV',
+          year: '2023',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        },
+        {
+          id: 'V',
+          year: '2024',
+          title: 'Coming Soon',
+          letter: 'Coming Soon'
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style>
+.demo-table-expand {
+    font-size: 0;
+}
+
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+    white-space: pre-wrap;
+}
+</style>
