@@ -3,6 +3,7 @@
     <h5>咒术师</h5>
     <el-row :gutter="12">
       <Letter :letter="letterCN" />
+      <Deduction :deduction="deductionCN" />
     </el-row>
     <router-view />
   </div>
@@ -12,6 +13,68 @@
 export default {
   data() {
     return {
+      deductionCN: [
+        {
+          id: '1',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '2',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '3',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '4',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '5',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '6',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '7',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '8',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '9',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        },
+        {
+          id: '10',
+          title: 'Coming Soon',
+          content: 'Coming Soon',
+          conclusion: 'Coming Soon'
+        }
+      ],
       letterCN: [
         {
           id: 'I',

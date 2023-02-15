@@ -134,7 +134,7 @@ export default {
         {
           job: '厂长',
           name: '里奥',
-          py: 'liao'
+          py: 'changzhang'
         }
       ]
     }

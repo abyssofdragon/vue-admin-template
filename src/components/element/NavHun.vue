@@ -35,7 +35,6 @@ export default {
       activeNames: ['1']
     }
   }
-
 }
 </script>
 
