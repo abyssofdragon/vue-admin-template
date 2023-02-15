@@ -78,31 +78,31 @@ export default {
       letterCN: [
         {
           id: 'I',
-          year: '2020',
+          year: 'Coming Soon',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         },
         {
           id: 'II',
-          year: '2021',
+          year: 'Coming Soon',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         },
         {
           id: 'III',
-          year: '2022',
+          year: 'Coming Soon',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         },
         {
           id: 'IV',
-          year: '2023',
+          year: 'Coming Soon',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         },
         {
           id: 'V',
-          year: '2024',
+          year: 'Coming Soon',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         }

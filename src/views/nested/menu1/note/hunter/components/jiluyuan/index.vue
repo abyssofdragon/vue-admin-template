@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>隐士</h5>
+    <h5>“记录员”</h5>
     <el-row :gutter="12">
       <Letter :letter="letterCN" />
       <Deduction :deduction="deductionCN" />
@@ -78,31 +78,31 @@ export default {
       letterCN: [
         {
           id: 'I',
-          year: '2020',
+          year: '2024',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         },
         {
           id: 'II',
-          year: '2021',
+          year: '2025',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         },
         {
           id: 'III',
-          year: '2022',
+          year: '2026',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         },
         {
           id: 'IV',
-          year: '2023',
+          year: '2027',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         },
         {
           id: 'V',
-          year: '2024',
+          year: '2028',
           title: 'Coming Soon',
           letter: 'Coming Soon'
         }

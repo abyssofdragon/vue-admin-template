@@ -65,6 +65,12 @@ export default {
       meta: { title: '0518 博士' }
     },
     {
+      path: 'lutou',
+      component: () => import('@/views/nested/menu1/note/hunter/components/lutou'),
+      name: 'Lutou',
+      meta: { title: '0521 lutou' }
+    },
+    {
       path: 'susanzhihun',
       component: () => import('@/views/nested/menu1/note/hunter/components/susanzhihun'),
       name: 'Susanzhihun',
