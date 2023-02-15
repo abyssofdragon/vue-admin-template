@@ -1,5 +1,7 @@
 import Vue from 'vue'
 
+import './config/idv-components'// idv组件
+
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'

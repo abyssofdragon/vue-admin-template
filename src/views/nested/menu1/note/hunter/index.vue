@@ -1,18 +1,8 @@
 <template>
-  <div style="padding:16px;">
-    <h2>监管者报告</h2>
-    <el-row :gutter="12">
-      <el-col v-for="hunter in hunters" :key="hunter.id" :span="4">
-        <el-card shadow="hover" class="box-card">
-          <div slot="header" class="clearfix">
-            <span>{{ hunter.job }}</span>
-            <el-button style="float: right; padding: 3px 0" type="text" @click="$router.push('hunter/'+hunter.py)">详情</el-button>
-          </div>
-          {{ hunter.name }}
-        </el-card>
-      </el-col>
-    </el-row>
+  <div>
+    <h3>监管者报告</h3>
     <router-view />
+    <NavHun :hunters="hunters" />
   </div>
 </template>
 
@@ -23,131 +13,131 @@ export default {
       hunters: [
         {
           job: '隐士',
-          name: '阿尔瓦'
+          name: '阿尔瓦',
+          py: 'yinshi'
         },
         {
           job: '“记录员”',
-          name: '柯根'
+          name: '柯根',
+          py: 'jiluyuan'
         },
         {
           job: '“噩梦”',
-          name: '“奥尔菲斯”'
+          name: '“奥尔菲斯”',
+          py: 'emeng'
         },
         {
           job: '蜡像师',
-          name: '菲利普'
+          name: '菲利普',
+          py: 'laxiangshi'
         },
         {
           job: '渔女',
-          name: '格蕾丝'
+          name: '格蕾丝',
+          py: 'yunv'
         },
         {
           job: '破轮',
-          name: '威尔三兄弟'
+          name: '威尔三兄弟',
+          py: 'polun'
         },
         {
           job: '“博士”',
-          name: '珀西'
+          name: '珀西',
+          py: 'boshi'
         },
         {
           job: '雕刻家',
-          name: '伽拉泰亚'
+          name: '伽拉泰亚',
+          py: 'diaokejia'
         },
         {
           job: '小提琴家',
-          name: '安东尼奥'
+          name: '安东尼奥',
+          py: 'xiaotiqinjia'
         },
         {
           job: '“使徒”',
-          name: '安'
+          name: '安',
+          py: 'shitu'
         },
         {
           job: '26号守卫',
-          name: '邦邦'
+          name: '邦邦',
+          py: '26haoshouwei'
         },
         {
           job: '红夫人',
-          name: '玛丽'
+          name: '玛丽',
+          py: 'hongfuren'
         },
         {
           job: '孽蜥',
-          name: '卢基诺'
+          name: '卢基诺',
+          py: 'niexi'
         },
         {
           job: '爱哭鬼',
-          name: '罗比'
+          name: '罗比',
+          py: 'aikugui'
         },
         {
           job: '梦之女巫',
-          name: '伊德海拉'
+          name: '伊德海拉',
+          py: 'mengzhinvwu'
         },
         {
           job: '疯眼',
-          name: '巴尔克'
+          name: '巴尔克',
+          py: 'fengyan'
         },
         {
           job: '摄影师',
-          name: '约瑟夫'
+          name: '约瑟夫',
+          py: 'sheyingshi'
         },
         {
           job: '宿伞之魂',
-          name: '谢必安/范无咎'
+          name: '谢必安/范无咎',
+          py: 'susanzhihun'
         },
         {
           job: '黄衣之主',
-          name: '哈斯塔'
+          name: '哈斯塔',
+          py: 'huangyizhizhu'
         },
         {
           job: '红蝶',
-          name: '美智子'
+          name: '美智子',
+          py: 'hongdie'
         },
         {
           job: '蜘蛛',
-          name: '瓦尔莱塔'
+          name: '瓦尔莱塔',
+          py: 'zhizhu'
         },
         {
           job: '“杰克”',
-          name: '杰克'
+          name: '杰克',
+          py: 'jieke'
         },
         {
           job: '鹿头',
-          name: '班恩'
+          name: '班恩',
+          py: 'lutou'
         },
         {
           job: '小丑',
-          name: '裘克'
+          name: '裘克',
+          py: 'xiaochou'
         },
         {
           job: '厂长',
-          name: '里奥'
+          name: '里奥',
+          py: 'liao'
         }
       ]
     }
   }
 }
 </script>
-
-<style>
-.text {
-  font-size: 14px;
-}
-
-.item {
-  margin-bottom: 18px;
-}
-
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-
-.clearfix:after {
-  clear: both
-}
-
-.box-card {
-  width: 100%;
-  margin-bottom: 18px;
-}
-</style>

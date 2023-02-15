@@ -1,11 +1,10 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
     <el-collapse v-model="activeNames">
       <el-collapse-item title="角色日信件" name="1">
         <el-row>
           <el-col :span="24">
-            <el-table :data="letter" style="width: 100%">
+            <el-table :data="letter" stripe border max-height="500" style="width: 100%">
               <el-table-column type="expand">
                 <template slot-scope="props">
                   <el-form label-position="left" inline class="demo-table-expand">
@@ -30,10 +29,6 @@
 export default {
   name: 'Letter',
   props: {
-    title: {
-      type: String,
-      default: ''
-    },
     letter: {
       type: Array,
       default: function() {

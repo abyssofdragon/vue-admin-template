@@ -1,29 +1,7 @@
 <template>
-  <div id="app" style="padding:16px;">
-    <h5>调酒师</h5>
-    <Letter :title="t" :letter-c-n="letterCN" />
-    <el-collapse v-model="activeNames">
-      <el-collapse-item title="角色日信件" name="1">
-        <el-row>
-          <el-col :span="24">
-            <el-table :data="letterCN" style="width: 100%">
-              <el-table-column type="expand">
-                <template slot-scope="props">
-                  <el-form label-position="left" inline class="demo-table-expand">
-                    <el-form-item>
-                      <v-html contenteditable="true">{{ props.row.letter }}</v-html>
-                    </el-form-item>
-                  </el-form>
-                </template>
-              </el-table-column>
-              <el-table-column label="NO" prop="id" />
-              <el-table-column label="年份" prop="year" />
-              <el-table-column label="标题" prop="title" />
-            </el-table>
-          </el-col>
-        </el-row>
-      </el-collapse-item>
-    </el-collapse>
+  <div id="app">
+    <h4>调酒师</h4>
+    <Letter :letter="letterCN" />
     <router-view />
   </div>
 </template>
@@ -32,7 +10,6 @@
 export default {
   data() {
     return {
-      t: 'tjs',
       letterCN: [
         {
           id: 'I',
