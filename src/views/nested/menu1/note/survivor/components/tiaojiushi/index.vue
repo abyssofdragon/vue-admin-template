@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <h4>调酒师</h4>
-    <Letter :letter="letterCN" />
+    <el-row :gutter="12">
+      <Letter :letter="letterCN" />
+    </el-row>
     <router-view />
   </div>
 </template>

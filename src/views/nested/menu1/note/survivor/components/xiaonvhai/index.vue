@@ -1,7 +1,9 @@
 <template>
   <div>
     <h5>“小女孩”</h5>
-    <Letter :letter="letterCN" />
+    <el-row :gutter="12">
+      <Letter :letter="letterCN" />
+    </el-row>
     <router-view />
   </div>
 </template>

@@ -1,7 +1,9 @@
 <template>
   <div>
     <h5>玩具商</h5>
-    <Letter :letter="letterCN" />
+    <el-row :gutter="12">
+      <Letter :letter="letterCN" />
+    </el-row>
     <router-view />
   </div>
 </template>

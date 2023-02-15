@@ -1,7 +1,9 @@
 <template>
   <div style="padding: 8px">
     <h5>调香师</h5>
-    <Letter :letter="letterCN" />
+    <el-row :gutter="12">
+      <Letter :letter="letterCN" />
+    </el-row>
     <router-view />
   </div>
 </template>
