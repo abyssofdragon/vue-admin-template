@@ -1,5 +1,5 @@
 <template>
-  <div style="padding:8px;">
+  <div>
     <h5>魔术师</h5>
     <Letter :letter="letterCN" />
     <router-view />

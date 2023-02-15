@@ -1,5 +1,5 @@
 <template>
-  <div style="padding:8px;">
+  <div>
     <h5>幸运儿</h5>
     <Letter :letter="letterCN" />
     <router-view />

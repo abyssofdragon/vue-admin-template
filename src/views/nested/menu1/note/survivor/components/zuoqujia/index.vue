@@ -1,5 +1,5 @@
 <template>
-  <div style="padding:8px;">
+  <div>
     <h5>作曲家</h5>
     <Letter :letter="letterCN" />
     <router-view />
