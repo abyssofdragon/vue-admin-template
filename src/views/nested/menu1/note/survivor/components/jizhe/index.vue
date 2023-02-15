@@ -40,8 +40,8 @@ export default {
         {
           id: 'V',
           year: '2024',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         }
       ]
     }

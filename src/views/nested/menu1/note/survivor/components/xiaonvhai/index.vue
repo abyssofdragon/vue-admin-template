@@ -16,32 +16,32 @@ export default {
         {
           id: 'I',
           year: '2023',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'II',
           year: '2024',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'III',
           year: '2025',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'IV',
           year: '2026',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'V',
           year: '2027',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         }
       ]
     }

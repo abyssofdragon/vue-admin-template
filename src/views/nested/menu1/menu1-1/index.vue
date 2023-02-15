@@ -49,7 +49,7 @@
           <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
         </el-collapse-item>
       </el-collapse></el-tab-pane>
-      <el-tab-pane label="Coming Soon">Coming Soon</el-tab-pane>
+      <el-tab-pane label="TBD">TBD</el-tab-pane>
     </el-tabs>
   </div>
 </template>

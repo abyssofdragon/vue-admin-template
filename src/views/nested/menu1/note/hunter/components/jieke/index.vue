@@ -16,63 +16,63 @@ export default {
       deductionCN: [
         {
           id: '1',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '2',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '3',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '4',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '5',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '6',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '7',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '8',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '9',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '10',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         }
       ],
       letterCN: [
@@ -97,14 +97,14 @@ export default {
         {
           id: 'IV',
           year: '2023',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'V',
           year: '2024',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         }
       ]
     }

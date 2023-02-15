@@ -10,7 +10,7 @@
                   <template slot-scope="props">
                     <el-form label-position="left" inline class="demo-table-expand">
                       <el-form-item>
-                        <v-html contenteditable="true">{{ props.row.letter }}</v-html>
+                        <div contenteditable="true">{{ props.row.letter }}</div>
                       </el-form-item>
                     </el-form>
                   </template>
@@ -48,13 +48,15 @@ export default {
 
 <style>
 .demo-table-expand {
-    font-size: 0;
+  font-size: 0;
 }
 
 .demo-table-expand .el-form-item {
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 100%;
-    white-space: pre-wrap;
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 100%;
+  white-space: pre-wrap;
+  line-height: 20px;
 }
+
 </style>

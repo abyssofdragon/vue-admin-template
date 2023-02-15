@@ -28,20 +28,20 @@ export default {
         {
           id: 'III',
           year: '2023',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'IV',
           year: '2024',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'V',
           year: '2025',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         }
       ]
     }

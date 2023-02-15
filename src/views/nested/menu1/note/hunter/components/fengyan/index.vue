@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>隐士</h5>
+    <h5>疯眼</h5>
     <el-row :gutter="12">
       <Letter :letter="letterCN" />
       <Deduction :deduction="deductionCN" />
@@ -16,95 +16,95 @@ export default {
       deductionCN: [
         {
           id: '1',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '2',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '3',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '4',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '5',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '6',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '7',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '8',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '9',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '10',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         }
       ],
       letterCN: [
         {
           id: 'I',
           year: '2020',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '布杂艺术学院回绝信',
+          letter: '亲爱的纪尧姆校长:\n收到您的来信时，我简直不敢相信我的眼睛，我的心中被喜悦和感激所溢满，快要承载不住，我从未想过自己一丁点微不足道的建筑才华能够得到这样的赏识，于我而言是多么大的荣幸啊。然而这封信或许会让您失望。\n首先,请原谅我擅自来一睹贵校风采,看着那些未来可能成为我同学的人们,如此的年轻有为，而我，一个乡间建筑工人的孩子，已年近三十，光是路费就耗尽了大部分积蓄，尽管可能有些许才华，但您的邀请对我来说只能是人生路上一个美好的梦，我不希望它醒于现实。事实上，我已经接受了一对庄园夫妇的邀请，会去为他们的庄园做修建，在这个世界阴暗的角落，为建筑添加一些见不得人的“装饰”，这应当才是我这种人的人生吧。\n最后，我对此一切深表遗憾！\n\n对您由衷感激的，\n您忠诚的\n巴尔克·拉·帕杜拉'
         },
         {
           id: 'II',
           year: '2021',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '一张信纸',
+          letter: '先生，\n两个小鬼已抵达庄园数日有余。\n这两个家伙十分聪明，充满了好奇心，甚至会让我回想起那个总在墙角露出的衣摆。\n这原本是一组富有创造力的实验，虽然我讨厌其中一个孩子时常觊觎我的机器人。\n然而就在最近，我发现一切并未按照原本的设想发展，与其说是他们的聪慧超出了我的预期，不如说是他们确实可以在某些前提下达成短暂的合作，而恰巧这个前提就是我。\n常年埋没在阴暗处的锁链被无情地打上了聚光灯，每一处的锈迹被呈现在放大镜下，庄园从未被如此的一览无余过。\n即使目前还有两人暂未到达，但我毫不怀疑他们可以顺利地通过游戏，这样一来原本的实验便不再具有意义。\n于是我的脑袋里产生了两个疑问。\n天赋是上天难得的恩赐，它只会被给予极少数人，但是真的会有免费的馈赠吗？被命运青睐的他们，看起来就像是定子和转子，那么一旦他们之间的空气间隙被抽离，无法自由转动的二者又该如何斗争呢？\n至于另外一个问题，虽然我想我知道答案，但还是忍不住问出。\n您会允许再有人带着庄园的秘密离开吗？\n\n您最忠诚的，巴尔克·拉·帕杜拉'
         },
         {
           id: 'III',
           year: '2022',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '一封未被寄出的信',
+          letter: '班恩,\n没有回信是因为我一直在思考一个问题。\n—直以来,我都认为理性是一种崇高的道德，是平面上运动着的均匀光滑的小球，不受任何阻力，在任何时候都不会出现偏差，永远保持一个方向。近来我发现“理性道德”这种东西，就跟理想实验一样，在现实生活中根本不会存在，哪怕是高智商群体，他们之间看似完美的合作，其结果最终也和其他平庸者一样,一败涂地。\n我承认我也曾对他们抱以某种希望，期待他们能够成功，或许是我在他们身上看到过熟悉的东西，而我不自觉地被那种东西吸引。不过换个角度，如果他们其实并不是真正的天才呢？我沉迷在他们智慧的表象中，一旦换个参考系——那场游戏，挫抑了他们的自负，同时也暴露出他们掩饰私欲的狼狈嘴脸。\n这也验证了他的想法是对的，内里混乱的东西就是需要我们进行修正而我们就是设计截止阀的人，只有光滑的圆弧内壁才可以提供一个没有噪音没有阻力的平稳工艺流程。尽管我曾受挫，但这一次我将全然地投入到计划当中，完全地，排出所有不完美的异常湍流。\n最后，我想你代我好好保管一样重要的东西，是我失败的试验品里找出来的故障零件，不它并不是失败，只是现在依旧不完美……\n巴尔克\n\n信件背面留有墨水洇花了的字迹，上面写着“Traitor?”\n和信笺摆在一起的，还有一个档案袋，档案袋上写着26，里面只有一副不完整的影像带。\n桌面的中央正摆着一个半个头颅的白色蜡像。\n\n截止阀阀体是阀的主要承压部件，并且容纳闭合元件。截止阀内的流动通道被设计成具有光滑的圆弧内壁而没有尖锐的角和尖棱，这样可提供一个不产生异常湍流及噪音的平稳工艺流动。流动通道本身必须具有恒定的面积以避免产生任何附加的压力损失和过高的流速。'
         },
         {
           id: 'IV',
           year: '2023',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'V',
           year: '2024',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         }
       ]
     }

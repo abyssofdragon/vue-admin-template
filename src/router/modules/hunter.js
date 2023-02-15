@@ -68,7 +68,7 @@ export default {
       path: 'lutou',
       component: () => import('@/views/nested/menu1/note/hunter/components/lutou'),
       name: 'Lutou',
-      meta: { title: '0521 lutou' }
+      meta: { title: '0521 鹿头' }
     },
     {
       path: 'susanzhihun',
@@ -141,6 +141,12 @@ export default {
       component: () => import('@/views/nested/menu1/note/hunter/components/changzhang'),
       name: 'Changzhang',
       meta: { title: '1221 厂长' }
+    },
+    {
+      path: 'yinshi',
+      component: () => import('@/views/nested/menu1/note/hunter/components/yinshi'),
+      name: 'Yinshi',
+      meta: { title: 'TBD 隐士' }
     },
     {
       path: 'shouyeren',

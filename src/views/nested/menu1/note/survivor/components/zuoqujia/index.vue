@@ -15,33 +15,33 @@ export default {
       letterCN: [
         {
           id: 'I',
-          year: 'Coming Soon',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          year: 'TBD',
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'II',
-          year: 'Coming Soon',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          year: 'TBD',
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'III',
-          year: 'Coming Soon',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          year: 'TBD',
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'IV',
-          year: 'Coming Soon',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          year: 'TBD',
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'V',
-          year: 'Coming Soon',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          year: 'TBD',
+          title: 'TBD',
+          letter: 'TBD'
         }
       ]
     }

@@ -10,7 +10,7 @@
                   <template slot-scope="props">
                     <el-form label-position="left" inline class="demo-table-expand">
                       <el-form-item>
-                        <v-html contenteditable="true">{{ props.row.conclusion }}</v-html>
+                        <div contenteditable="true">{{ props.row.conclusion }}</div>
                       </el-form-item>
                     </el-form>
                   </template>

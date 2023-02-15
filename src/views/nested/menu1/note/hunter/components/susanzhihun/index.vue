@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>隐士</h5>
+    <h5>宿伞之魂</h5>
     <el-row :gutter="12">
       <Letter :letter="letterCN" />
       <Deduction :deduction="deductionCN" />
@@ -16,95 +16,95 @@ export default {
       deductionCN: [
         {
           id: '1',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '2',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '3',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '4',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '5',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '6',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '7',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '8',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '9',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '10',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         }
       ],
       letterCN: [
         {
           id: 'I',
           year: '2020',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '江城子·中元夜雨有感',
+          letter: '西风吹梦到江皋，断魂消，落花飘。记得重逢，流水怨春潮。\n只有青灯相忆否，人去也，惜花朝。\n而今休说旧时桥，倩谁描，数声箫。一曲离情，明月暗中宵。\n此际相思千万缕，清夜永，漏声遥。'
         },
         {
           id: 'II',
           year: '2021',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '一套被妥善收存的书信',
+          letter: '【第一封】\n青玉案·宿科布多寄南台贤弟\n明炳丹心焉可灭，边未靖，金瓯缺。称戈予誓从戎业。切莫等闲，君当烺烺，落拓空对月。生将拼却汗青血。死亦守持碎玉节。待得凯乐朝天阙。九州生气，洒向千峰，裂尽关山雪。\n雍正九年五月初七素公敬上\n\n【第二封】\n素公吾兄，见字如晤:\n塞上孤障，周敝寒凉。然兄只道寸心笑傲，近况片字不言，却是不知素公体无恙否?运途济否?忧恚遣否?时年痹疾再患否?\n素公苦心良言，吾焉能不知。非吾闾里高卧，不襄家国天下事，实乃烽烟苦布衣，殊不忍见哀鸿。与其长缨羡列鼎，孰若仗剑济壑陵。\n说时有趣，前日仗义陇亩，同遇玄衣客扶弱纵豪。酒过得意，行尽青山，交为知己。若素公再至福州，定为引荐。盼君早日大捷而归。\n自古封侯万里路，漫漫白骨蔽川原。我知素公非贪生怕死之徒，然沙场凶险，兄可记与吾仍有前约未续，定要\n(信未写完，笔墨止于最后一个字，且最后一笔被重重拉扯歪斜出去) '
         },
         {
           id: 'III',
           year: '2022',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '一份笔迹不同的实验记录草稿',
+          letter: '【实验场地】湖景村\n【实验对象】5-0-3 （使用特殊道具）\n【实验道具编号】 5-0-3-U\n【已知道具信息】\n有关5-0-3-U的传说称，5-0-3-U蕴含神秘的东方力量。试验表明，5-0-3-U内确有微量生物能反应，但记录者认为该能量反应与“内宿亡灵”的传说毫无关联，或许与它曾长期处于特殊生态环境有关。\n目前暂无法解释的异常之处在于，将5-0-3-U置于湿润环境中，控制湿度变量后静置，会检测到不同程度的磁场变化。变量与结果数据间暂未建立相关模型。\n\n【实验准备】\n①将道具5-0-3-U置于湖景村A号大船的X标记位，控制范围环境内的湿润度，使其达到磁场变化度最大的数据点。\n②若相关目标对象5-0-3成功进入游戏，则诱导他前往标记地点；若5-0-3未能进入游戏，则本则实验记录暂时终止。\n\n【观测记录】\n（后半页为额外粘贴的纸张，字迹与上半页明显不同，且十分凌乱，似为实时速记）\n对象5-0-3已成功进入游戏；\n5-0-3已位于标记点，并已发现船舱中表现异常的水纹信息；另，该地环境异常湿润，越接近5-0-3-U所处位置湿感越重；\n5-0-3尝试破解水纹符号；\n5-0-3似乎看见了某种无法被观测到的东西；\n5-0-3似被影响，陷入混乱；\n……（内容被涂抹）\n5-0-3情绪已逐渐趋于稳定，精神状态呈正向转变；\n5-0-3离开标记点，前往5-0-2所在方位；\n……'
         },
         {
           id: 'IV',
           year: '2023',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'V',
           year: '2024',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         }
       ]
     }

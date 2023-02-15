@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>隐士</h5>
+    <h5>摄影师</h5>
     <el-row :gutter="12">
       <Letter :letter="letterCN" />
       <Deduction :deduction="deductionCN" />
@@ -16,95 +16,95 @@ export default {
       deductionCN: [
         {
           id: '1',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '2',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '3',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '4',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '5',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '6',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '7',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '8',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '9',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         },
         {
           id: '10',
-          title: 'Coming Soon',
-          content: 'Coming Soon',
-          conclusion: 'Coming Soon'
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
         }
       ],
       letterCN: [
         {
           id: 'I',
           year: '2020',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '无法寄出的家书',
+          letter: '亲爱的克劳德:\n今天没有下雨，却仍然保留着你离去那天的寒意。\n我坐在书房里，隔着遥远的时光，写一封永远不可能寄出去的信。看起来有点蠢，但在今天，我无法控制自己。\n你和我，曾经共同走过四季的路，一年又一年，直到那个冬天。我们所走的路开始偏斜，你仍然满怀希望等待着春天，可怕的死神却站在前方。\n他带着你离去了，带着许多人离去了，去我无法到达也无法看清的世界。\n我甚至有些责怪自己，为什么，在这个寒意料峭的初春，是我活了下来。\n我想念你，亲爱的兄弟。可当我站在镜子前面，日复一日镜中的面孔却逐渐变得陌生。即使时光也不能夺走的记忆，该如何获得呢?我可以永远记得你吗?我可以永远记得那些可爱可敬的人们吗?\n你再也不会回应我了，意识到这一点时总让我心碎。\n你说春天始终会再来，正如乌云无法永远遮蔽太阳的光辉。\n只是从那天起，我再也无法享受那些没有你的春天了。\n我必须记住什么，总有人应该记住什么。\n那些灾难，那些疾病，那些逝去的生命，那些本应一同迎接春天到来的人们……\n我想全部记住。\n\n你的兄长\n约瑟夫'
         },
         {
           id: 'II',
           year: '2021',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '最后一封信',
+          letter: '吾友艾略特:\n我心意已决,你不必一而再再而三地劝我。\n她一定还活着,就存在于这个庄园的某个角落。我会找到她,带上她一起出来。\n何况我已取得老管家的信任,不可能在这种阶段抽身而退。\n不过,确实如你最初猜测的那样,这里绝不会只是一个普通的庄园,至于那位沟壑纵横、步履蹒跚的乡绅老爷,谦和可亲的笑脸也许只是他虚假的对外面具。\n老人每天会花一个小时待在画室里,对着那几张破损的涂鸦纸静默不语。我偷偷检查过,这些涂鸦画除了都出自一人之手外,并无异常。此人名叫克劳德,可每当我旁敲侧击问及时,庄园内的人都讳莫如深。\n除此之外的大部分时间,老人都待在地下暗室。你知道的,就是他处理相片的地方。可是,即便他再热爱摄影,这时长是否也太不寻常了些?\n我又打听到,老乡绅以前并没有那么疯狂。—切的转折点,源自一次远游,没人知道他远游时遇到了什么,只知道他回家时拿了许多神秘学的书籍。自那之后,老人就整日整夜把自己关在暗室里,还不允许下人入内。好像也是从那个时候起,镇子上出现了老人小孩离奇失踪的怪事。\n要说那个地方没有问题,傻瓜都不信!\n然而,庄园内居然没有任何人提出疑问或者讨论这件事?不知是对未知的恐惧压过了本能的好奇,还是当真主人的命令高于一切?\n总之,明晚,我会潜进地下暗室。我不知道前方等着我的是什么,但我已决心推开那扇门……\n\n祝安\n麦考利'
         },
         {
           id: 'III',
           year: '2022',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: '由信纸订成的日记',
+          letter: '日沉弥漫的橘，破碎镜像的光影，干枯后脉络毕现的黄果酸浆，流转变换的寒暑春秋与星辰轨迹……\n动态的变迁赋予了生死以意义，制造出生活之外的所谓浪漫，而亘古不变的重复会让人失去对新鲜的热情。\n——不知为什么，最近我常思考这些。\n也许是我太久没有从虚假的镜像中出来，没有认真去看看身边的真实。\n就像人们总是梦想远方的玫瑰园，却不去欣赏盛开于窗前的玫瑰花。\n又或许是，越来越多人对永恒镜像的反应与我所期待的大相径庭。\n不是有人说，当世上所有人都指责你的过错，即便你是正确的，久而久之，你也会怀疑自已。\n我仍然记得很多年前那名自称艾考特的青年……或许是艾利特，艾略特……算了，名字不重要。他不是第一个对我的实验做出控诉的人，却是最理智最啰嗦的一个。\n我确实不想听那些关于逝者关于沉沦的心理开导言辞，或者关于时间与生活的意义，但活得越久，越会让人忍不住回想起他的话。\n可是他们为什么不能明白，生命本就该诗意而来，不该臃肿地收尾。所以成为“永恒国”子民的那一刻，他们该要满怀感激地，享受瞬间诗意的定格。\n为什么他们大多数人宁愿选择老去，选择丑陋，选择挣扎在灵魂也无法安息的现实中？\n难道实验真的是错误的吗？\n是了，有一点，仅此一点，会让我承认实验的失败。\n那就是你还没有真正回来。\n现在的你，在我触手可及的地方，却只会安静地笑。\n对，我的实验没有错，也许我能等到实验彻底成功的那天，让一切达成圆满。\n也许那天，当你阅读到这里时，能亲口告诉我这个问题的答案：克劳德，这是你我定格在光影中的第几年？'
         },
         {
           id: 'IV',
           year: '2023',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         },
         {
           id: 'V',
           year: '2024',
-          title: 'Coming Soon',
-          letter: 'Coming Soon'
+          title: 'TBD',
+          letter: 'TBD'
         }
       ]
     }
