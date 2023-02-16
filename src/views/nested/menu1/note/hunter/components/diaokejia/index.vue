@@ -1,10 +1,7 @@
 <template>
   <div>
     <h5>雕刻家</h5>
-    <el-row :gutter="12">
-      <Letter :letter="letterCN" />
-      <Deduction :deduction="deductionCN" />
-    </el-row>
+    <Character :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
@@ -15,92 +12,107 @@ export default {
     return {
       deductionCN: [
         {
+          role: '雕刻家',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '善意',
+          content: '诅咒最初看起来都像眷顾。',
+          conclusion: '一篇艺术评论:这座雕塑在技法上虽仍稍有瑕疵,但想到作者——一位可爱的小淑女，我们不由对艺术世家克劳德家族的下一位天才充满期待。'
         },
         {
+          role: '雕刻家',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '刹那',
+          content: '美的闪光，总是转瞬即逝。',
+          conclusion: '第一封短信:尊敬的克劳德先生，令嫒在技法上的学习速度已经远远超过我的预期，或许明年我可以带她一起去巴黎或者佛罗伦萨，那里有比此地更好的艺术氛围，我相信这对拓宽她的眼界、提高她的艺术修养很有好处'
         },
         {
+          role: '雕刻家',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '永恒',
+          content: '静止的刹那，能称为永恒么？',
+          conclusion: '一张医嘱:这种病例实属罕见，很遗憾，目前并无医治之法,短期内这种病症不会影响她日常生活，但随着年龄增长，对于她生理和心理而言,都是严酷的考验，请多加关注。'
         },
         {
+          role: '雕刻家',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '恶意',
+          content: '人们总要为“天真”付出代价',
+          conclusion: '“哈哈哈哈，老师，不要太为难她，那些有形之美对于她遥不可及，毕竟，她只是个‘孩子’。”'
         },
         {
+          role: '雕刻家',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '囚笼',
+          content: '躯壳不是唯一的囚笼。',
+          conclusion: '第二封短信:尊敬的克劳德先生，令嫒对于在佛罗伦萨的生活并不太适应，她看起来实在过于稚嫩，无论是生理、心理还是能力上，或许她需要换一换环境，才能重新唤起沉睡的天赋。'
         },
         {
+          role: '雕刻家',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '邀请',
+          content: '“亲爱的，首先你要知道你想要什么。”',
+          conclusion: '一叠陈旧的信封:多数是空的，部分信件的封口处有残缺的火漆印，看起来像某种蕨型花纹的一部分，有一个信封里装着一张支票，落款是德罗斯男爵。'
         },
         {
+          role: '雕刻家',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '灵感',
+          content: '至高的艺术，需要灵魂与温度。',
+          conclusion: '一封家信:父亲，我已从德罗斯先生的宅邸返回佛罗伦萨，这次远游的受益远超这些年我在佛罗伦萨所学，因此，我决定结束于此地的求学，不日将返回家中，请在附楼为我腾空一间偏厅，以作创作之所'
         },
         {
+          role: '雕刻家',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '期待',
+          content: '一小步，向前或者向后',
+          conclusion: '一本藏书:奥维德《变形记》第十卷，看起来有些年头了，被人多次翻阅，扉页上有一个蕨型花纹的藏书章。'
         },
         {
+          role: '雕刻家',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '期待效应',
+          content: '“你会成为最完美的造物。”',
+          conclusion: '一篇艺术评论:这座名为“伽拉泰亚”的女性雕塑，除了作者精妙的雕刻技法外，所呈现出的充满韵律的身体曲线和喷薄而出的生命张力让人无法移开视线，在经历了长时间蛰伏后，克劳德家的新星冉冉升起了。'
         },
         {
+          role: '雕刻家',
           id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '创作者',
+          content: '离完美，只差一步。',
+          conclusion: '一地破碎的石膏碎块：拼凑起来是一座造型优美的女性雕塑，但是，没有头颅。'
         }
       ],
       letterCN: [
         {
+          role: '雕刻家',
           id: 'I',
           year: '2021',
           title: '一页废纸篓中未寄出的信',
           letter: '尊敬的父亲：\n我窥见了造物的真谛。\n曾经，我还会奢求傻瓜的赞美，\n现在，我想自己无暇顾及那些无聊与琐碎。\n也许这该归功于远游的决定。\n\n还记得我送给德罗斯先生的那件作品吗？\n被关进石中的鸟儿，\n无味，无序，无比渺小以至灵魂逐渐死去。\n是的，它是如此浅薄。\n所以再见之时我亲手砸碎了它。\n\n而在我意识到这一点之前，\n我在这，看到了被豢养的木偶和自诩高贵的奴隶，\n看到了瞻仰遗容就像簇拥国王的蚂蚁，\n看到了河床断裂后被污浊浇透的灵魂，\n……\n我看到了邪恶的伟大。\n\n当我意识到人类不过是在灵魂之上铺砌了一层薄石膏之后，\n我听见满脑子高速旋飞叫嚣的想法，\n我听见躯体的存在本身多么易碎，\n我听见敲碎一枚蛋壳的声音，\n我听见雕像的神性诞生，\n艺术的真理破壳。\n'
         },
         {
+          role: '雕刻家',
           id: 'II',
           year: '2022',
           title: '一页留言',
           letter: '亲爱的伽拉泰亚:\n你还好吗?\n凌晨回房后你就将自己锁在屋内不出来,也不说话,我们只能听到连续不断但又微弱的敲击声,你在做什么,我很担心你……\n你一定被吓坏了。\n谁也没想到事情会发展成那样,但当时奥尔菲斯先生也是为了自保,为了救我们，才不得不动手。\n就像袭击发生时你第一时间推开了我一样。\n伽拉泰亚,别怕,我会一直在你身边,我会保护你,我们会一起从这里离开。\n如若你心绪安定下来或者有任何需要,请一定要呼唤我。\n\n另外还有一件事,昨晚我们再回到院中时发现他的尸体不见了，但奥尔菲斯先生说并不是他处理的,我有种不太好的预感……\n总之,你独处时请诸事小心。\n海伦娜留'
         },
         {
+          role: '雕刻家',
           id: 'III',
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '雕刻家',
           id: 'IV',
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '雕刻家',
           id: 'V',
           year: '2025',
           title: 'TBD',
@@ -112,15 +124,3 @@ export default {
 }
 </script>
 
-<style>
-.demo-table-expand {
-    font-size: 0;
-}
-
-.demo-table-expand .el-form-item {
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 100%;
-    white-space: pre-wrap;
-}
-</style>

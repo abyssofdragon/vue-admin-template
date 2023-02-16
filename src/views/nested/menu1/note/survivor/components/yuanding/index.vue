@@ -1,17 +1,91 @@
 <template>
   <div>
     <h5>园丁</h5>
-    <el-row :gutter="12">
-      <Letter :letter="letterCN" />
-    </el-row>
+    <Character :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
 
 <script>
+import Character from '@/components/element/Character.vue'
 export default {
+  components: { Character },
   data() {
     return {
+      deductionCN: [
+        {
+          id: '1',
+          title: '幸福生活',
+          content: '因为有你的陪伴才让我充满希望。',
+          conclusion: '照片：穿着黄色背带裤的短发中年男子站在中间。左下角写着“父亲”。'
+        },
+        {
+          id: '2',
+          title: '新朋友',
+          content: '我会在这里遇见谁呢？',
+          conclusion: '小女孩的日记1：爸爸的新朋友是个穿着西装头发梳得发亮的年轻叔叔。他很热情，总是带着鲜花来。'
+        },
+        {
+          id: '3',
+          title: '厄运来临',
+          content: '别让那些家伙靠近我！',
+          conclusion: '幸福是转瞬即逝的，即使竭力避开，也无法逃开下一次厄运的追逐。'
+        },
+        {
+          id: '4',
+          title: '别离',
+          content: '在对方察觉前离开，也许这样就不用面临分离的痛苦。',
+          conclusion: '小女孩的日记3：妈妈走了。那天晚上我没有睡着，她留下的最后一句话是“对不起”。'
+        },
+        {
+          id: '5',
+          title: '合作',
+          content: '当我们与他人合作时，纷争也许是无法避免的。',
+          conclusion: '当我们与他人合作时，纷争也许是无法避免的。'
+        },
+        {
+          id: '6',
+          title: '好奇心',
+          content: '我想知道里面是什么！',
+          conclusion: '都是一些破烂，不过好歹还能用个几次。我是说，我们应该变废为宝。'
+        },
+        {
+          id: '7',
+          title: '维修',
+          content: '这些密码机看上去还能用，也许我该让它们重获新生。',
+          conclusion: '我想，我知道该如何打开那扇门了。'
+        },
+        {
+          id: '8',
+          title: '避难',
+          content: '灾难来临前，他将我送走。而现在，只剩下我一个人。',
+          conclusion: '照片：一个八九岁的女孩站在一间孤儿院的门口。右下角写着几个字：我心爱的丽莎'
+        },
+        {
+          id: '9',
+          title: '破坏',
+          content: '如果说我从过去学到了什么，那就是在事情变得更糟前趁早行动。',
+          conclusion: '小女孩的日记4：爸爸喝了太多酒，他开始从家里拿东西出去卖。有时候会有陌生人闯进家里搬走东西。我不知道发生了什么，但这感觉很糟糕。'
+        },
+        {
+          id: '10',
+          title: '救赎',
+          content: '我常常想，如果那时候曾经有个人帮帮我就好了。现在，也许我能帮助别人？',
+          conclusion: '照片：十四岁的少女被固定在椅子上接受电疗。一位女性医生正操作着仪器。'
+        },
+        {
+          id: '11',
+          title: '残像',
+          content: '我从未想过会以这样的方式与他相逢，不，这不可能是真的！',
+          conclusion: '照片：一栋建筑物燃起了熊熊大火，隐约能见到建筑物的招牌，军工厂'
+        },
+        {
+          id: '12',
+          title: '救赎',
+          content: '我常常想，如果那时候曾经有个人帮帮我就好了。现在，也许我能帮助别人？',
+          conclusion: '照片：十四岁的少女被固定在椅子上接受电疗。一位女性医生正操作着仪器。'
+        }
+      ],
       letterCN: [
         {
           id: 'I',
@@ -49,15 +123,3 @@ export default {
 }
 </script>
 
-<style>
-.demo-table-expand {
-    font-size: 0;
-}
-
-.demo-table-expand .el-form-item {
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 100%;
-    white-space: pre-wrap;
-}
-</style>

@@ -71,6 +71,18 @@ export const constantRoutes = [
         meta: { title: 'Table', icon: 'table' }
       },
       {
+        path: 'letter',
+        name: 'Letter',
+        component: () => import('@/views/table/components/Letter'),
+        meta: { title: '信件', icon: 'table' }
+      },
+      {
+        path: 'deduction',
+        name: 'Deduction',
+        component: () => import('@/views/table/components/Deduction'),
+        meta: { title: '推演', icon: 'table' }
+      },
+      {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),

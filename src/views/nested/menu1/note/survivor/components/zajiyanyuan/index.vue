@@ -1,9 +1,7 @@
 <template>
   <div>
     <h5>杂技演员</h5>
-    <el-row :gutter="12">
-      <Letter :letter="letterCN" />
-    </el-row>
+    <Character :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
@@ -12,6 +10,68 @@
 export default {
   data() {
     return {
+      deductionCN: [
+        {
+          id: '1',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '2',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '3',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '4',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '5',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '6',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '7',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '8',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '9',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        },
+        {
+          id: '10',
+          title: 'TBD',
+          content: 'TBD',
+          conclusion: 'TBD'
+        }
+      ],
       letterCN: [
         {
           id: 'I',
@@ -29,7 +89,7 @@ export default {
           id: 'III',
           year: '2022',
           title: '麦克·莫顿的一页实验档案',
-          letter: '编号:8-? -2\n姓名:麦克·莫顿\n\n【测试标记】\n1、天真的复仇者\n2、眷恋家人\n3、思维敏捷\n\n【测试倾向】\n迷路的“家人”，回不去的“喧嚣”。\n\n【测试结果】\n1、整体评价：\n作为8-1-4的对照组，同为“喧嚣”马戏团幸存者的8-?-2没有被施以药剂。在整个游戏过程里，8-?-2的确没有沉浸在故友相聚的氛围中，是头脑最为清晰的实验目标。\n\n2、流程说明：\n8-?-2带着探明真相的目的来到庄园，未想能重见“喧嚣”的诸多旧人。而在8-0-1被袭击的那一刻，8-?-2心中已有了模糊的答案，过往种种黑暗面也随之揭开。在游戏中，8-?-2和8-?-5联手设计的“嘉宾演出”，彻底击碎了8-0-3与8-1-4的合作关系。但面对再度失去8-1-4而消沉的8-0-3，8-? -2选择放弃报复，留在了他怀念已久的舞台上。\n\n3、实验总结:\n曾经乐观率性的8-?-2如何复仇是本组实验最大的悬念之一。而最后8-?-2放弃复仇的选择，并没有脱离他的本性：“喧嚣”马戏团的家人在他心中是第一位的。这种对家庭的依恋幼稚且盲目。当“喧嚣”过往的黑暗面被一一揭开，8-?-2才终于发现自已的快乐舞台只存在于那段表面平静的短暂时光（这点我感同身受）。而信念崩塌的8-?-2没能再成熟地面对现实——这再度证明：天真和乐观在游戏中无法存续。'
+          letter: '编号：8-? -2\n姓名:麦克·莫顿\n\n【测试标记】\n1、天真的复仇者\n2、眷恋家人\n3、思维敏捷\n\n【测试倾向】\n迷路的“家人”，回不去的“喧嚣”。\n\n【测试结果】\n1、整体评价：\n作为8-1-4的对照组，同为“喧嚣”马戏团幸存者的8-?-2没有被施以药剂。在整个游戏过程里，8-?-2的确没有沉浸在故友相聚的氛围中，是头脑最为清晰的实验目标。\n\n2、流程说明：\n8-?-2带着探明真相的目的来到庄园，未想能重见“喧嚣”的诸多旧人。而在8-0-1被袭击的那一刻，8-?-2心中已有了模糊的答案，过往种种黑暗面也随之揭开。在游戏中，8-?-2和8-?-5联手设计的“嘉宾演出”，彻底击碎了8-0-3与8-1-4的合作关系。但面对再度失去8-1-4而消沉的8-0-3，8-? -2选择放弃报复，留在了他怀念已久的舞台上。\n\n3、实验总结:\n曾经乐观率性的8-?-2如何复仇是本组实验最大的悬念之一。而最后8-?-2放弃复仇的选择，并没有脱离他的本性：“喧嚣”马戏团的家人在他心中是第一位的。这种对家庭的依恋幼稚且盲目。当“喧嚣”过往的黑暗面被一一揭开，8-?-2才终于发现自已的快乐舞台只存在于那段表面平静的短暂时光（这点我感同身受）。而信念崩塌的8-?-2没能再成熟地面对现实——这再度证明：天真和乐观在游戏中无法存续。'
         },
         {
           id: 'IV',
@@ -49,15 +109,3 @@ export default {
 }
 </script>
 
-<style>
-.demo-table-expand {
-    font-size: 0;
-}
-
-.demo-table-expand .el-form-item {
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 100%;
-    white-space: pre-wrap;
-}
-</style>

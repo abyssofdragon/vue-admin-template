@@ -1,10 +1,7 @@
 <template>
   <div>
     <h5>孽蜥</h5>
-    <el-row :gutter="12">
-      <Letter :letter="letterCN" />
-      <Deduction :deduction="deductionCN" />
-    </el-row>
+    <Character :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
@@ -112,15 +109,3 @@ export default {
 }
 </script>
 
-<style>
-.demo-table-expand {
-    font-size: 0;
-}
-
-.demo-table-expand .el-form-item {
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 100%;
-    white-space: pre-wrap;
-}
-</style>

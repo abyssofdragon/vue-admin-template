@@ -31,6 +31,8 @@
     "vue": "2.6.10",
     "vue-router": "3.0.6",
     "vuex": "3.1.0",
+    "vxe-table": "^3.6.10",
+    "xe-utils": "^3.5.7",
     "yjs": "^13.5.45"
   },
   "devDependencies": {

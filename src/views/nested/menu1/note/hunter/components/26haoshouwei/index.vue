@@ -1,10 +1,7 @@
 <template>
   <div>
     <h5>26号守卫</h5>
-    <el-row :gutter="12">
-      <Letter :letter="letterCN" />
-      <Deduction :deduction="deductionCN" />
-    </el-row>
+    <Character :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
@@ -15,92 +12,107 @@ export default {
     return {
       deductionCN: [
         {
+          role: '26号守卫',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '助手',
+          content: '创造的第一步决定了上限',
+          conclusion: '实验记录1;连续25个失败品，只得到一个可用的结果。二十六分之一的概率，希望这一切都值得。'
         },
         {
+          role: '26号守卫',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '性价比',
+          content: '暂时的浪费是为了之后更有效率',
+          conclusion: '实验记录2:26号能够胜任实验室以外的建筑工作，包括“保姆工作”。一次明智的投资！'
         },
         {
+          role: '26号守卫',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '负担',
+          content: '记忆和能量是有上限的，一些额外的内容会变成负担',
+          conclusion: '实验记录3：是德罗斯小姐的声音，26号录下了那句话。这会占用存储空间，也许我该消除那部分内容。'
         },
         {
+          role: '26号守卫',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '家庭',
+          content: '这是一种以婚姻、血缘、收养或同居等关系为基础而形成的共同生活单位',
+          conclusion: '实验记录4：小混球又不小心弄丢了一些值钱的物件，从他“真正”的父母那里回来后……他尝试自己承担全部责任，但这种容忍和保护只会使他们变得越来越贪婪。'
         },
         {
+          role: '26号守卫',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '偷猎者',
+          content: '这是比鬣狗更狡猾残暴的一群畜生',
+          conclusion: '影像记录1：:一群偷猎者正在追赶一只瘸腿的雌性驼鹿并沿途放下新的捕兽夹。'
         },
         {
+          role: '26号守卫',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '实验场所',
+          content: '如果我们需要进行一些必要的实验，安全是最重要的',
+          conclusion: '实验记录5：我希望这次事故不会让班恩大发雷霆，至少，这证明26号具备了守卫的基础功能。也许我应该增加延时装置，避免弹药爆炸得太迅速。'
         },
         {
+          role: '26号守卫',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '通行口令',
+          content: '人类是一种既不可靠也不稳定的装置',
+          conclusion: '实验记录6：任何需要人工验证的通行验证方式都不如机器准确，但德罗斯夫妇显然认为留下足够的雇员可以为当地就业率提供助益。即使这种行为会带来损害自身财产安全的风险。'
         },
         {
+          role: '26号守卫',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '失控',
+          content: '实验的意义之一正是检验理论假说的正确性',
+          conclusion: '实验记录7：延时装置的小问题带来了大麻烦。我得重新进入实验室制造26号的运动组件。为了消除德罗斯小姐对不归林的好奇心，我会给26号留下影像记录核心与互动模块。'
         },
         {
+          role: '26号守卫',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '暴乱',
+          content: '众愚政治是一种病态的大众统治，很容易被有心人煽动',
+          conclusion: '影像记录2：拿着火把与枪支的人群蜂拥而来，其中有一些熟悉的面孔，他们带走了两个孩子。'
         },
         {
+          role: '26号守卫',
           id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '回忆',
+          content: '他从来没真正删除那段记录',
+          conclusion: '影像记录0：穿着白色连衣裙的女孩笑着说：“很高兴认识你，邦邦。”'
         }
       ],
       letterCN: [
         {
+          role: '26号守卫',
           id: 'I',
           year: '2021',
           title: '一封包裹上的附信',
           letter: '尊敬的帕杜拉先生:\n您好!\n关于您希望提升延时装置精度的需求，我实在独木难支，于是将样本拿给了我的女儿一同研究，请您见谅——我应该不只一次提过，她已经成为了超越我的天才。\n但即便如此，我们依旧只能将装置的精度在确保长时间运转的情况下提升百分之十二。钟表结构简单，功能单一，只需要讲求每一分每一秒的精细，但这个机械装置的连携功能似乎远不止于此。根据我女儿的猜测，它甚至可能是某个自主校准系统里的一个环节？——我们无意窥探您的发明，但这个想法实在令我们匪夷所思，“机械”与“自主”两个词究竟要怎样才能联系在一起？\n改造后的装置将随信送达。能为您伟大的发明尽一点微薄之力，我们倍感荣幸。\n另，虽然唐突，但我们是否有机会能够就自主机械这个方向有进一步的交流？我的女儿对此尤其痴迷。\n祝您一切顺利!\n\n忠诚的，\n列兹尼克'
         },
         {
+          role: '26号守卫',
           id: 'II',
           year: '2022',
           title: '一页日记',
           letter: '今天订购了一批新的零件，用于改造26号。\n自从那次事件后，26号从未出现不受控制的现象，这是第一次。\n一定是那两个小鬼!\n机器人绝不可能有自主意识。\n 那个小男孩看起来更关心那些机关，那个小女孩……对！准是她趁我不注意的时候，对26号做了什么手脚。原本以为她的机器人报废后，这家伙会消停一段时间。\n我想我该重新看看26号的录像，或许有什么被我忽视掉的细节。\n……\n不，我应该先对这个蠢透了的机器下达终止指令！'
         },
         {
+          role: '26号守卫',
           id: 'III',
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '26号守卫',
           id: 'IV',
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '26号守卫',
           id: 'V',
           year: '2025',
           title: 'TBD',
@@ -112,15 +124,3 @@ export default {
 }
 </script>
 
-<style>
-.demo-table-expand {
-    font-size: 0;
-}
-
-.demo-table-expand .el-form-item {
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 100%;
-    white-space: pre-wrap;
-}
-</style>

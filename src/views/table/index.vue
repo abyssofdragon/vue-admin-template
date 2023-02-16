@@ -1,79 +1,81 @@
 <template>
   <div class="app-container">
-    <el-table
-      v-loading="listLoading"
-      :data="list"
-      element-loading-text="Loading"
+    <vxe-toolbar>
+      <template #buttons>
+        <vxe-input v-model="filterName" type="search" placeholder="试试全表搜索" @keyup="searchEvent" />
+      </template>
+    </vxe-toolbar>
+
+    <vxe-table
       border
-      fit
-      highlight-current-row
+      height="300"
+      :data="words"
     >
-      <el-table-column align="center" label="ID" width="95">
-        <template slot-scope="scope">
-          {{ scope.$index }}
-        </template>
-      </el-table-column>
-      <el-table-column label="Title">
-        <template slot-scope="scope">
-          {{ scope.row.title }}
-        </template>
-      </el-table-column>
-      <el-table-column label="Author" width="110" align="center">
-        <template slot-scope="scope">
-          <span>{{ scope.row.author }}</span>
-        </template>
-      </el-table-column>
-      <el-table-column label="Pageviews" width="110" align="center">
-        <template slot-scope="scope">
-          {{ scope.row.pageviews }}
-        </template>
-      </el-table-column>
-      <el-table-column class-name="status-col" label="Status" width="110" align="center">
-        <template slot-scope="scope">
-          <el-tag :type="scope.row.status | statusFilter">{{ scope.row.status }}</el-tag>
-        </template>
-      </el-table-column>
-      <el-table-column align="center" prop="created_at" label="Display_time" width="200">
-        <template slot-scope="scope">
-          <i class="el-icon-time" />
-          <span>{{ scope.row.display_time }}</span>
-        </template>
-      </el-table-column>
-    </el-table>
+      <vxe-column type="seq" width="80" />
+      <vxe-column field="name" title="Name" type="html" />
+      <vxe-column field="role" title="Role" type="html" />
+      <vxe-column field="age" title="Age" type="html" />
+      <vxe-column field="address" title="Address" type="html" />
+      <template #empty>
+        <span style="color: red;">
+          <img src="https://n.sinaimg.cn/sinacn17/w120h120/20180314/89fc-fyscsmv5911424.gif">
+          <p>没有更多数据了！</p>
+        </span>
+      </template>
+    </vxe-table>
   </div>
 </template>
 
 <script>
-import { getList } from '@/api/table'
+import XEUtils from 'xe-utils'
 
 export default {
-  filters: {
-    statusFilter(status) {
-      const statusMap = {
-        published: 'success',
-        draft: 'gray',
-        deleted: 'danger'
-      }
-      return statusMap[status]
-    }
-  },
   data() {
     return {
-      list: null,
-      listLoading: true
+      words: [],
+      filterName: '',
+      wordData: [
+        { id: 10001, name: 'Test1', role: 'Develop', sex: '0', age: 28, amount: 888, address: 'test abc' },
+        { id: 10002, name: 'Test2', role: 'Test', sex: '1', age: 22, amount: 666, address: 'Guangzhou' },
+        { id: 10003, name: 'Test3', role: 'PM', sex: '1', age: 32, amount: 89, address: 'Shanghai' },
+        { id: 10004, name: 'Test4', role: 'Designer', sex: '0', age: 23, amount: 1000, address: 'test abc' },
+        { id: 10005, name: 'Test5', role: 'Develop', sex: '0', age: 30, amount: 999, address: 'Shanghai' },
+        { id: 10006, name: 'Test6', role: 'Designer', sex: '0', age: 21, amount: 998, address: 'test abc' },
+        { id: 10007, name: 'Test7', role: 'Test', sex: '1', age: 29, amount: 2000, address: 'test abc' },
+        { id: 10008, name: 'Test8', role: 'Develop', sex: '1', age: 35, amount: 999, address: 'test abc' },
+        { id: 10009, name: 'Test9', role: 'Test', sex: '1', age: 26, amount: 2000, address: 'test abc' },
+        { id: 100010, name: 'Test10', role: 'Develop', sex: '1', age: 21, amount: 666, address: 'test abc' }
+      ]
     }
   },
   created() {
-    this.fetchData()
+    this.searchEvent()
   },
   methods: {
-    fetchData() {
-      this.listLoading = true
-      getList().then(response => {
-        this.list = response.data.items
-        this.listLoading = false
-      })
+    searchEvent() {
+      const filterName = XEUtils.toValueString(this.filterName).trim().toLowerCase()
+      if (filterName) {
+        const filterRE = new RegExp(filterName, 'gi')
+        const searchProps = ['name', 'role', 'age', 'address']
+        const rest = this.wordData.filter(item => searchProps.some(key => XEUtils.toValueString(item[key]).toLowerCase().indexOf(filterName) > -1))
+        this.words = rest.map(row => {
+          const item = Object.assign({}, row)
+          searchProps.forEach(key => {
+            item[key] = XEUtils.toValueString(item[key]).replace(filterRE, match => `<span class="keyword-lighten">${match}</span>`)
+          })
+          return item
+        })
+      } else {
+        this.words = this.wordData
+      }
     }
   }
 }
 </script>
+
+<style>
+  .keyword-lighten {
+          color: #000;
+          background-color: #FFFF00;
+        }
+</style>
