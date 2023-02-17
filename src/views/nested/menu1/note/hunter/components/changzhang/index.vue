@@ -1,10 +1,7 @@
 <template>
   <div>
     <h5>厂长</h5>
-    <el-row :gutter="12">
-      <Letter :letter="letterCN" />
-      <Deduction :deduction="deductionCN" />
-    </el-row>
+    <Character :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
@@ -13,6 +10,18 @@
 export default {
   data() {
     return {
+      descriptionCN: [
+        {
+          role: '',
+          type: '传闻',
+          text: ''
+        },
+        {
+          role: '',
+          type: '故事背景',
+          text: ''
+        }
+      ],
       deductionCN: [
         {
           role: '厂长',

@@ -2,7 +2,7 @@
   <div>
     <el-row :gutter="12">
       <el-col :span="12">
-        <Letter :letter="letter" />
+        <Description :description="description" />
         <Letter :letter="letter" />
       </el-col>
       <el-col :span="12">
@@ -17,6 +17,12 @@ export default {
   name: 'Character',
   props: {
     deduction: {
+      type: Array,
+      default: function() {
+        return []
+      }
+    },
+    description: {
       type: Array,
       default: function() {
         return []
