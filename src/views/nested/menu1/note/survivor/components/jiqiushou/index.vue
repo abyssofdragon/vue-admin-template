@@ -12,68 +12,79 @@ export default {
     return {
       deductionCN: [
         {
+          role: '击球手',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '板球',
+          content: '19世纪，板球运动开始盛行。',
+          conclusion: '一篇报道：自维多利亚时代开始，板球这项运动超越了单纯的消遣和健身功能，成为彰显“英国性”的国球。'
         },
         {
+          role: '击球手',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '天才',
+          content: '有谁不喜欢温和乖顺的天才呢？',
+          conclusion: '一封联名推荐信：本地区推荐甘吉参加公开交流赛。信件下方有二十几个申报人名。'
         },
         {
+          role: '击球手',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '竞赛',
+          content: '运动竞技总是最公平的。',
+          conclusion: '一张比赛记录单：甘吉，连胜第十二场。下一场，与英国皇家战队进行半决赛对决。'
         },
         {
+          role: '击球手',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '亲卫',
+          content: '这看上去是个不错的机会。',
+          conclusion: '一封邀请函：鉴于你优秀的公开赛表现，破格邀请你加入皇室板球战队，并对你进行针对性培养，皇室战队喜爱且珍惜每一个天才。女王的亲卫。'
         },
         {
+          role: '击球手',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '庄园',
+          content: '所谓理想的彼岸也不过是海市蜃楼。',
+          conclusion: '一张训练时间表：周一-周三．奥利弗；周四-周六，威利；周日，甘吉。'
         },
         {
+          role: '击球手',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '宽慰',
+          content: '哥哥你好厉害，可以跟我一起玩吗？',
+          conclusion: '一块做工很好的板子：上面刻了甘吉的名字。'
         },
         {
+          role: '击球手',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '远方的噩耗',
+          content: '体面的玩具，抗衡不了锐利的军刀。',
+          conclusion: '一封匿名信：“回家吧，救救他们！”'
         },
         {
+          role: '击球手',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '一触即发',
+          content: '星火点燃，随黑烟消散。',
+          conclusion: '一篇报道:女王亲卫庄园被烧毁．除庄园主儿子暂未搜寻到其他幸存者。'
         },
         {
+          role: '击球手',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '失控',
+          content: '成堆的枯草，一旦点燃便无法控制。',
+          conclusion: '一张诊断书：狂躁症，极其容易失控，请尽量避免看到火源，建议反锁门窗，自行在家静养。'
         },
         {
+          role: '击球手',
           id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '冒险',
+          content: '一无所有时，再大的风险也不再重要了。',
+          conclusion: '一封家书：亲爱的母亲，我在这边一切安好，请等我回家。'
         }
       ],
       letterCN: [
         {
+          role: '击球手',
           id: 'I',
           year: '2022',
           title: '一封越洋信件',
@@ -81,24 +92,28 @@ export default {
             '尊敬的大人:\n听闻，在德里的您身体逐渐好转，我甚感宽慰，真理的传播需要您这般虔诚之人的身先士卒，吾等才有去教化那些愚人的机会。\n这对他们本身也是救赎，不是么?\n就像您年初送来的“礼物”，刚来时，还过得去的球技和谦卑温和的个性是他为数不多的可取之处，如若没有您的慧眼，他便只能在湿热的污泥中终此一生，如何能有机会感受到帝国的荣光?\n他甚至得到了子爵大人的青睐，获得了步入文明的机会。\n关于这件事，或许您已经从额尔金公爵听到了一些传闻，是的，那些都是真的，任性的子爵大人要求那个“礼物”和他一起上课，而不仅仅是板球的玩乐。\n我们都觉得这多少有点不妥，但子爵大人那位显赫的父亲，显然并不在乎以对这小小僭越之举的默许，来换取一个安静的午后。\n不过这也不是全然没有好处，那个“礼物”终于能顺畅而准确地与我们交流，并对我们毫无防备，且充满感恩之情（相较于对他矜贵的队友而言）。\n因此，我们得以获得一些有趣的信息，关于他的家乡，关于那些神奇的香料提炼。\n我想这些对您接下来的行动应该会有所帮助，具体内容已随信奉上。\n期待您下一次捷报。\n\n您忠诚的盟友'
         },
         {
+          role: '击球手',
           id: 'II',
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '击球手',
           id: 'III',
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '击球手',
           id: 'IV',
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '击球手',
           id: 'V',
           year: '2026',
           title: 'TBD',

@@ -12,92 +12,107 @@ export default {
     return {
       deductionCN: [
         {
+          role: '画家',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '命运',
+          content: '我曾经相信，命运为我选择了最好的开端。',
+          conclusion: '一封请柬:装点着烫金纹样和考究的火漆印章，内容简单，庆贺瓦尔登家独子的一岁诞辰。'
         },
         {
+          role: '画家',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '爱',
+          content: '书本上说，爱的表现方式之一是夸赞。',
+          conclusion: '一些礼物:附有长篇大论的信件，内容充斥着奉承和赞誉。落款是巴利尔伯爵。'
         },
         {
+          role: '画家',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '我所热爱的',
+          content: '生活充满美好，他们说，画笔能把那些美好留住。',
+          conclusion: '几幅画作:歪歪扭扭的人物肖像、花园的风景画、精美的餐后点心和漂亮的白色小狗。'
         },
         {
+          role: '画家',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '深信不疑的',
+          content: '“艾格少爷是我见过的最有艺术天赋的学生！”',
+          conclusion: '一封推荐信:“我的旧友，萨莱先生，在绘画方面颇具造诣，或许可以……'
         },
         {
+          role: '画家',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '着色',
+          content: '有时，第一笔能决定整幅画作的色彩。',
+          conclusion: '日记1:我做了奇怪的梦，先生握着我的手，沾着粘稠的颜料在画布上涂抹……'
         },
         {
+          role: '画家',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '生日礼物',
+          content: '十岁生日那天，“他”开口了。',
+          conclusion: '一封夹在书页里的信:艾格，你想懂得真正的艺术吗?'
         },
         {
+          role: '画家',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '成长',
+          content: '我渐渐明白，人们为一点甜头可以付出十倍的谎言。',
+          conclusion: '日记2:那些人觊觎的不过是瓦尔登家的权利和财富，萨莱先生也一样。他根本就不爱艺术，更别提那些画。'
         },
         {
+          role: '画家',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '吵闹',
+          content: '除了艺术以外，我不在乎任何东西。',
+          conclusion: '潦草的笔记:“它们发出了叉子划过铜盘的响声。我想我该烧了那些失败的作品，它们在墙上尖叫、哀嚎，像那些人样聒噪……”'
         },
         {
+          role: '画家',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '新的色彩',
+          content: '红色是温柔的哼鸣。',
+          conclusion: '字迹模糊的失踪报告:“……男，39岁，曾……担任家庭教师……”'
         },
         {
+          role: '画家',
           id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '新的灵感',
+          content: '唯有生命的美永远诡谲悦耳。',
+          conclusion: '最后的画作：开信刀上沾了一点点红色。'
         }
       ],
       letterCN: [
         {
+          role: '画家',
           id: 'I',
           year: '2022',
           title: '一幅肖像画后的留言',
           letter: '祝艾拉五岁生日快乐！这是送给你的肖像，祝你早日康复！\n等你十五岁，我十七岁时，我会成为一名厉害的画家。\n那时会有很多人和你一起看我的画，你会成为最伟大的画家的妹妹。\n……\n\n再回过头看当初的留言，我只觉得好笑。\n这世界上绝大多数人庸俗聒噪，我无需他们的理解，他们也只会让我觉得无趣。\n唯有那些能理解我的人才能为我的艺术添上一笔。\n六岁时，马车里的母亲留下了青色；八岁时，画具室中的妹妹留下了白色。我仍不忘她们彻夜的干咳，病中容貌。但随着时间，那些灵感也渐渐模糊、消逝了。\n后来，只有萨莱先生理解我，但可悲的是，他也逐渐暴露了骗子的真相。\n\n萨莱先生能给我的灵感也越来越少了。他会离开吧？会带着欺骗逃走吧？\n这些天，我总能听到画布和画笔们的叫声：\n——如果需要他的颜色，不如主动留下些什么。'
         },
         {
+          role: '画家',
           id: 'II',
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '画家',
           id: 'III',
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '画家',
           id: 'IV',
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '画家',
           id: 'V',
           year: '2026',
           title: 'TBD',

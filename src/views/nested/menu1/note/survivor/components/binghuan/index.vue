@@ -12,92 +12,107 @@ export default {
     return {
       deductionCN: [
         {
+          role: '病患',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '甜梦',
+          content: '母胎里的温度，是生命最初的记忆。',
+          conclusion: '一张照片：面露愁色的夫妇，身边围绕着三个孩子，妇人怀里还抱着一个刚刚满月的婴儿。'
         },
         {
+          role: '病患',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '幼犬',
+          content: '为了生存，动物有时会放弃最弱的幼崽。',
+          conclusion: '一张照片：眼神涣散的妇人被绑在床上，地上散落着摔碎的碗盘。最小的男孩望着门外，紧紧捏着父亲的手指。'
         },
         {
+          role: '病患',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '新家',
+          content: '遮风挡雨，勉强果腹，以及不善的饲主。',
+          conclusion: '一篇日记：那个新来的小孩今天只要到三便士零钱，养着这种废物，不加多养几条狗！'
         },
         {
+          role: '病患',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '圈养',
+          content: '抢占领地并不是必备的技能……至少对人来说不是。',
+          conclusion: '一篇日记：该死的小废物掉进了赛场，但他活着出来了！那些脑满肠肥的家伙们兴奋得要命，或许……'
         },
         {
+          role: '病患',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '挣扎',
+          content: '我该成为什么？',
+          conclusion: '一张照片：看守的男人捂着流血的胳膊，满身伤痕的男孩瞪着他，他眼睛通红，嘴里咬着一个面包。'
         },
         {
+          role: '病患',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '认知',
+          content: '忘记你曾为人。',
+          conclusion: '一张照片：笼子里睡着一名少年，脚踝上戴着镣铐，一旁的破碗里有些糊状的食物。'
         },
         {
+          role: '病患',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '暴雨',
+          content: '冲走所有污垢、垃圾、痕迹……',
+          conclusion: '病患档案：身份不明，年龄不明，高烧，失忆，发现于白沙街街口。'
         },
         {
+          role: '病患',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '艾达·梅斯默',
+          content: '念出那个名字，跟她走。',
+          conclusion: '一张纸条：艾达？药？'
         },
         {
+          role: '病患',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '重塑',
+          content: '每个十月十日，都是新的开始。',
+          conclusion: '一篇日记：有个男人来找艾达……他很奇怪，他们辽了什么？艾达说，是好肖息。明明艾达说过，认何人都不会知到这里。'
         },
         {
+          role: '病患',
           id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '旅途',
+          content: '只要她愿意。',
+          conclusion: '一本病历：夹着许多东西的病历本，最后一页粘着一枚铁丝掰成的戒指。'
         }
       ],
       letterCN: [
         {
+          role: '病患',
           id: 'I',
           year: '2022',
           title: '一封泛黄的回信',
           letter: '小说家先生：\n感谢你的来信，我对那天在白沙街疯人院和你相遇的印象颇深。但也许那时存在着一些误会，你所说的“窃取”，只是我在拿取早已向院方申请过的病患资料——而这一切都出于我作为医生的、合理的研究行为。\n请原谅我不愿把白沙街疯人院的病患档案借出，无论是对你还是对其他人。而且恕我冒昧，我对在疯人院病人的身上“采集灵感”的写作方式抱有怀疑态度。\n很遗憾下个月起我就不能再与你通信了。由于一些私人原因，我将辞去学校的工作并搬离这个城市。人们并不缺一个姓梅斯默的女医生或一名助理教授，但我的家人需要我。\n如果还有其他医学上的问题，可以向查尔斯·梅斯默的诊所询问。他也许是与你聊得来的那类医生。\n艾达·梅斯默'
         },
         {
+          role: '病患',
           id: 'II',
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '病患',
           id: 'III',
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '病患',
           id: 'IV',
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '病患',
           id: 'V',
           year: '2026',
           title: 'TBD',

@@ -12,92 +12,114 @@ export default {
     return {
       deductionCN: [
         {
+          role: '古董商',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '四季青',
+          content: '山中何事？松花酿酒，春水煎茶。',
+          conclusion: '一张画像：竹亭里老人在装睡，左耳有颗朱砂痣的女孩想拿走老人的萧和竹纹古玉耍玩。不远处，一对衣冠素雅的夫妇含笑煎茶。'
         },
         {
+          role: '古董商',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '满山红',
+          content: '竹沥也会是红色的，竹烬下葬着他们，人世间埋着我。',
+          conclusion: '官府公文残页：“······与萧、谢等人朋比为奸，阴怀逆谋，祸乱民心，蠹坏纲纪。以致皇考宵旰焦劳，圣躬欠泰，前恙复作，竟上宾于天······等人已处极刑，以儆效尤。着其党羽萧珩与其子萧望同轘于市，夷其族，以殆后患······”'
         },
         {
+          role: '古董商',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '忍冬',
+          content: '熬过寒冬，饮血茹冰，很多时候靠的并非是铮铮傲骨，而是时刻灼烧肺腑的恨意。',
+          conclusion: '传闻：当年清点尸骨的差役并未找到萧家七小姐，而年末时有人看见早已告病还乡的萧家老仆林从瑸带着和萧七一般年纪的女孩在钱塘附近出没，两人形同乞丐。'
         },
         {
+          role: '古董商',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '羽涅',
+          content: '不惜一切代价的涅火重生，烧掉的不只是天真。',
+          conclusion: '“如果只是在门前跪三天就能有一个师傅，那是多么容易的事。林叔，我现在什么都不怕，什么都可以利用。”'
         },
         {
+          role: '古董商',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '芥子',
+          content: '这世上绝大多数人，本就如同芥子，微不足道，却做尽不切实际的梦。',
+          conclusion: '流言：听说了吗，那位遇刺了！不过，那帮人刺杀的只是“那位”的替身。据说受伤逃走的两人里，有一个是萧珩的孙女，至于剩下的乌合之众，全被处决了，到底是蚍蜉撼树。'
         },
         {
+          role: '古董商',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '忘忧',
+          content: '月有盈亏，木有枯荣，万事万物哪能都如人愿，要学会放下。',
+          conclusion: '一封绝笔书：作为萧家家仆，老奴希望小姐无论如何都要活下去，你是萧家最后的火种；作为林叔，我只希望我看着长大的阿七放下仇恨，做个普通的女孩，安度余生。'
         },
         {
+          role: '古董商',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '寄奴',
+          content: '死亡会滋生仇恨，磨砺锋刃；死亡也会让人抑制仇恨，收敛锋芒。',
+          conclusion: '一场争吵：“林景福，限你明天之前把她赶出去！你那远方亲戚林从瑸已经死了，你还留这瘟神干嘛？我怎么不知道你家里有人姓戚，是不是随便来个没娘养的乞丐你都能认亲？”'
         },
         {
+          role: '古董商',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '独活',
+          content: '为了活下去，曾经嫉恶如仇的人也会变成恶人的刀。',
+          conclusion: '一篇报道：短短一月内，城中多名富商接连暴毙，疑似挡人财路，遭人买凶。'
         },
         {
+          role: '古董商',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '落地生根',
+          content: '但求岁月平常，让逝者安心，哪怕只是表象的安稳。',
+          conclusion: '一份合同：整座古董店及店内古董被高价售出，新店主落款“戚十一”，店铺易名为“磐竹斋”。'
         },
         {
+          role: '古董商',
           id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '千里光',
+          content: '光照了进来，从此花有了声音，箫有了颜色，往后的日子都是崭新的。',
+          conclusion: '一篇日记：店前争端扰人清梦，随手替少女解了围，便被她日日缠上。未曾想她是唐家人。唐嘉实联系不上我，倒被他家孙辈轻易撞上，命运可笑。她自言汉名唤作“唐肆”，并非取自家中排行之序，而是肆意潇洒之意。记起母亲也曾告诉我，萧遥，逍遥，便是自在随性，无所拘束······想来，唐肆有一对爱她的父母。'
+        },
+        {
+          role: '古董商',
+          id: '11',
+          title: '当归',
+          content: '他说他知道她的下落',
+          conclusion: '闭店公告：富商唐家的产业接二连三关门，几乎同一时间，街角那座古董店也宣布无限期歇业。'
         }
       ],
       letterCN: [
         {
+          role: '古董商',
           id: 'I',
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '古董商',
           id: 'II',
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '古董商',
           id: 'III',
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '古董商',
           id: 'IV',
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '古董商',
           id: 'V',
           year: 'TBD',
           title: 'TBD',
