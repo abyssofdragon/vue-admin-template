@@ -12,14 +12,14 @@ export default {
     return {
       descriptionCN: [
         {
-          role: '',
+          role: '祭司',
           type: '传闻',
-          text: ''
+          text: '菲欧娜·吉尔曼是一位神秘主义者，宣称是一位神明引导自己来到这个庄园，但没人相信她的说辞。'
         },
         {
-          role: '',
+          role: '祭司',
           type: '故事背景',
-          text: ''
+          text: '菲欧娜·吉尔曼是一位神秘主义者，总是随身携带着一枚古怪的金属环。菲欧娜宣称是神引导自己来到这个庄园，但没人相信她的说辞。'
         }
       ],
       deductionCN: [

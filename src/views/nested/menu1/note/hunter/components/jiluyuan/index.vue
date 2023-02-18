@@ -12,104 +12,112 @@ export default {
     return {
       descriptionCN: [
         {
-          role: '',
+          role: '“记录员”',
           type: '传闻',
-          text: ''
+          text: '随着年龄的增长,柯根逐渐明白,只有有“重量”的人的声音才会被听到。不过没有关系,现在的她足以成为那个可以决定一切的人。'
         },
         {
-          role: '',
+          role: '“记录员”',
           type: '故事背景',
-          text: ''
+          text: '作为家族最小的女儿，柯根曾庆幸自己出生在一个自由平等的家中。她喜欢晚饭时的长桌会议，像是模拟法庭一样，她也可以对自己的观点畅所欲言。而随着年龄的增长，哥哥们都一一去了最好的学校，获得律师资格，进入权利的中心，而她只能在庄园里成长为一名大家闺秀，等待出嫁。她幼时最喜欢的长桌晚餐，父母以哥哥们的出色表现引以为傲，基奥家族因为他们而兴盛，而她，越来越安静，终于失去了发声的权利，或许平等从来就不存在过吧。\n当父母决定将她嫁给对家族声望和地位有有所帮助的贵族后，柯根以改变自己外表的方式来抗拒，果然贵族在见了她的面后便摇头而去。于是她跟随哥哥去往大城市，平日里她帮助哥哥整理数据，摘抄关键的法律条例等。彼时嫂嫂怀孕，一切仿佛新的开始，充满生机。但好景不长，在帮助哥哥整理数据的时候，她逐渐揭开了这个除了父母外她最爱的人的真面目。起初柯根反抗过，但是作为一名女性，她没有任何发声的权利，她开始厌恶自己的身份，从行为方式到着装都发生了变化。她悉心“照料”着哥哥的饮食，然而他的身体状态依旧每况愈下，为了能正常出席法庭，他越来越依靠柯根。此时的柯根已经逐渐替代了哥哥成为真正的决裁者，但当到达权利的巅峰后，她内心只剩下对曾经不公待遇的报复而忘记了初心，她喜欢那句“It ain\'t over till the fat lady sings（这还没有结束直至分晓）”，而她，就是决定一切的那个人。'
         }
       ],
       deductionCN: [
         {
+          role: '“记录员”',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '立案',
+          content: '第40. 4条：生命权',
+          conclusion: '一张新生儿照片的背面：女孩起名柯根是不畏艰险、正大光明的意思。'
         },
         {
+          role: '“记录员”',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '宣布开庭',
+          content: '第40. 6. 1. i条：言论自由',
+          conclusion: '一本法律书籍旁，歪歪扭扭的小字：下次晚餐上我可以用这条来反驳父亲。'
         },
         {
+          role: '“记录员”',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '合议庭组成人员',
+          content: '第40. 1条：法律面前人人平等',
+          conclusion: '一份录取通知书的背面：二哥也去了大哥的学校，再过两年就该是我收到这张通知书了，上面将写着“柯根.尼古拉斯.基奥女士”'
         },
         {
+          role: '“记录员”',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '陈述',
+          content: '第42. 3. 1条：受教育权',
+          conclusion: '被打湿的纸片：琼斯太太，我对您没有任何的不满意，只是我希望像哥哥们一样去最好的学校接受教育，而不是像现在这样，在一个房间里接受家庭教育。'
         },
         {
+          role: '“记录员”',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '异议',
+          content: '第34. 2，34. 3. 1° ，34. 3. 4° 条：一审法院',
+          conclusion: '一张手写的判决书：在我心中，他们被驳回了公正判决的权利!'
         },
         {
+          role: '“记录员”',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '核实',
+          content: '第45. 1条：社会秩序',
+          conclusion: '报纸头版：再次出现医疗事故，但法院最终裁决梅斯默医生无罪。'
         },
         {
+          role: '“记录员”',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '审判',
+          content: '第38. 3条：设立特别法庭',
+          conclusion: '一份处方：如果梅斯默医生的治疗方案没有问题，那我现在的措施，应该也在合理的范畴以内。'
         },
         {
+          role: '“记录员”',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '执行',
+          content: '第40. 4. 6°条：拒绝保释',
+          conclusion: '笔迹狂乱的记录：基奥女士，如果您因为她的眼泪而动容，因为年幼侄子天真的眼神而心软，您将再也无法听到，冤屈者在寒冬被冰雪覆盖掉的哀鸣。'
         },
         {
+          role: '“记录员”',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
-        },
-        {
-          id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '新秩序',
+          content: '第34. 2，34. 5. 1° 条：终审法院',
+          conclusion: '一份记录的尾处：“在全能的神面前，我庄严而真诚地承诺并宣布，我将尽我所知、所能和权力去执行首席大法官的职位（或视情况而定），不畏惧、不偏爱，我将恪守宪法和法律。愿神指导并支持我。'
         }
       ],
       letterCN: [
         {
+          role: '“记录员”',
           id: 'I',
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '“记录员”',
           id: 'II',
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '“记录员”',
           id: 'III',
           year: '2026',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '“记录员”',
           id: 'IV',
           year: '2027',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '“记录员”',
           id: 'V',
           year: '2028',
           title: 'TBD',

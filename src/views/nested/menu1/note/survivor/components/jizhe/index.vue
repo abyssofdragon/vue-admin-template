@@ -12,14 +12,14 @@ export default {
     return {
       descriptionCN: [
         {
-          role: '',
+          role: '记者',
           type: '传闻',
-          text: ''
+          text: 'TBD'
         },
         {
-          role: '',
+          role: '记者',
           type: '故事背景',
-          text: ''
+          text: 'TBD'
         }
       ],
       deductionCN: [

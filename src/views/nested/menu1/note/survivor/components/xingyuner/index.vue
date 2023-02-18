@@ -12,14 +12,14 @@ export default {
     return {
       descriptionCN: [
         {
-          role: '',
+          role: '幸运儿',
           type: '传闻',
-          text: ''
+          text: '不知有多少人参加了这个游戏，他也是其中之一。'
         },
         {
-          role: '',
+          role: '幸运儿',
           type: '故事背景',
-          text: ''
+          text: '世界就像摇晃不停的骰蛊，他一直在赢而谁也不知道，当它停下时会变成怎样。'
         }
       ],
       deductionCN: [

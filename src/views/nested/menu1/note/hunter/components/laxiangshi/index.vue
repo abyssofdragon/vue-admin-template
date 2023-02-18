@@ -12,104 +12,119 @@ export default {
     return {
       descriptionCN: [
         {
-          role: '',
+          role: '蜡像师',
           type: '传闻',
-          text: ''
+          text: '在甄选模特方面，菲利普有一套独特的准则，而在蜡像装饰上，他总是会听妹妹的。'
         },
         {
-          role: '',
+          role: '蜡像师',
           type: '故事背景',
-          text: ''
+          text: '当一个人心中存在恶念时，他的面相和姿态会发生变化——菲利普是这么笃信的。这不只是科学，也是他追求的美学，毕竟，蜡像制作本就是医学催生出的艺术。想想看吧，一旦这个理论得到证实，世上有多少不幸会被扼杀在摇篮中？\n菲利普决心利用自己的天赋做出一番事业。一次意料之外的寻访为他的科学和艺术带来了极大突破，一个美好的世界似乎触手可及。然而，他停步了，虚假的成功晃花了他的眼。软弱和不思进取的代价就是失去挚亲，失去一切。\n菲利普背负起了他的悔恨和罪责，最好的忏悔就是前进。\n欢迎来到这场美妙绝伦的蜡像展，小心不要乱碰，每一组作品都是一个惩恶扬善的幸福故事，希望你能从中获益。\n尊敬的客人，请不要害怕，来，抬起头，让我看看你的脸。'
         }
       ],
       deductionCN: [
         {
+          role: '蜡像师',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '家庭作坊',
+          content: '学徒的工作，往往从制蜡开始。',
+          conclusion: '被稚嫩字体涂改过的笔记：9份石蜡会更粘稠，再加1份（被墨水涂黑，无法分辨）红茶和三滴柠檬汁！'
         },
         {
+          role: '蜡像师',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '约定',
+          content: '我们答应她，在她外出工作时照顾好彼此。',
+          conclusion: '厚厚的信封和一张便条：令堂因意外坠楼去世，此事请勿再提。她是位尽责的女佣，赔偿金已随信附上。不要听信谣言，就当是为了你妹妹。'
         },
         {
+          role: '蜡像师',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '犯罪学',
+          content: '邪恶的证据就藏在它们之中，只是样本还不够。',
+          conclusion: '一封寄给学者的信：“您质疑我论据的真实性，那么近期请拨冗参观我的工坊。如果您想近距离观察，不要穿白衣服，有些污渍不易清洗。”'
         },
         {
+          role: '蜡像师',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '新展区',
+          content: '屏息欣赏吧，他们的狂热源于真实。',
+          conclusion: '报纸头版:兄妹俩大获成功，以罪犯为主题的蜡制胸像勾起了大众的猎奇心理，观众络绎不绝！'
         },
         {
+          role: '蜡像师',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '越界',
+          content: '突破那条界限，知识是属于勇敢者的奖励。',
+          conclusion: '笔迹狂乱的日记：我本意是寻找样本，却在疯人院里找到了突破瓶颈的契机。是的，她说得对，模仿是拙劣的，要定格那关键的一瞬间……'
         },
         {
+          role: '蜡像师',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '前行',
+          content: '暂时的分离不可避免，我们将在没有罪恶的未来重逢。',
+          conclusion: '被打湿的纸片：对于不告而别，我很抱歉，我知道你会哭，会缠着我要跟我一起走，可是这趟旅途不适合现在的你。等你蜡雕技艺提升，我就回来接你。'
         },
         {
+          role: '蜡像师',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '盛名',
+          content: '名誉是甜美的泥潭，稍有不慎就会被吞噬。',
+          conclusion: '被剪下收藏的专栏：犯罪学界的新星启程前往下一个国家，他的理论已在多起审判中被提及，当然，有的犯人自称无辜，发誓要报复……'
         },
         {
+          role: '蜡像师',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '追随者',
+          content: '我的模特来自世界各地。',
+          conclusion: '一则传闻：不断有人失踪，可典狱长似乎并不在意，听说别处也一样……'
         },
         {
+          role: '蜡像师',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '迟到',
+          content: '如果我早日付诸实践……如果我当时亲手……',
+          conclusion: '犯罪现场的照片：工坊里，欢乐的蜡像们围绕着深处被腊填满的容器，一只手沿边缘垂下。墙上用蜡写着一行字：都是你的错。'
         },
         {
+          role: '蜡像师',
           id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '开场',
+          content: '新的蜡像风格，兼具生动、实用与美好。',
+          conclusion: '“这个造型满意吗？别怕，他没法再伤害你了。对了，邀请刚才路过的那位先生做他的搭档应该会很合适……你说呢？”'
         }
       ],
       letterCN: [
         {
+          role: '蜡像师',
           id: 'I',
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '蜡像师',
           id: 'II',
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '蜡像师',
           id: 'III',
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '蜡像师',
           id: 'IV',
           year: '2026',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '蜡像师',
           id: 'V',
           year: '2027',
           title: 'TBD',

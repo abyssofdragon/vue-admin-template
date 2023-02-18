@@ -12,104 +12,119 @@ export default {
     return {
       descriptionCN: [
         {
-          role: '',
+          role: '“使徒”',
           type: '传闻',
-          text: ''
+          text: '疫病袭来之时，安的虔诚与善良并未为她换来些许命运的仁慈，她生命中唯一获得的救赎，或许只有生死边缘.那先于死神走向地的轻盈脚步和夜尽之处注视着她的那双不属于人类的眼睛。'
         },
         {
-          role: '',
+          role: '“使徒”',
           type: '故事背景',
           text: ''
         }
       ],
       deductionCN: [
         {
+          role: '“使徒”',
           id: '1',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '瘟疫',
+          content: '众生平等，灾难从不评估他们是否值得被摧毁。',
+          conclusion: '一则新闻:近日来多地流行不明瘟疫，患者有呕吐、痉挛、高烧等症状，传播途径不明。城市居民需加强防疫，尽量避免外出。'
         },
         {
+          role: '“使徒”',
           id: '2',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '诫命',
+          content: '“我是你唯一的神”',
+          conclusion: '一张照片:装饰讲究的房间里，一个女孩正趴在女人的床头哭泣。一旁的角落中，男人对着供奉着猫形神像的神龛念念有词。'
         },
         {
+          role: '“使徒”',
           id: '3',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '独活',
+          content: '“幸存”是最残酷的惩罚',
+          conclusion: '一件丧服:装饰繁复，用料讲究……即使多次穿着也能保持最初的柔软。'
         },
         {
+          role: '“使徒”',
           id: '4',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '被目光聚焦',
+          content: '艳羡、同情、嫉妒……你不能完全知晓那些目光背后是什么。',
+          conclusion: '一份遗嘱公证:所有财产由其二人独女继承，包括名下的住房、土地……'
         },
         {
+          role: '“使徒”',
           id: '5',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '以诅咒论断',
+          content: '论断别人，小心招致自已被论断的后果。',
+          conclusion: '一封神父的信:“我日夜祈祷，那女孩的血亲们终于恢复了神智。然而恶魔依然存在，将有更多人受到邪灵的侵犯。异瞳是恶魔的诅咒……”'
         },
         {
+          role: '“使徒”',
           id: '6',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '附身',
+          content: '总有些人会被恶魔附身。',
+          conclusion: '一张包着石头的字条:字条上的笔迹稚嫩而潦草:滚出我们的镇子!他们说是你带来了新的瘟疫!是你杀了我妈妈!'
         },
         {
+          role: '“使徒”',
           id: '7',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '圣堂的呼唤',
+          content: '你若献出所有，就可实现你的愿望。',
+          conclusion: '一张废弃的诊断书，前半行被划掉:因压力过大导致的精神衰弱，伴有幻听、幻视等症状……被恶魔附身，只有向主忏悔才能赦免你的罪。'
         },
         {
+          role: '“使徒”',
           id: '8',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '囹圄',
+          content: '祈求你的赦免和垂怜，赐我平安。',
+          conclusion: '一件黑衣:穿得磨破了的黑衣，上面还带着温热的血液，在一个月夜被抛弃在荒野之中。'
         },
         {
+          role: '“使徒”',
           id: '9',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '以神的名义',
+          content: '被人欺骗又怎能得到神的庇护。',
+          conclusion: '猫一样的影子:“我可以满足你的愿望，只需你献出最后的信仰。”'
         },
         {
+          role: '“使徒”',
           id: '10',
-          title: 'TBD',
-          content: 'TBD',
-          conclusion: 'TBD'
+          title: '交托',
+          content: '让所有谎言付出代价。',
+          conclusion: '一张剪报:讲述了又一场可怕瘟疫的降临，因瘟疫而死亡的人数直线上升，暂时未找到预防控制的办法。奇怪的是，这场瘟疫似乎只在固定城市传播。'
         }
       ],
       letterCN: [
         {
+          role: '“使徒”',
           id: 'I',
           year: '2020',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '“使徒”',
           id: 'II',
           year: '2021',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '“使徒”',
           id: 'III',
           year: '2022',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '“使徒”',
           id: 'IV',
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
+          role: '“使徒”',
           id: 'V',
           year: '2024',
           title: 'TBD',

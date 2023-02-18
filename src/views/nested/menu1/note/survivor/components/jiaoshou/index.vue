@@ -12,14 +12,14 @@ export default {
     return {
       descriptionCN: [
         {
-          role: '',
+          role: '教授',
           type: '传闻',
-          text: ''
+          text: '卢基诺教授曾以无尽的求知欲探寻着人类的起源，却在这条路上，触摸到了人类进化的未来。'
         },
         {
-          role: '',
+          role: '教授',
           type: '故事背景',
-          text: ''
+          text: '“人类是从猴子进化来的，那在猴子之前呢？”\n——卢基诺教授曾以无尽的求知欲探寻着人类的起源，却在这条路上，触摸到了人类进化的未来。'
         }
       ],
       deductionCN: [
