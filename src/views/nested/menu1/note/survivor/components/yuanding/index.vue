@@ -1,7 +1,7 @@
 <template>
   <div>
     <h5>园丁</h5>
-    <Character :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
+    <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
@@ -12,6 +12,7 @@ export default {
   components: { Character },
   data() {
     return {
+      note: '',
       descriptionCN: [
         {
           role: '园丁',

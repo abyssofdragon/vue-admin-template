@@ -11,199 +11,244 @@ export default {
     return {
       survivors: [
         {
+          id: 40,
+          job: '记者',
+          name: '爱丽丝',
+          pinyin: 'jizhe'
+        },
+        {
+          id: 39,
           job: '作曲家',
           name: '阿尔瓦',
-          py: 'zuoqujia'
+          pinyin: 'zuoqujia'
         },
         {
+          id: 38,
           job: '古董商',
           name: '柯根',
-          py: 'gudongshang'
+          pinyin: 'gudongshang'
         },
         {
+          id: 37,
           job: '教授',
           name: '“奥尔菲斯”',
-          py: 'jiaoshou'
+          pinyin: 'jiaoshou'
         },
         {
+          id: 36,
           job: '哭泣小丑',
           name: '菲利普',
-          py: 'kuqixiaochou'
+          pinyin: 'kuqixiaochou'
         },
         {
+          id: 35,
           job: '“小女孩”',
           name: '格蕾丝',
-          py: 'xiaonvhai'
+          pinyin: 'xiaonvhai'
         },
         {
+          id: 34,
           job: '小说家',
           name: '威尔三兄弟',
-          py: 'xiaoshuojia'
+          pinyin: 'xiaoshuojia'
         },
         {
+          id: 33,
           job: '病患',
           name: '珀西',
-          py: 'binghuan'
+          pinyin: 'binghuan'
         },
         {
+          id: 32,
           job: '“心理学家”',
           name: '伽拉泰亚',
-          py: 'xinlixuejia'
+          pinyin: 'xinlixuejia'
         },
         {
+          id: 31,
           job: '玩具商',
           name: '安东尼奥',
-          py: 'wanjushang'
+          pinyin: 'wanjushang'
         },
         {
+          id: 30,
           job: '击球手',
           name: '安',
-          py: 'jiqiushou'
+          pinyin: 'jiqiushou'
         },
         {
+          id: 29,
           job: '画家',
           name: '邦邦',
-          py: 'huajia'
+          pinyin: 'huajia'
         },
         {
+          id: 28,
           job: '昆虫学者',
           name: '玛丽',
-          py: 'kunchongxuezhe'
+          pinyin: 'kunchongxuezhe'
         },
         {
+          id: 27,
           job: '“囚徒”',
           name: '卢基诺',
-          py: 'qiutu'
+          pinyin: 'qiutu'
         },
         {
+          id: 26,
           job: '守墓人',
           name: '罗比',
-          py: 'shoumuren'
+          pinyin: 'shoumuren'
         },
         {
+          id: 25,
           job: '邮差',
           name: '伊德海拉',
-          py: 'youchai'
+          pinyin: 'youchai'
         },
         {
+          id: 24,
           job: '调酒师',
           name: '巴尔克',
-          py: 'tiaojiushi'
+          pinyin: 'tiaojiushi'
         },
         {
+          id: 23,
           job: '大副',
           name: '约瑟夫',
-          py: 'dafu'
+          pinyin: 'dafu'
         },
         {
+          id: 22,
           job: '杂技演员',
           name: '谢必安/范无咎',
-          py: 'zajiyanyuan'
+          pinyin: 'zajiyanyuan'
         },
         {
+          id: 21,
           job: '野人',
           name: '哈斯塔',
-          py: 'yeren'
+          pinyin: 'yeren'
         },
         {
+          id: 20,
           job: '咒术师',
           name: '美智子',
-          py: 'zhoushushi'
+          pinyin: 'zhoushushi'
         },
         {
+          id: 19,
           job: '勘探员',
           name: '瓦尔莱塔',
-          py: 'kantanyuan'
+          pinyin: 'kantanyuan'
         },
         {
+          id: 18,
           job: '入殓师',
           name: '杰克',
-          py: 'rulianshi'
+          pinyin: 'rulianshi'
         },
         {
+          id: 17,
           job: '先知',
           name: '班恩',
-          py: 'xianzhi'
+          pinyin: 'xianzhi'
         },
         {
+          id: 16,
           job: '舞女',
           name: '裘克',
-          py: 'wunv'
+          pinyin: 'wunv'
         },
         {
+          id: 15,
           job: '牛仔',
           name: '里奥',
-          py: 'niuzai'
+          pinyin: 'niuzai'
         },
         {
+          id: 14,
           job: '调香师',
           name: '里奥',
-          py: 'tiaoxiangshi'
+          pinyin: 'tiaoxiangshi'
         },
         {
+          id: 13,
           job: '祭司',
           name: '里奥',
-          py: 'jisi'
+          pinyin: 'jisi'
         },
         {
+          id: 12,
           job: '盲女',
           name: '里奥',
-          py: 'mangnv'
+          pinyin: 'mangnv'
         },
         {
+          id: 11,
           job: '前锋',
           name: '里奥',
-          py: 'qianfeng'
+          pinyin: 'qianfeng'
         },
         {
+          id: 10,
           job: '机械师',
           name: '里奥',
-          py: 'jixieshi'
+          pinyin: 'jixieshi'
         },
         {
+          id: 9,
           job: '空军',
           name: '里奥',
-          py: 'kongjun'
+          pinyin: 'kongjun'
         },
         {
+          id: 8,
           job: '佣兵',
           name: '里奥',
-          py: 'yongbing'
+          pinyin: 'yongbing'
         },
         {
+          id: 7,
           job: '冒险家',
           name: '里奥',
-          py: 'maoxianjia'
+          pinyin: 'maoxianjia'
         },
         {
+          id: 6,
           job: '魔术师',
           name: '里奥',
-          py: 'moshushi'
+          pinyin: 'moshushi'
         },
         {
+          id: 5,
           job: '园丁',
           name: '里奥',
-          py: 'yuanding'
+          pinyin: 'yuanding'
         },
         {
+          id: 4,
           job: '“慈善家”',
           name: '里奥',
-          py: 'cishanjia'
+          pinyin: 'cishanjia'
         },
         {
+          id: 3,
           job: '律师',
           name: '里奥',
-          py: 'lvshi'
+          pinyin: 'lvshi'
         },
         {
+          id: 2,
           job: '医生',
           name: '里奥',
-          py: 'yisheng'
+          pinyin: 'yisheng'
         },
         {
+          id: 1,
           job: '幸运儿',
           name: '里奥',
-          py: 'xingyuner'
+          pinyin: 'xingyuner'
         }
       ]
     }

@@ -1,7 +1,7 @@
 <template>
   <div style="padding: 8px">
     <h5>击球手</h5>
-    <Character :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
+    <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
@@ -10,6 +10,7 @@
 export default {
   data() {
     return {
+      note: '',
       descriptionCN: [
         {
           role: '击球手',

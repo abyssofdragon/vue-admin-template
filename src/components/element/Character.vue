@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Editor ref="editor" v-model="note" />
     <el-row :gutter="12">
       <el-col :span="12">
         <Description :description="description" />
@@ -16,6 +17,12 @@
 export default {
   name: 'Character',
   props: {
+    note: {
+      type: String,
+      default: function() {
+        return []
+      }
+    },
     deduction: {
       type: Array,
       default: function() {

@@ -8,7 +8,7 @@
             <el-card shadow="hover" class="box-card">
               <div slot="header" class="clearfix">
                 <span>{{ survivor.job }}</span>
-                <el-button style="float: right; padding: 3px 0" type="text" @click="$router.push(survivor.py)">详情</el-button>
+                <el-button style="float: right; padding: 3px 0" type="text" @click="$router.push(survivor.pinyin)">详情</el-button>
               </div>
               {{ survivor.name }}
             </el-card>

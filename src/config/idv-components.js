@@ -1,4 +1,6 @@
 import Vue from 'vue'
+// 编辑模块
+import Editor from '../components/element/Editor'// 富文本编辑器Quill
 // 剧情模块
 import Character from '../components/element/Character'// 角色
 import Description from '../components/element/Description'// 背景故事
@@ -12,6 +14,8 @@ const components = {
   // 导航卡片
   NavSur,
   NavHun,
+  // 编辑模块
+  Editor,
   // 剧情模块
   Character,
   Deduction,

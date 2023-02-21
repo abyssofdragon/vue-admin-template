@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h4>调酒师</h4>
-    <Character :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
+    <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>
 </template>
@@ -10,6 +10,7 @@
 export default {
   data() {
     return {
+      note: '',
       descriptionCN: [
         {
           role: '调酒师',
