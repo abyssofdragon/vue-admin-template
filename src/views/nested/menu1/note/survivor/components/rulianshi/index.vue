@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>入殓师</h5>
+    <h3>入殓师</h3>
     <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>

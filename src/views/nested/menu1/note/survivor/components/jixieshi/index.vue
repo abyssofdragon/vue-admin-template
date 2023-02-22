@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>机械师</h5>
+    <h3>机械师</h3>
     <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>

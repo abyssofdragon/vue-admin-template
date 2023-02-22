@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h4>调酒师</h4>
+    <h3>调酒师</h3>
     <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>

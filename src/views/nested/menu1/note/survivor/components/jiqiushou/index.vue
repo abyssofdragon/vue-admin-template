@@ -1,6 +1,6 @@
 <template>
   <div style="padding: 8px">
-    <h5>击球手</h5>
+    <h3>击球手</h3>
     <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>

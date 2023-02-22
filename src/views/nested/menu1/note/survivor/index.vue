@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>求生者侧写</h3>
     <router-view />
     <NavSur :survivors="survivors" />
   </div>

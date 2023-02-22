@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>幸运儿</h5>
+    <h3>幸运儿</h3>
     <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>

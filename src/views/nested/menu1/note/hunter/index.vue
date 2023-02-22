@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>监管者报告</h3>
     <router-view />
     <NavHun :hunters="hunters" />
   </div>

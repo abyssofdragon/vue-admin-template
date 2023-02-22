@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>“心理学家”</h5>
+    <h3>“心理学家”</h3>
     <Character :note="note" :description="descriptionCN" :letter="letterCN" :deduction="deductionCN" />
     <router-view />
   </div>

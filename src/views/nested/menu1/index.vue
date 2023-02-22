@@ -1,6 +1,5 @@
 <template>
   <div style="padding:16px;">
-    <h1>心境地图</h1>
     <router-view />
   </div>
 </template>
