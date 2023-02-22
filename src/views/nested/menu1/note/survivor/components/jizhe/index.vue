@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '记者',
-          id: '1',
+          id: 1,
           title: 'TBD',
           content: 'TBD',
           conclusion: 'TBD'
         },
         {
           role: '记者',
-          id: '2',
+          id: 2,
           title: 'TBD',
           content: 'TBD',
           conclusion: 'TBD'
         },
         {
           role: '记者',
-          id: '3',
+          id: 3,
           title: 'TBD',
           content: 'TBD',
           conclusion: 'TBD'
@@ -98,35 +98,35 @@ export default {
       letterCN: [
         {
           role: '记者',
-          id: 'I',
+          id: 1,
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '记者',
-          id: 'II',
+          id: 2,
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '记者',
-          id: 'III',
+          id: 3,
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '记者',
-          id: 'IV',
+          id: 4,
           year: '2026',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '记者',
-          id: 'V',
+          id: 5,
           year: '2027',
           title: 'TBD',
           letter: 'TBD'

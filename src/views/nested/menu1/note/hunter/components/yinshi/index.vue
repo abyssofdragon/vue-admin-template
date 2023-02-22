@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '隐士',
-          id: '1',
+          id: 1,
           title: '粒子',
           content: '渺小的微粒，足以构成庞大、喧嚣、变幻莫测的世界。',
           conclusion: '一封家书：“去吧，阿尔瓦，别再回这穷地方，去该被你改变的世界。”'
         },
         {
           role: '隐士',
-          id: '2',
+          id: 2,
           title: '异电性',
           content: '吸引，来源于彼此的不同。',
           conclusion: '一则教师评语：赫尔曼满腔热忱，怀有极浪漫的科学理想；阿尔瓦则更沉默，是脚踏实地的实用主义者······在学术研究上，他们是极好的搭档。'
         },
         {
           role: '隐士',
-          id: '3',
+          id: 3,
           title: '理论',
           content: '所有理论都来源于天马行空的梦，而我们的使命是将它证实。',
           conclusion: '一张图纸：夹在毕业证中，绘制着复杂的的机械结构，落款是赫尔曼·塞曼。'
@@ -112,35 +112,35 @@ export default {
       letterCN: [
         {
           role: '隐士',
-          id: 'I',
+          id: 1,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '隐士',
-          id: 'II',
+          id: 2,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '隐士',
-          id: 'III',
+          id: 3,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '隐士',
-          id: 'IV',
+          id: 4,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '隐士',
-          id: 'V',
+          id: 5,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'

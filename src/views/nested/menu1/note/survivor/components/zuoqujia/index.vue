@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '作曲家',
-          id: '1',
+          id: 1,
           title: '声部',
           content: '多么幸运,多数人孤独地降生在这个世界。',
           conclusion: '一件洗礼袍:未被使用过,上面有着精致的矢车菊刺绣。'
         },
         {
           role: '作曲家',
-          id: '2',
+          id: 2,
           title: '主音',
           content: '闭嘴,疯子。',
           conclusion: '第一封诊断回执:克雷伯格大人，我们认为令郎偶发的异常亢奋是由于一种儿童精神障碍所致,这在以前的病例中也偶有出现，他们多数会在成年后自愈。'
         },
         {
           role: '作曲家',
-          id: '3',
+          id: 3,
           title: '复调',
           content: '我们应该学会聆听另一种声音。',
           conclusion: '第二封诊断回执:克雷伯格大人，我们认为令郎皮肤上的局部病征，应该是色素异常所致，不会对他的生活造成过多影响，也与他的精神障碍无关，无须担心。'
@@ -91,35 +91,35 @@ export default {
       letterCN: [
         {
           role: '作曲家',
-          id: 'I',
+          id: 1,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '作曲家',
-          id: 'II',
+          id: 2,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '作曲家',
-          id: 'III',
+          id: 3,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '作曲家',
-          id: 'IV',
+          id: 4,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '作曲家',
-          id: 'V',
+          id: 5,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'

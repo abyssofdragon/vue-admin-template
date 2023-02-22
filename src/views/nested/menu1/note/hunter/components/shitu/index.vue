@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '“使徒”',
-          id: '1',
+          id: 1,
           title: '瘟疫',
           content: '众生平等，灾难从不评估他们是否值得被摧毁。',
           conclusion: '一则新闻:近日来多地流行不明瘟疫，患者有呕吐、痉挛、高烧等症状，传播途径不明。城市居民需加强防疫，尽量避免外出。'
         },
         {
           role: '“使徒”',
-          id: '2',
+          id: 2,
           title: '诫命',
           content: '“我是你唯一的神”',
           conclusion: '一张照片:装饰讲究的房间里，一个女孩正趴在女人的床头哭泣。一旁的角落中，男人对着供奉着猫形神像的神龛念念有词。'
         },
         {
           role: '“使徒”',
-          id: '3',
+          id: 3,
           title: '独活',
           content: '“幸存”是最残酷的惩罚',
           conclusion: '一件丧服:装饰繁复，用料讲究……即使多次穿着也能保持最初的柔软。'
@@ -98,35 +98,35 @@ export default {
       letterCN: [
         {
           role: '“使徒”',
-          id: 'I',
+          id: 1,
           year: '2020',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '“使徒”',
-          id: 'II',
+          id: 2,
           year: '2021',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '“使徒”',
-          id: 'III',
+          id: 3,
           year: '2022',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '“使徒”',
-          id: 'IV',
+          id: 4,
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '“使徒”',
-          id: 'V',
+          id: 5,
           year: '2024',
           title: 'TBD',
           letter: 'TBD'

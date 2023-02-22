@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '古董商',
-          id: '1',
+          id: 1,
           title: '四季青',
           content: '山中何事？松花酿酒，春水煎茶。',
           conclusion: '一张画像：竹亭里老人在装睡，左耳有颗朱砂痣的女孩想拿走老人的萧和竹纹古玉耍玩。不远处，一对衣冠素雅的夫妇含笑煎茶。'
         },
         {
           role: '古董商',
-          id: '2',
+          id: 2,
           title: '满山红',
           content: '竹沥也会是红色的，竹烬下葬着他们，人世间埋着我。',
           conclusion: '官府公文残页：“······与萧、谢等人朋比为奸，阴怀逆谋，祸乱民心，蠹坏纲纪。以致皇考宵旰焦劳，圣躬欠泰，前恙复作，竟上宾于天······等人已处极刑，以儆效尤。着其党羽萧珩与其子萧望同轘于市，夷其族，以殆后患······”'
         },
         {
           role: '古董商',
-          id: '3',
+          id: 3,
           title: '忍冬',
           content: '熬过寒冬，饮血茹冰，很多时候靠的并非是铮铮傲骨，而是时刻灼烧肺腑的恨意。',
           conclusion: '传闻：当年清点尸骨的差役并未找到萧家七小姐，而年末时有人看见早已告病还乡的萧家老仆林从瑸带着和萧七一般年纪的女孩在钱塘附近出没，两人形同乞丐。'
@@ -105,35 +105,35 @@ export default {
       letterCN: [
         {
           role: '古董商',
-          id: 'I',
+          id: 1,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '古董商',
-          id: 'II',
+          id: 2,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '古董商',
-          id: 'III',
+          id: 3,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '古董商',
-          id: 'IV',
+          id: 4,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '古董商',
-          id: 'V',
+          id: 5,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'

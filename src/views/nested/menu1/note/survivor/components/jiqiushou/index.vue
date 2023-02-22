@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '击球手',
-          id: '1',
+          id: 1,
           title: '板球',
           content: '19世纪，板球运动开始盛行。',
           conclusion: '一篇报道：自维多利亚时代开始，板球这项运动超越了单纯的消遣和健身功能，成为彰显“英国性”的国球。'
         },
         {
           role: '击球手',
-          id: '2',
+          id: 2,
           title: '天才',
           content: '有谁不喜欢温和乖顺的天才呢？',
           conclusion: '一封联名推荐信：本地区推荐甘吉参加公开交流赛。信件下方有二十几个申报人名。'
         },
         {
           role: '击球手',
-          id: '3',
+          id: 3,
           title: '竞赛',
           content: '运动竞技总是最公平的。',
           conclusion: '一张比赛记录单：甘吉，连胜第十二场。下一场，与英国皇家战队进行半决赛对决。'
@@ -98,7 +98,7 @@ export default {
       letterCN: [
         {
           role: '击球手',
-          id: 'I',
+          id: 1,
           year: '2022',
           title: '一封越洋信件',
           letter:
@@ -106,28 +106,28 @@ export default {
         },
         {
           role: '击球手',
-          id: 'II',
+          id: 2,
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '击球手',
-          id: 'III',
+          id: 3,
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '击球手',
-          id: 'IV',
+          id: 4,
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '击球手',
-          id: 'V',
+          id: 5,
           year: '2026',
           title: 'TBD',
           letter: 'TBD'

@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '调香师',
-          id: '1',
+          id: 1,
           title: '心有灵犀',
           content: '我们有别人不懂的默契。',
           conclusion: '一张老照片：两个长得一模一样的小女孩手牵手站在花田里，一个开朗，一个怯懦，却十分亲密。照片的右下角有两个名字：薇拉·奈尔、克洛伊·奈尔。'
         },
         {
           role: '调香师',
-          id: '2',
+          id: 2,
           title: '疏离',
           content: '大人们向来如此，喜欢自以为是地批判，无休止地比较。',
           conclusion: '“克洛伊？谁有功夫理会那个只知道调香的怪人？不过她的姐姐薇拉实在是位优雅又讨人喜欢的美人。”一位格拉斯的住民如是说道。'
         },
         {
           role: '调香师',
-          id: '3',
+          id: 3,
           title: '恩赐',
           content: '气味讲述着大自然的故事，但并不是每个人都有幸与之产生共鸣。',
           conclusion: '薇拉的日记：克洛伊有着所有调香师都梦寐以求的天赋，她应该再自信一点的。'
@@ -98,7 +98,7 @@ export default {
       letterCN: [
         {
           role: '调香师',
-          id: 'I',
+          id: 1,
           year: '2020',
           title: '给“薇拉·奈尔”的信',
           letter:
@@ -106,7 +106,7 @@ export default {
         },
         {
           role: '调香师',
-          id: 'II',
+          id: 2,
           year: '2021',
           title: '薇拉的庄园日记',
           letter:
@@ -114,7 +114,7 @@ export default {
         },
         {
           role: '调香师',
-          id: 'III',
+          id: 3,
           year: '2022',
           title: '薇拉·奈尔的一页实验档案',
           letter:
@@ -122,14 +122,14 @@ export default {
         },
         {
           role: '调香师',
-          id: 'IV',
+          id: 4,
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '调香师',
-          id: 'V',
+          id: 5,
           year: '2024',
           title: 'TBD',
           letter: 'TBD'

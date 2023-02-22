@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '蜡像师',
-          id: '1',
+          id: 1,
           title: '家庭作坊',
           content: '学徒的工作，往往从制蜡开始。',
           conclusion: '被稚嫩字体涂改过的笔记：9份石蜡会更粘稠，再加1份（被墨水涂黑，无法分辨）红茶和三滴柠檬汁！'
         },
         {
           role: '蜡像师',
-          id: '2',
+          id: 2,
           title: '约定',
           content: '我们答应她，在她外出工作时照顾好彼此。',
           conclusion: '厚厚的信封和一张便条：令堂因意外坠楼去世，此事请勿再提。她是位尽责的女佣，赔偿金已随信附上。不要听信谣言，就当是为了你妹妹。'
         },
         {
           role: '蜡像师',
-          id: '3',
+          id: 3,
           title: '犯罪学',
           content: '邪恶的证据就藏在它们之中，只是样本还不够。',
           conclusion: '一封寄给学者的信：“您质疑我论据的真实性，那么近期请拨冗参观我的工坊。如果您想近距离观察，不要穿白衣服，有些污渍不易清洗。”'
@@ -98,35 +98,35 @@ export default {
       letterCN: [
         {
           role: '蜡像师',
-          id: 'I',
+          id: 1,
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '蜡像师',
-          id: 'II',
+          id: 2,
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '蜡像师',
-          id: 'III',
+          id: 3,
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '蜡像师',
-          id: 'IV',
+          id: 4,
           year: '2026',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '蜡像师',
-          id: 'V',
+          id: 5,
           year: '2027',
           title: 'TBD',
           letter: 'TBD'

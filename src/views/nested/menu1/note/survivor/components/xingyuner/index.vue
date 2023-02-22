@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '幸运儿',
-          id: '1',
+          id: 1,
           title: 'TBD',
           content: 'TBD',
           conclusion: 'TBD'
         },
         {
           role: '幸运儿',
-          id: '2',
+          id: 2,
           title: 'TBD',
           content: 'TBD',
           conclusion: 'TBD'
         },
         {
           role: '幸运儿',
-          id: '3',
+          id: 3,
           title: 'TBD',
           content: 'TBD',
           conclusion: 'TBD'
@@ -98,35 +98,35 @@ export default {
       letterCN: [
         {
           role: '幸运儿',
-          id: 'I',
+          id: 1,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '幸运儿',
-          id: 'II',
+          id: 2,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '幸运儿',
-          id: 'III',
+          id: 3,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '幸运儿',
-          id: 'IV',
+          id: 4,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '幸运儿',
-          id: 'V',
+          id: 5,
           year: 'TBD',
           title: 'TBD',
           letter: 'TBD'

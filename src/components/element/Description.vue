@@ -4,7 +4,8 @@
       <el-collapse-item title="背景故事" name="1">
         <el-row>
           <el-col :span="24">
-            <el-table :data="description" stripe border default-expand-all max-height="300" style="width: 100%">
+            <!-- <el-table :data="description" stripe border default-expand-all max-height="300" style="width: 100%"> -->
+            <el-table :data="description" stripe border default-expand-all style="width: 100%">
               <el-table-column type="expand">
                 <template slot-scope="props">
                   <el-form label-position="left" inline class="demo-table-expand">

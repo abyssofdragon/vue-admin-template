@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '渔女',
-          id: '1',
+          id: 1,
           title: '渔村',
           content: '童话故事总是始于无名的小村庄。',
           conclusion: '一张照片：搁浅的死鱼，寂静的湖岸……几个渔民一脸愁苦地看着空荡荡的渔网。'
         },
         {
           role: '渔女',
-          id: '2',
+          id: 2,
           title: '竹篮',
           content: '顺水漂来的礼物，里面是一个小小的包裹。',
           conclusion: '一张字条：格蕾丝，生于4月2日。'
         },
         {
           role: '渔女',
-          id: '3',
+          id: 3,
           title: '“怪胎”',
           content: '那些与众不同的，是独属于主角的特殊标志。',
           conclusion: '一张诊断书：失语症，先天发声困难。颈侧有不明赘生物，怀疑与发声障碍有关，可考虑手术切除。'
@@ -98,35 +98,35 @@ export default {
       letterCN: [
         {
           role: '渔女',
-          id: 'I',
+          id: 1,
           year: '2023',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '渔女',
-          id: 'II',
+          id: 2,
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '渔女',
-          id: 'III',
+          id: 3,
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '渔女',
-          id: 'IV',
+          id: 4,
           year: '2026',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '渔女',
-          id: 'V',
+          id: 5,
           year: '2027',
           title: 'TBD',
           letter: 'TBD'

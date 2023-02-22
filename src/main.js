@@ -5,6 +5,9 @@ import './config/idv-components'// idv组件
 import VXETable from 'vxe-table'// vxe-table组件
 import 'vxe-table/lib/style.css'
 
+import ViewUI from 'view-design'// view-ui组件
+import 'view-design/dist/styles/iview.css'
+
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
@@ -39,6 +42,7 @@ Vue.use(ElementUI, { locale })
 // Vue.use(ElementUI)
 
 Vue.use(VXETable)
+Vue.use(ViewUI)
 
 Vue.config.productionTip = false
 

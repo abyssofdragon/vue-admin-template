@@ -26,21 +26,21 @@ export default {
       deductionCN: [
         {
           role: '“记录员”',
-          id: '1',
+          id: 1,
           title: '立案',
           content: '第40. 4条：生命权',
           conclusion: '一张新生儿照片的背面：女孩起名柯根是不畏艰险、正大光明的意思。'
         },
         {
           role: '“记录员”',
-          id: '2',
+          id: 2,
           title: '宣布开庭',
           content: '第40. 6. 1. i条：言论自由',
           conclusion: '一本法律书籍旁，歪歪扭扭的小字：下次晚餐上我可以用这条来反驳父亲。'
         },
         {
           role: '“记录员”',
-          id: '3',
+          id: 3,
           title: '合议庭组成人员',
           content: '第40. 1条：法律面前人人平等',
           conclusion: '一份录取通知书的背面：二哥也去了大哥的学校，再过两年就该是我收到这张通知书了，上面将写着“柯根.尼古拉斯.基奥女士”'
@@ -91,35 +91,35 @@ export default {
       letterCN: [
         {
           role: '“记录员”',
-          id: 'I',
+          id: 1,
           year: '2024',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '“记录员”',
-          id: 'II',
+          id: 2,
           year: '2025',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '“记录员”',
-          id: 'III',
+          id: 3,
           year: '2026',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '“记录员”',
-          id: 'IV',
+          id: 4,
           year: '2027',
           title: 'TBD',
           letter: 'TBD'
         },
         {
           role: '“记录员”',
-          id: 'V',
+          id: 5,
           year: '2028',
           title: 'TBD',
           letter: 'TBD'

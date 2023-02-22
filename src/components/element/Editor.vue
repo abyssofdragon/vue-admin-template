@@ -50,7 +50,7 @@ export default {
             [{ indent: '-1' }, { indent: '+1' }], // 缩进
             [{ 'direction': 'rtl' }, { align: [] }], // 文本方向 对齐方式
             [{ size: ['small', false, 'large', 'huge'] }, { color: [] }, { background: [] }], // 字体大小、字体颜色、字体背景颜色、, { font: [] } 字体种类
-            ['link', 'image', 'video'] // 链接、图片、视频
+            ['link', 'image'] // 链接、图片、, 'video'视频
           ] // 工具菜单栏配置,
         },
         placeholder: '请输入笔记'
