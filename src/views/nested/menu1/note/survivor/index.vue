@@ -1,7 +1,7 @@
 <template>
   <div>
-    <router-view />
     <NavSur :survivors="survivors" />
+    <router-view />
   </div>
 </template>
 <script>

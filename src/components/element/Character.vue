@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Row gutter="16">
+    <Row>
       <Col span="23">
         <div class="character">
           <div id="note">
@@ -24,6 +24,7 @@
           <AnchorLink href="#deduction" title="推演" />
           <AnchorLink href="#letter" title="信件" />
         </Anchor>
+        <BackTop :height="0" :bottom="0" :right="0" />
       </Col>
     </Row>
   </div>
@@ -78,21 +79,7 @@ export default {
 .character {
   position: relative;
   overflow: auto;
-  height: 850px;
+  height: 800px;
 }
 
-.demo-table-expand {
-  font-size: 0;
-}
-
-.demo-table-expand .el-form-item {
-  margin-right: 0;
-  margin-bottom: 0;
-  width: 100%;
-  white-space: pre-wrap;
-}
-
-.el-table tr .el-table__expanded-cell {
-  padding: 3.5px 58px 3.5px 0px;
-}
 </style>
