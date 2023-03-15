@@ -4,7 +4,7 @@
       <Col span="23">
         <div class="character">
           <div id="note">
-            <Editor ref="editor" v-model="note" />
+            <NoteEditor ref="editor" v-model="note" />
           </div>
           <div id="description">
             <Description :description="description" />
@@ -79,7 +79,7 @@ export default {
 .character {
   position: relative;
   overflow: auto;
-  height: 800px;
+  height: 750px;
 }
 
 </style>

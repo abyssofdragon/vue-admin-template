@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import axios from 'axios'
 
 Vue.use(Router)
 
@@ -155,16 +156,27 @@ export const constantRoutes = [
             meta: { title: 'Menu1-3' }
           }
         ]
-      },
-      {
-        path: 'menu2',
-        component: () => import('@/views/nested/menu2/index'),
-        name: 'Menu2',
-        meta: { title: 'menu2' }
       }
     ]
   },
-
+  {
+    path: '/creativeCentre',
+    component: Layout,
+    redirect: '/creativeCentre/write',
+    name: 'CreativeCentre',
+    meta: {
+      title: '创作中心',
+      icon: 'nested'
+    },
+    children: [
+      {
+        path: 'write',
+        component: () => import('@/views/creativeCenter/write'),
+        name: 'Write',
+        meta: { title: '创作' }
+      }
+    ]
+  },
   {
     path: 'external-link',
     component: Layout,
@@ -187,6 +199,34 @@ const createRouter = () => new Router({
 })
 
 const router = createRouter()
+// 任何一个跳转之前都要执行下述逻辑
+router.beforeEach((to, from, next) => {
+  if (to.path.startsWith('/login')) {
+    window.localStorage.removeItem('acces-admin')
+    next()
+  } else {
+    const admin = JSON.parse(window.localStorage.getItem('access-admin'))
+    if (!admin) {
+      next({ path: '/login' })
+    } else {
+    // 校验token合法性
+      axios({
+        url: 'http://localhost:8080/checkToken',
+        method: 'get',
+        headers: {
+          token: admin.token
+        }
+      }).then(response => {
+        console.log('校验结果', response.data)
+        if (!response.data) {
+          console.log('校验失败')
+          next({ path: '/404' })
+        }
+      })
+      next()
+    }
+  }
+})
 
 // Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {

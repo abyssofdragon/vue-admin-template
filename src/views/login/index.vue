@@ -54,6 +54,7 @@
 
 <script>
 import { validUsername } from '@/utils/validate'
+import Axios from 'axios'
 
 export default {
   name: 'Login',
@@ -108,6 +109,17 @@ export default {
     handleLogin() {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
+          this.loading = true
+          // Jwttoken
+          const _this = this
+          Axios.get('http://localhost:8080/login', { params: _this.loginForm }).then(function(response) {
+            console.log('JwtToken', response.data)
+            if (response.data != null) {
+              localStorage.setItem('access-admin', JSON.stringify(response.data))
+              // _this.$router.replace({ path: '/dashboard' })
+            }
+          })
+          // 原
           this.loading = true
           this.$store.dispatch('user/login', this.loginForm).then(() => {
             this.$router.push({ path: this.redirect || '/' })

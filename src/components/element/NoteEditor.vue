@@ -2,11 +2,15 @@
   <div>
     <el-row>
       <el-col :span="24">
-        <el-row>
-          <el-col :span="24">
-            <div class="editor" />
-          </el-col>
-        </el-row>
+        <el-collapse v-model="activeNames">
+          <el-collapse-item title="笔记" name="1">
+            <el-row>
+              <el-col :span="24">
+                <div class="editor" />
+              </el-col>
+            </el-row>
+          </el-collapse-item>
+        </el-collapse>
       </el-col>
     </el-row>
   </div>
@@ -16,7 +20,7 @@
 import Quill from 'quill'
 import 'quill/dist/quill.snow.css'
 export default {
-  name: 'Editor',
+  name: 'NoteEditor',
   props: {
     value: {
       type: String,
@@ -25,6 +29,7 @@ export default {
   },
   data() {
     return {
+      activeNames: ['1'],
       indexCursor: null,
       lengthCursor: null,
       quill: null,

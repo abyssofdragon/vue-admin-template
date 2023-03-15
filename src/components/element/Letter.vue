@@ -5,6 +5,9 @@
         <el-row>
           <el-col :span="24">
             <vxe-grid ref="xGrid" v-bind="gridOptions" />
+            <template #edit="{ row }">
+              <div contenteditable="true">{{ row.letter }}</div>
+            </template>
           </el-col>
         </el-row>
       </el-collapse-item>
@@ -40,9 +43,29 @@ export default {
         round: true, // 圆角边框
         loading: true, // 显示加载中
         resizable: true,
-        scrollY: [// 纵向虚拟滚动配置
-          { enabled: false }// 是否启用
-        ]
+        scrollY: [ // 纵向虚拟滚动配置
+          { enabled: false } // 是否启用
+        ],
+        toolbarConfig: {
+          perfect: true, // 配套的样式
+          zoom: true, // 最大化显示
+          export: true, // 导出
+          print: true, // 打印
+          custom: true, // 自定义列配置
+          slots: {
+            buttons: 'toolbar_buttons'
+          }
+        },
+        exportConfig: {}, // 导出配置项
+        printConfig: {}, // 打印配置项
+        columnConfig: { // 列配置
+          isCurrent: true, // 点击列头时，高亮当前列
+          isHover: true // 移到列头时，高亮当前列头
+        },
+        rowConfig: { // 行配置
+          isCurrent: true, // 点击行时，高亮当前行
+          isHover: true // 移到行时，高亮当前行
+        }
       }
     }
   },
@@ -51,7 +74,7 @@ export default {
     setTimeout(() => {
       this.gridOptions.loading = false
       this.gridOptions.columns = [
-        { field: 'id', title: 'NO', width: '5%' },
+        { field: 'id', title: 'NO', width: '5%', sortable: true },
         { field: 'year', title: '年份', width: '5%' },
         { field: 'title', title: '标题', width: '10%' },
         { field: 'letter', title: '信件', width: '80%' }
@@ -62,7 +85,5 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
 

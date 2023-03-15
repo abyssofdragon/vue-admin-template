@@ -72,7 +72,7 @@ export default {
     setTimeout(() => {
       this.gridOptions.loading = false
       this.gridOptions.columns = [
-        { field: 'id', title: 'NO', width: '5%' },
+        { field: 'id', title: 'NO', width: '5%', sortable: true },
         { field: 'title', title: '推演', width: '10%' },
         { field: 'content', title: '内容', width: '25%' },
         { field: 'conclusion', title: '结论', width: '60%',

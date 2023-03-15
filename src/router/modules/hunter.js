@@ -127,7 +127,7 @@ export default {
     {
       path: 'polun',
       component: () => import('@/views/nested/menu1/note/hunter/components/polun'),
-      name: 'Xiaochou',
+      name: 'Polun',
       meta: { title: '1125 破轮' }
     },
     {

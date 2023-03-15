@@ -1,5 +1,6 @@
 import Vue from 'vue'
 // 编辑模块
+import NoteEditor from '../components/element/NoteEditor'// 富文本编辑器Quill
 import Editor from '../components/element/Editor'// 富文本编辑器Quill
 // 剧情模块
 import Character from '../components/element/Character'// 角色
@@ -16,6 +17,7 @@ const components = {
   NavHun,
   // 编辑模块
   Editor,
+  NoteEditor,
   // 剧情模块
   Character,
   Deduction,
