@@ -24,9 +24,9 @@ const routes = [
       name: 'menu1',
       meta: { title: 'menu1' },
       children: [{
-        path: 'menu1-1',
-        name: 'menu1-1',
-        meta: { title: 'menu1-1' }
+        path: 'mainStory',
+        name: 'mainStory',
+        meta: { title: 'mainStory' }
       },
       {
         path: 'note',

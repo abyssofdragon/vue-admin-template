@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import axios from 'axios'
+// import axios from 'axios'
 
 Vue.use(Router)
 
@@ -122,10 +122,16 @@ export const constantRoutes = [
         meta: { title: '心境地图' },
         children: [
           {
-            path: 'menu1-1',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'Menu1-1',
+            path: 'mainStory',
+            component: () => import('@/views/nested/menu1/mainStory'),
+            name: 'mainStory',
             meta: { title: '剧情模式' }
+          },
+          {
+            path: 'relation',
+            component: () => import('@/views/nested/menu1/relation'),
+            name: 'relation',
+            meta: { title: '角色关系' }
           },
           {
             path: 'note',
@@ -200,33 +206,33 @@ const createRouter = () => new Router({
 
 const router = createRouter()
 // 任何一个跳转之前都要执行下述逻辑
-router.beforeEach((to, from, next) => {
-  if (to.path.startsWith('/login')) {
-    window.localStorage.removeItem('acces-admin')
-    next()
-  } else {
-    const admin = JSON.parse(window.localStorage.getItem('access-admin'))
-    if (!admin) {
-      next({ path: '/login' })
-    } else {
-    // 校验token合法性
-      axios({
-        url: 'http://localhost:8080/checkToken',
-        method: 'get',
-        headers: {
-          token: admin.token
-        }
-      }).then(response => {
-        console.log('校验结果', response.data)
-        if (!response.data) {
-          console.log('校验失败')
-          next({ path: '/404' })
-        }
-      })
-      next()
-    }
-  }
-})
+// router.beforeEach((to, from, next) => {
+//   if (to.path.startsWith('/login')) {
+//     window.localStorage.removeItem('acces-admin')
+//     next()
+//   } else {
+//     const admin = JSON.parse(window.localStorage.getItem('access-admin'))
+//     if (!admin) {
+//       next({ path: '/login' })
+//     } else {
+//     // 校验token合法性
+//       axios({
+//         url: 'http://localhost:8080/checkToken',
+//         method: 'get',
+//         headers: {
+//           token: admin.token
+//         }
+//       }).then(response => {
+//         console.log('校验结果', response.data)
+//         if (!response.data) {
+//           console.log('校验失败')
+//           next({ path: '/404' })
+//         }
+//       })
+//       next()
+//     }
+//   }
+// })
 
 // Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {
