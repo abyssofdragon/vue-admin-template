@@ -69,13 +69,13 @@
           />
           <vxe-form-item field="role" title="角色" :span="12" :item-render="{}">
             <template #default="{ data }">
-              <vxe-input v-model="data.role" placeholder="请输入角色" disabled v-if="selectRow"/>
-              <vxe-input v-model="data.role" placeholder="请输入角色" v-else />
+              <vxe-input v-if="selectRow" v-model="data.role" placeholder="请输入角色" disabled />
+              <vxe-input v-else v-model="data.role" placeholder="请输入角色" />
             </template>
           </vxe-form-item>
           <vxe-form-item field="type" title="类型" :span="12" :item-render="{}">
             <template #default="{ data }">
-              <vxe-select v-model="data.type" transfer v-if="selectRow">
+              <vxe-select v-if="selectRow" v-model="data.type" transfer>
                 <vxe-option
                   v-for="item in typeList"
                   :key="item.value"
@@ -84,7 +84,7 @@
                   :disabled="true"
                 />
               </vxe-select>
-              <vxe-select v-model="data.type" transfer v-else>
+              <vxe-select v-else v-model="data.type" transfer>
                 <vxe-option
                   v-for="item in typeList"
                   :key="item.value"
@@ -140,7 +140,7 @@ export default {
       initialTableData: [
         {
           id: '1',
-          type:'1',
+          type: '1',
           role: '26号守卫',
           rumor: '巴尔克的26号守卫型机器人，储存着大量定时炸弹。',
           background: '巴尔克失败了二十五次，在最后一次他获得了26号，这曾是他最得意的作品。26号拥有极高的自主意识，这大大提升了它的工作效率，也让巴尔克得以暂时获得“假期”，远离繁杂重复的劳作，投入到新的机关设计里去。在此期间，26号的自我意识逐渐形成，它甚至拥有了一个“名字”——邦邦。巴尔克恼怒地发现26号的效率在自我意识的过度发展后逐渐降低，因此他更换了26号的中央枢纽并编写了新规则。奇怪的事情发生了，无论巴尔克更换多少次中央枢纽，修改多少次规则，26号在重启后都会播放同一句话：“很高兴认识你，邦邦。”'
@@ -148,14 +148,14 @@ export default {
       ],
       typeList: [
         { label: '监管者', value: '1' },
-        { label: '求生者', value: '2'  },
+        { label: '求生者', value: '2' }
       ],
       selectRow: null,
       showEdit: false,
       formData: {
         role: '',
         rumor: '',
-        type:'',
+        type: '',
         background: ''
       },
       formRules: {
@@ -202,7 +202,7 @@ export default {
     insertEvent() {
       this.formData = {
         name: '',
-        type:'',
+        type: '',
         role: '',
         rumor: '',
         background: ''

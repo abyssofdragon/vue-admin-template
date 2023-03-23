@@ -21,9 +21,9 @@ export default {
           name: 'DeductionManage',
           component: () => import('@/views/manageCenter/plotManage/deductionManage'),
           meta: { title: '背景推演', icon: 'table' }
-        },
+        }
       ]
-      
+
     }
   ]
 }

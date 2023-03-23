@@ -20,7 +20,7 @@
       :data="display"
       @cell-dblclick="cellDBLClickEvent"
     >
-      <vxe-column type="seq" width="60"  />
+      <vxe-column type="seq" width="60" />
       <vxe-column field="role" title="角色" type="html" sortable />
       <vxe-column field="id" title="ID" type="html" sortable />
       <vxe-column field="content" title="内容" type="html" />
@@ -67,10 +67,10 @@
             :span="24"
             :title-prefix="{message: '角色的背景推演', icon: 'vxe-icon-info-circle' }"
           />
-          <vxe-form-item field="role" title="角色" :span="12" :item-render="{}" >
+          <vxe-form-item field="role" title="角色" :span="12" :item-render="{}">
             <template #default="{ data }">
-              <vxe-input v-model="data.role" placeholder="请输入角色" disabled v-if="isEdit"/>
-              <vxe-input v-model="data.role" placeholder="请输入角色" v-else />
+              <vxe-input v-if="isEdit" v-model="data.role" placeholder="请输入角色" disabled />
+              <vxe-input v-else v-model="data.role" placeholder="请输入角色" />
             </template>
           </vxe-form-item>
           <vxe-form-item field="id" title="推演ID" :span="12" :item-render="{}">
@@ -122,7 +122,7 @@ export default {
       filterName1: '',
       submitLoading: false,
       initialTableData: [
-      {
+        {
           role: '26号守卫',
           id: 1,
           title: '助手',
@@ -194,7 +194,7 @@ export default {
         }
       ],
       selectRow: null,
-      isEdit:false,
+      isEdit: false,
       showEdit: false,
       formData: {
         role: '示例',
@@ -236,7 +236,7 @@ export default {
         conclusion: row.conclusion
       }
       this.selectRow = row
-      this.isEdit=true,
+      this.isEdit = true,
       this.showEdit = true
     },
     insertEvent() {
@@ -244,10 +244,10 @@ export default {
         role: '',
         id: '',
         content: '',
-        conclusion:''
+        conclusion: ''
       }
       this.selectRow = null
-      this.isEdit=false
+      this.isEdit = false
       this.showEdit = true
     },
     submitEvent() {
