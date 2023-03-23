@@ -8,7 +8,9 @@ Vue.use(Router)
 import Layout from '@/layout'
 import survivor from './modules/survivor'
 import hunter from './modules/hunter'
-
+import authorityManage from './modules/authorityManage'
+import plotManage from './modules/plotManage'
+// import manager from './modules/manager'
 /**
  * Note: sub-menu only appear when route children.length >= 1
  * Detail see: https://panjiachen.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html
@@ -181,6 +183,32 @@ export const constantRoutes = [
         name: 'Write',
         meta: { title: '创作' }
       }
+    ]
+  },
+  {
+    path: '/admin',
+    component: Layout,
+    redirect: '/admin/manageCenter',
+    name: 'Admin',
+    meta: {
+      title: '管理员',
+      icon: 'nested'
+    },
+    children: [
+      plotManage
+    ]
+  },
+  {
+    path: '/superAdmin',
+    component: Layout,
+    redirect: '/superAdmin/manageCenter',
+    name: 'SuperAdmin',
+    meta: {
+      title: '超级管理员',
+      icon: 'nested'
+    },
+    children: [
+      authorityManage
     ]
   },
   {

@@ -1,8 +1,9 @@
-<!-- 权限管理 -->
+<!-- 剧情管理 -->
 <template>
   <div>
     <vxe-toolbar>
       <template #buttons>
+        <vxe-button icon="vxe-icon-square-plus" @click="insertEvent()">新增</vxe-button>
         <vxe-input v-model="filterName1" type="search" placeholder="试试全表搜索" @keyup="searchEvent" />
       </template>
     </vxe-toolbar>
@@ -19,9 +20,11 @@
       @cell-dblclick="cellDBLClickEvent"
     >
       <vxe-column type="seq" width="60" />
-      <vxe-column field="id" title="用户ID" type="html" sortable />
-      <vxe-column field="name" title="用户名" type="html" sortable />
-      <vxe-column field="authority" title="用户权限" type="html" :formatter="formatterAuthority" :filters="[{label: '实习生', value: '1'}, {label: '管理员', value: '3'}, {label: '超级管理员', value: '5'}]" :filter-multiple="false" />
+      <vxe-column field="type" title="类型" type="html" :formatter="formatterType" :filters="[{label: '监管者', value: '1'}, {label: '求生者', value: '2'}]" :filter-multiple="true" />
+      <vxe-column field="id" title="ID" type="html" sortable />
+      <vxe-column field="role" title="角色" type="html" sortable />
+      <vxe-column field="rumor" title="传闻" type="html" />
+      <vxe-column field="background" title="背景故事" type="html" />
       <vxe-column title="操作" width="100" show-overflow>
         <template #default="{ row }">
           <vxe-button type="text" icon="vxe-icon-edit" @click="editEvent(row)" />
@@ -58,23 +61,47 @@
       <template #default>
         <vxe-form :data="formData" :rules="formRules" title-align="right" title-width="100" @submit="submitEvent">
           <vxe-form-item
-            title="更改权限"
+            title="背景故事"
             title-align="left"
             :title-width="200"
             :span="24"
-            :title-prefix="{ icon: 'vxe-icon-comment' }"
+            :title-prefix="{message: '角色的背景故事', icon: 'vxe-icon-info-circle' }"
           />
-          <vxe-form-item field="authority" title="用户权限" :span="12" :item-render="{}">
+          <vxe-form-item field="role" title="角色" :span="12" :item-render="{}">
             <template #default="{ data }">
-              <vxe-select v-model="data.authority" transfer>
+              <vxe-input v-model="data.role" placeholder="请输入角色" disabled v-if="selectRow"/>
+              <vxe-input v-model="data.role" placeholder="请输入角色" v-else />
+            </template>
+          </vxe-form-item>
+          <vxe-form-item field="type" title="类型" :span="12" :item-render="{}">
+            <template #default="{ data }">
+              <vxe-select v-model="data.type" transfer v-if="selectRow">
                 <vxe-option
-                  v-for="item in authorityList"
+                  v-for="item in typeList"
                   :key="item.value"
                   :value="item.value"
                   :label="item.label"
-                  :disabled="item.disabled"
+                  :disabled="true"
                 />
               </vxe-select>
+              <vxe-select v-model="data.type" transfer v-else>
+                <vxe-option
+                  v-for="item in typeList"
+                  :key="item.value"
+                  :value="item.value"
+                  :label="item.label"
+                />
+              </vxe-select>
+            </template>
+          </vxe-form-item>
+          <vxe-form-item field="rumor" title="传闻" :span="24" :item-render="{}" :title-suffix="{message: '传闻', icon: 'vxe-icon-question-circle-fill'}">
+            <template #default="{ data }">
+              <vxe-textarea v-model="data.rumor" :autosize="{minRows: 2, maxRows: 4}" />
+            </template>
+          </vxe-form-item>
+          <vxe-form-item field="background" title="详情" :span="24" :item-render="{}" :title-suffix="{message: '背景故事', icon: 'vxe-icon-question-circle-fill'}">
+            <template #default="{ data }">
+              <vxe-textarea v-model="data.background" :autosize="{minRows: 2, maxRows: 4}" />
             </template>
           </vxe-form-item>
           <vxe-form-item align="center" title-align="left" :span="24">
@@ -92,6 +119,8 @@
 <script>
 // 全表搜索 https://vxetable.cn/v3/#/table/advanced/search
 // 弹框编辑 https://vxetable.cn/v3/#/table/edit/popupForm
+// 筛选 https://vxetable.cn/v3/#/table/base/filter
+// 排序 https://vxetable.cn/v3/#/table/base/sort
 import VXETable from 'vxe-table'
 import XEUtils from 'xe-utils'
 
@@ -109,44 +138,38 @@ export default {
       filterName1: '',
       submitLoading: false,
       initialTableData: [
-        { id: 10001, name: 'JZY', authority: '5' },
-        { id: 10002, name: 'ZPF', authority: '3' },
-        { id: 10003, name: 'CC', authority: '3' },
-        { id: 10004, name: 'LXH', authority: '3' },
-        { id: 10005, name: 'RHF', authority: '3' },
-        { id: 10006, name: 'ZCY', authority: '3' },
-        { id: 10001, name: 'JZY', authority: '5' },
-        { id: 10002, name: 'ZPF', authority: '3' },
-        { id: 10003, name: 'CC', authority: '3' },
-        { id: 10004, name: 'LXH', authority: '3' },
-        { id: 10005, name: 'RHF', authority: '3' },
-        { id: 10006, name: 'ZCY', authority: '3' },
-        { id: 10001, name: 'JZY', authority: '5' },
-        { id: 10002, name: 'ZPF', authority: '3' },
-        { id: 10003, name: 'CC', authority: '3' },
-        { id: 10004, name: 'LXH', authority: '3' },
-        { id: 10005, name: 'RHF', authority: '3' },
-        { id: 10006, name: 'ZCY', authority: '3' },
-        { id: 10001, name: 'JZY', authority: '5' },
-        { id: 10002, name: 'ZPF', authority: '3' },
-        { id: 10003, name: 'CC', authority: '3' },
-        { id: 10004, name: 'LXH', authority: '3' },
-        { id: 10005, name: 'RHF', authority: '3' },
-        { id: 10006, name: 'ZCY', authority: '3' }
+        {
+          id: '1',
+          type:'1',
+          role: '26号守卫',
+          rumor: '巴尔克的26号守卫型机器人，储存着大量定时炸弹。',
+          background: '巴尔克失败了二十五次，在最后一次他获得了26号，这曾是他最得意的作品。26号拥有极高的自主意识，这大大提升了它的工作效率，也让巴尔克得以暂时获得“假期”，远离繁杂重复的劳作，投入到新的机关设计里去。在此期间，26号的自我意识逐渐形成，它甚至拥有了一个“名字”——邦邦。巴尔克恼怒地发现26号的效率在自我意识的过度发展后逐渐降低，因此他更换了26号的中央枢纽并编写了新规则。奇怪的事情发生了，无论巴尔克更换多少次中央枢纽，修改多少次规则，26号在重启后都会播放同一句话：“很高兴认识你，邦邦。”'
+        }
+      ],
+      typeList: [
+        { label: '监管者', value: '1' },
+        { label: '求生者', value: '2'  },
       ],
       selectRow: null,
       showEdit: false,
-      authorityList: [
-        { label: '实习生', value: '1', disabled: false },
-        { label: '管理员', value: '3', disabled: false },
-        { label: '超级管理员', value: '5', disabled: true }
-      ],
       formData: {
-        authority: '1'
+        role: '',
+        rumor: '',
+        type:'',
+        background: ''
       },
       formRules: {
-        authority: [
-          { required: true, message: '请选择权限' }
+        role: [
+          { required: true, message: '请输入角色' }
+        ],
+        type: [
+          { required: true, message: '请选择角色类型' }
+        ],
+        rumor: [
+          { required: true, message: '请输入传闻' }
+        ],
+        background: [
+          { required: true, message: '请输入背景故事' }
         ]
       }
     }
@@ -155,8 +178,8 @@ export default {
     this.searchEvent()
   },
   methods: {
-    formatterAuthority({ cellValue }) {
-      const item = this.authorityList.find(item => item.value === cellValue)
+    formatterType({ cellValue }) {
+      const item = this.typeList.find(item => item.value === cellValue)
       return item ? item.label : ''
     },
     visibleMethod({ data }) {
@@ -167,28 +190,54 @@ export default {
     },
     editEvent(row) {
       this.formData = {
-        authority: row.authority
+        name: row.name,
+        role: row.role,
+        type: row.type,
+        rumor: row.rumor,
+        background: row.background
       }
       this.selectRow = row
+      this.showEdit = true
+    },
+    insertEvent() {
+      this.formData = {
+        name: '',
+        type:'',
+        role: '',
+        rumor: '',
+        background: ''
+      }
+      this.selectRow = null
       this.showEdit = true
     },
     submitEvent() {
       this.submitLoading = true
       setTimeout(() => {
+        const $table = this.$refs.xTable
         this.submitLoading = false
         this.showEdit = false
         if (this.selectRow) {
           VXETable.modal.message({ content: '保存成功', status: 'success' })
           Object.assign(this.selectRow, this.formData)
+        } else {
+          VXETable.modal.message({ content: '新增成功', status: 'success' })
+          $table.insert(this.formData)
         }
       }, 500)
+    },
+    async removeEvent(row) {
+      const type = await VXETable.modal.confirm('您确定要删除该数据?')
+      const $table = this.$refs.xTable
+      if (type === 'confirm') {
+        $table.remove(row)
+      }
     },
     searchEvent() {
       this.loading = true
       const filterName = XEUtils.toValueString(this.filterName1).trim().toLowerCase()
       if (filterName) {
         const filterRE = new RegExp(filterName, 'gi')
-        const searchProps = ['name']
+        const searchProps = ['rumor', 'background']
         const rest = this.initialTableData.filter(item => searchProps.some(key => XEUtils.toValueString(item[key]).toLowerCase().indexOf(filterName) > -1))
         this.list = rest.map(row => {
           const item = Object.assign({}, row)
@@ -215,9 +264,9 @@ export default {
 }
 </script>
 
-  <style>
-  .keyword-lighten {
-    color: #000;
-    background-color: #FFFF00;
-  }
-  </style>
+      <style>
+      .keyword-lighten {
+      color: #000;
+      background-color: #FFFF00;
+      }
+      </style>

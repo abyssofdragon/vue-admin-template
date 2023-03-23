@@ -12,8 +12,8 @@
         </Select>
       </Col>
       <Col span="4">
-             <Button type="success" long @click="submit">发布</Button>
-          </Col>
+        <Button type="success" long @click="submit">发布</Button>
+      </Col>
     </Row>
     <Row>
       <Col span="24" style="padding-right:10px">
@@ -21,17 +21,17 @@
       </Col>
     </Row>
     <Row>
-        <Col span="24" style="padding-right:10px">
-         {{this.article}}
-        </Col>
-      </Row>
+      <Col span="24" style="padding-right:10px">
+        {{ this.article }}
+      </Col>
+    </Row>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      article:'123<br>即将',
+      article: '123<br>即将',
       cityList: [
         {
           value: '1',
