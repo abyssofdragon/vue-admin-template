@@ -1,6 +1,6 @@
 <!-- 剧情管理 -->
 <template>
-  <div>
+  <div style="padding:16px;">
     <vxe-toolbar>
       <template #buttons>
         <vxe-button icon="vxe-icon-square-plus" @click="insertEvent()">新增</vxe-button>
@@ -49,7 +49,7 @@
       @page-change="handlePageChange"
     />
     <vxe-modal
-      id="deductionManage"
+      id="passageList"
       v-model="showEdit"
       :title="selectRow ? '编辑&保存' : '新增&保存'"
       width="800"
@@ -91,7 +91,14 @@
           </vxe-form-item>
           <vxe-form-item field="conclusion" title="结论" :span="24" :item-render="{}" :title-suffix="{message: '请输入推演结论', icon: 'vxe-icon-question-circle-fill'}">
             <template #default="{ data }">
-              <vxe-textarea v-model="data.conclusion" :autosize="{minRows: 2, maxRows: 4}" />
+              <Editor
+                ref="editor"
+                v-model="data.conclusion"
+                @blur="onEditorBlur($event)"
+                @focus="onEditorFocus($event)"
+                @ready="onEditorReady($event)"
+                @change="onEditorChange($event)"
+              />
             </template>
           </vxe-form-item>
           <vxe-form-item align="center" title-align="left" :span="24">
@@ -224,10 +231,33 @@ export default {
       }
     }
   },
+  computed: {
+    editor() {
+      return this.$refs.editor.quill
+    }
+  },
   created() {
     this.searchEvent()
   },
+  mounted() {
+    console.log('this is current quill instance object', this.editor)
+  },
   methods: {
+    // quill
+    onEditorBlur(quill) {
+      console.log('editor blur!', quill)
+    },
+    onEditorFocus(quill) {
+      console.log('editor focus!', quill)
+    },
+    onEditorReady(quill) {
+      console.log('editor ready!', quill)
+    },
+    onEditorChange({ quill, html, text }) {
+      console.log('editor change!', quill, html, text)
+      this.formData.content = html
+    },
+
     visibleMethod({ data }) {
       return data.flag1 === 'Y'
     },
@@ -257,6 +287,7 @@ export default {
       this.showEdit = true
     },
     submitEvent() {
+      console.log(111, this.formData.conclusion)
       this.submitLoading = true
       setTimeout(() => {
         const $table = this.$refs.xTable

@@ -182,6 +182,12 @@ export const constantRoutes = [
         component: () => import('@/views/creativeCenter/write'),
         name: 'Write',
         meta: { title: '创作' }
+      },
+      {
+        path: 'passage',
+        component: () => import('@/views/passage'),
+        name: 'Passage',
+        meta: { title: '文章' }
       }
     ]
   },

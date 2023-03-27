@@ -22,7 +22,7 @@
     </Row>
     <Row>
       <Col span="24" style="padding-right:10px">
-        {{ this.article }}
+        {{ article }}
       </Col>
     </Row>
   </div>

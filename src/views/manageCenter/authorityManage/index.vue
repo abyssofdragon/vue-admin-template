@@ -46,14 +46,20 @@
       @page-change="handlePageChange"
     />
     <vxe-modal
+      id="authorityManage"
       v-model="showEdit"
       :title="selectRow ? '编辑&保存' : '新增&保存'"
       width="800"
+      height="400"
       min-width="600"
       min-height="300"
       :loading="submitLoading"
       resize
       destroy-on-close
+      show-zoom
+      remember
+      storage
+      transfer
     >
       <template #default>
         <vxe-form :data="formData" :rules="formRules" title-align="right" title-width="100" @submit="submitEvent">
