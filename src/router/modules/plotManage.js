@@ -24,6 +24,21 @@ export default {
         }
       ]
 
+    },
+    {
+      path: 'plotManage',
+      name: 'PlotManage',
+      component: () => import('@/views/manageCenter/passageManage'),
+      meta: { title: '剧情管理', icon: 'table' },
+      children: [
+        {
+          path: 'passageManage',
+          name: 'PassageManage',
+          component: () => import('@/views/manageCenter/passageManage/passage'),
+          meta: { title: '文章管理', icon: 'table' }
+        }
+      ]
+
     }
   ]
 }

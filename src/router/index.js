@@ -60,60 +60,60 @@ export const constantRoutes = [
     }]
   },
 
-  {
-    path: '/example',
-    component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'letter',
-        name: 'Letter',
-        component: () => import('@/views/table/components/Letter'),
-        meta: { title: '信件', icon: 'table' }
-      },
-      {
-        path: 'deduction',
-        name: 'Deduction',
-        component: () => import('@/views/table/components/Deduction'),
-        meta: { title: '推演', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
-      }
-    ]
-  },
+  // {
+  //   path: '/example',
+  //   component: Layout,
+  //   redirect: '/example/table',
+  //   name: 'Example',
+  //   meta: { title: 'Example', icon: 'el-icon-s-help' },
+  //   children: [
+  //     {
+  //       path: 'table',
+  //       name: 'Table',
+  //       component: () => import('@/views/table/index'),
+  //       meta: { title: 'Table', icon: 'table' }
+  //     },
+  //     {
+  //       path: 'letter',
+  //       name: 'Letter',
+  //       component: () => import('@/views/table/components/Letter'),
+  //       meta: { title: '信件', icon: 'table' }
+  //     },
+  //     {
+  //       path: 'deduction',
+  //       name: 'Deduction',
+  //       component: () => import('@/views/table/components/Deduction'),
+  //       meta: { title: '推演', icon: 'table' }
+  //     },
+  //     {
+  //       path: 'tree',
+  //       name: 'Tree',
+  //       component: () => import('@/views/tree/index'),
+  //       meta: { title: 'Tree', icon: 'tree' }
+  //     }
+  //   ]
+  // },
+
+  // {
+  //   path: '/form',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       name: 'Form',
+  //       component: () => import('@/views/form/index'),
+  //       meta: { title: 'Form', icon: 'form' }
+  //     }
+  //   ]
+  // },
 
   {
-    path: '/form',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        name: 'Form',
-        component: () => import('@/views/form/index'),
-        meta: { title: 'Form', icon: 'form' }
-      }
-    ]
-  },
-
-  {
-    path: '/nested',
+    path: '/plot',
     component: Layout,
     redirect: '/nested/menu1',
-    name: 'Nested',
+    name: 'PlotCenter',
     meta: {
-      title: 'Nested',
+      title: '剧情中心',
       icon: 'nested'
     },
     children: [
@@ -142,27 +142,27 @@ export const constantRoutes = [
             meta: { title: '查看笔记' },
             children: [
               survivor,
-              hunter,
-              {
-                path: 'menu1-2-3',
-                component: () => import('@/views/nested/menu1/note/menu1-2-3'),
-                name: 'Menu1-2-3',
-                meta: { title: '人格脉络' }
-              },
-              {
-                path: 'menu1-2-4',
-                component: () => import('@/views/nested/menu1/note/menu1-2-4'),
-                name: 'Menu1-2-4',
-                meta: { title: '线索记录' }
-              }
+              hunter
+              // {
+              //   path: 'menu1-2-3',
+              //   component: () => import('@/views/nested/menu1/note/menu1-2-3'),
+              //   name: 'Menu1-2-3',
+              //   meta: { title: '人格脉络' }
+              // },
+              // {
+              //   path: 'menu1-2-4',
+              //   component: () => import('@/views/nested/menu1/note/menu1-2-4'),
+              //   name: 'Menu1-2-4',
+              //   meta: { title: '线索记录' }
+              // }
             ]
-          },
-          {
-            path: 'menu1-3',
-            component: () => import('@/views/nested/menu1/menu1-3'),
-            name: 'Menu1-3',
-            meta: { title: 'Menu1-3' }
           }
+          // {
+          //   path: 'menu1-3',
+          //   component: () => import('@/views/nested/menu1/menu1-3'),
+          //   name: 'Menu1-3',
+          //   meta: { title: 'Menu1-3' }
+          // }
         ]
       }
     ]

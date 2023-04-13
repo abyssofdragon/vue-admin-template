@@ -10,7 +10,7 @@
 export default {
   data() {
     return {
-      note: '',
+      note: '我爱你啊',
       descriptionCN: [
         {
           role: '病患',

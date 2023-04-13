@@ -3,7 +3,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Login Form</h3>
+        <h3 class="title">《第五人格》游戏剧情平台</h3>
       </div>
 
       <el-form-item prop="username">
@@ -40,15 +40,37 @@
           <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
         </span>
       </el-form-item>
+      <el-button :loading="loading" type="primary" style="width:31%;margin-bottom:30px;float: left" @click.native.prevent="handleLogin">游客访问</el-button>
+      <el-button :loading="loading" type="primary" style="width:33%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
+      <el-button :loading="loading" type="primary" style="width:31%;margin-bottom:30px;float: right" @click="registerDialog = true">注册</el-button>
 
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
-
-      <div class="tips">
+      <!-- <div class="tips">
         <span style="margin-right:20px;">username: admin</span>
         <span> password: any</span>
-      </div>
+      </div> -->
 
     </el-form>
+    <el-dialog
+      title="注册用户"
+      :visible.sync="registerDialog"
+      width="30%"
+    >
+      <el-form ref="ruleForm" :model="ruleForm" status-icon :rules="rules" label-width="100px" class="demo-ruleForm">
+        <el-form-item label="用户名" prop="age">
+          <el-input v-model.number="ruleForm.age" />
+        </el-form-item>
+        <el-form-item label="密码" prop="pass">
+          <el-input v-model="ruleForm.pass" type="password" autocomplete="off" />
+        </el-form-item>
+        <el-form-item label="确认密码" prop="checkPass">
+          <el-input v-model="ruleForm.checkPass" type="password" autocomplete="off" />
+        </el-form-item>
+        <el-row>
+          <el-button type="primary" style="width:48%;float: left" @click="handleRegister">提交</el-button>
+          <el-button style="width:48%;float: right" @click="resetForm('ruleForm')">重置</el-button>
+        </el-row>
+      </el-form>
+    </el-dialog>
   </div>
 </template>
 
@@ -59,6 +81,37 @@ import Axios from 'axios'
 export default {
   name: 'Login',
   data() {
+    var checkAge = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('用户名不能为空'))
+      }
+      setTimeout(() => {
+        if (value === '') {
+          callback(new Error('请输入用户名'))
+        } else {
+          callback()
+        }
+      }, 1000)
+    }
+    var validatePass = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('请输入密码'))
+      } else {
+        if (this.ruleForm.checkPass !== '') {
+          this.$refs.ruleForm.validateField('checkPass')
+        }
+        callback()
+      }
+    }
+    var validatePass2 = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('请再次输入密码'))
+      } else if (value !== this.ruleForm.pass) {
+        callback(new Error('两次输入密码不一致!'))
+      } else {
+        callback()
+      }
+    }
     const validateUsername = (rule, value, callback) => {
       if (!validUsername(value)) {
         callback(new Error('Please enter the correct user name'))
@@ -74,6 +127,7 @@ export default {
       }
     }
     return {
+      userInfo: { userName: '', password: '', gender: '', age: '' },
       loginForm: {
         username: 'admin',
         password: '111111'
@@ -82,9 +136,26 @@ export default {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
         password: [{ required: true, trigger: 'blur', validator: validatePassword }]
       },
+      registerDialog: false,
       loading: false,
       passwordType: 'password',
-      redirect: undefined
+      redirect: undefined,
+      ruleForm: {
+        pass: '',
+        checkPass: '',
+        age: ''
+      },
+      rules: {
+        pass: [
+          { validator: validatePass, trigger: 'blur' }
+        ],
+        checkPass: [
+          { validator: validatePass2, trigger: 'blur' }
+        ],
+        age: [
+          { validator: checkAge, trigger: 'blur' }
+        ]
+      }
     }
   },
   watch: {
@@ -105,6 +176,10 @@ export default {
       this.$nextTick(() => {
         this.$refs.password.focus()
       })
+    },
+    handleRegister() {
+      this.userInfo = { userName: '', password: '', gender: '', age: '' }
+      this.registerDialog = false
     },
     handleLogin() {
       this.$refs.loginForm.validate(valid => {
@@ -194,14 +269,25 @@ $light_gray:#eee;
   width: 100%;
   background-color: $bg;
   overflow: hidden;
+  background:url("./login.jpg")center center no-repeat;
+  background-size:100% 100%;
 
   .login-form {
-    position: relative;
-    width: 520px;
-    max-width: 100%;
-    padding: 160px 35px 0;
-    margin: 0 auto;
-    overflow: hidden;
+    // position: relative;
+    // width: 520px;
+    // max-width: 100%;
+    // padding: 160px 35px 0;
+    // margin: 0 auto;
+    // overflow: hidden;
+     border:1px solid #dccfcf;
+  width: 520px;
+  margin:180px auto;
+  padding: 35px 80px 15px 35px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  box-shadow: 0 0 25px #909399;
+  background-color:rgba(255,255,255,0.3);
   }
 
   .tips {
@@ -229,7 +315,7 @@ $light_gray:#eee;
 
     .title {
       font-size: 26px;
-      color: $light_gray;
+      color: blueviolet;
       margin: 0px auto 40px auto;
       text-align: center;
       font-weight: bold;

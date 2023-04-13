@@ -6,23 +6,42 @@
           协作者：
         </div>
       </Col>
-      <Col span="18">
-        <Select v-model="author" filterable multiple>
+      <Col span="14">
+        <Select v-model="author" filterable>
           <Option v-for="item in cityList" :key="item.value" :value="item.value">{{ item.label }}</Option>
         </Select>
       </Col>
       <Col span="4">
-        <Button type="success" long @click="submit">发布</Button>
+        <Button type="success" long @click="submit">确认协作者</Button>
+      </Col>
+      <Col span="4">
+        <Button type="success" long @click="submit">发布文章</Button>
+      </Col>
+    </Row>
+    <br>
+    <Row>
+      <Col span="2">
+        <div>
+          标题：
+        </div>
+      </Col>
+      <Col span="10">
+        <Input v-model="title" placeholder="请输入标题" />
+      </Col>
+      <Col span="2">
+        <div>
+          标签：
+        </div>
+      </Col>
+      <Col span="10">
+        <Select v-model="tag" filterable multiple>
+          <Option v-for="item in tagList" :key="item.value" :value="item.value">{{ item.label }}</Option>
+        </Select>
       </Col>
     </Row>
     <Row>
       <Col span="24" style="padding-right:10px">
         <Editor ref="editor" v-model="article" />
-      </Col>
-    </Row>
-    <Row>
-      <Col span="24" style="padding-right:10px">
-        {{ article }}
       </Col>
     </Row>
   </div>
@@ -31,7 +50,7 @@
 export default {
   data() {
     return {
-      article: '123<br>即将',
+      article: '请输入',
       cityList: [
         {
           value: '1',
@@ -42,7 +61,18 @@ export default {
           label: 'DA'
         }
       ],
-      author: []
+      tagList: [
+        {
+          value: '1',
+          label: '空军'
+        },
+        {
+          value: '2',
+          label: '魔术师'
+        }
+      ],
+      tag: [],
+      title: '标题'
     }
   },
   methods: {

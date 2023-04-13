@@ -4,7 +4,7 @@
       <Col span="23">
         <div class="character">
           <div id="note">
-            <NoteEditor ref="editor" v-model="note" />
+            <NoteEditor ref="editor" :note="note" />
           </div>
           <div id="description">
             <Description :description="description" />

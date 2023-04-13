@@ -25,6 +25,12 @@ export default {
     value: {
       type: String,
       default: ''
+    },
+    note: {
+      type: String,
+      default: function() {
+        return []
+      }
     }
   },
   data() {
@@ -32,7 +38,7 @@ export default {
       activeNames: ['1'],
       indexCursor: null,
       lengthCursor: null,
-      quill: null,
+      quill: this.note,
       options: {
         theme: 'snow',
         modules: {
