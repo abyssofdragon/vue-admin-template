@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text"> name: {{ admin.username }}</div>
+    <h1>hi</h1>
     <el-calendar v-model="value" />
   </div>
 </template>

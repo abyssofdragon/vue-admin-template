@@ -6,7 +6,14 @@
           <el-collapse-item title="笔记" name="1">
             <el-row>
               <el-col :span="24">
-                <div class="editor" />
+                <quill-editor
+                  ref="myQuillEditor"
+                  v-model="content"
+                  :options="editorOption"
+                  @blur="onEditorBlur($event)"
+                  @focus="onEditorFocus($event)"
+                  @ready="onEditorReady($event)"
+                />
               </el-col>
             </el-row>
           </el-collapse-item>
@@ -17,8 +24,6 @@
 </template>
 
 <script>
-import Quill from 'quill'
-import 'quill/dist/quill.snow.css'
 export default {
   name: 'NoteEditor',
   props: {
@@ -38,56 +43,58 @@ export default {
       activeNames: ['1'],
       indexCursor: null,
       lengthCursor: null,
-      quill: this.note,
-      options: {
-        theme: 'snow',
+      content: this.note,
+      toolbarOptions: [
+        ['bold', 'italic', 'underline', 'strike'], // 加粗 斜体 下划线 删除线 -----['bold', 'italic', 'underline', 'strike']
+        [{ color: [] }, { background: [] }], // 字体颜色、字体背景颜色-----[{ color: [] }, { background: [] }]
+        [{ align: [] }], // 对齐方式-----[{ align: [] }]
+        [{ size: fontSizeStyle.whitelist }], // 字体大小-----[{ size: ['small', false, 'large', 'huge'] }]
+        [{ font: fonts }], // 字体种类-----[{ font: [] }]
+        [{ header: [1, 2, 3, 4, 5, 6, false] }], // 标题
+        [{ direction: 'ltl' }], // 文本方向-----[{'direction': 'rtl'}]
+        [{ direction: 'rtl' }], // 文本方向-----[{'direction': 'rtl'}]
+        [{ indent: '-1' }, { indent: '+1' }], // 缩进-----[{ indent: '-1' }, { indent: '+1' }]
+        [{ list: 'ordered' }, { list: 'bullet' }], // 有序、无序列表-----[{ list: 'ordered' }, { list: 'bullet' }]
+        [{ script: 'sub' }, { script: 'super' }], // 上标/下标-----[{ script: 'sub' }, { script: 'super' }]
+        ['blockquote', 'code-block'], // 引用  代码块-----['blockquote', 'code-block']
+        ['clean'], // 清除文本格式-----['clean']
+        ['link', 'image', 'video'] // 链接、图片、视频-----['link', 'image', 'video']
+      ],
+      editorOption: {
+        // some quill option
+        placeholder: '请输入笔记',
         modules: {
-          history: {
-            delay: 0,
-            maxStack: 500,
-            userOnly: true
-          },
-          toolbar: [
-            ['clean', 'bold', 'italic', 'underline', 'strike', 'blockquote'], // 清除文本格式 加粗 斜体 下划线 删除线 引用
-            // ['code-block'], // 代码块
-            [{ header: 1 }, { header: 2 }, { header: [1, 2, 3, 4, 5, 6, false] }], // 1、2 级标题 &  标题
-            [{ list: 'ordered' }, { list: 'bullet' }], // 有序、无序列表
-            [{ script: 'sub' }, { script: 'super' }], // 上标/下标
-            [{ indent: '-1' }, { indent: '+1' }], // 缩进
-            [{ 'direction': 'rtl' }, { align: [] }], // 文本方向 对齐方式
-            [{ size: ['small', false, 'large', 'huge'] }, { color: [] }, { background: [] }], // 字体大小、字体颜色、字体背景颜色、, { font: [] } 字体种类
-            ['link', 'image'] // 链接、图片、, 'video'视频
-          ] // 工具菜单栏配置,
-        },
-        placeholder: '请输入笔记'
+          toolbar: {
+            container: toolbarOptions
+            // handlers: {
+            //   image: this.handleImgUpload
+            // }
+          }
+        }
       }
     }
   },
-  mounted() {
-    // 初始化编辑器
-    this.onEditorFocus()
+  computed: {
+    editor() {
+      return this.$refs.myQuillEditor.quill
+    }
   },
-  cerated() {
-    // 注意在这里打印this.quill是为空
-    console.log(this.quill)// null
+  mounted() {
+    console.log('this is current quill instance object', this.editor)
   },
   methods: {
-    onEditorFocus() {
-      const dom = this.$el.querySelector('.editor')
-      this.quill = new Quill(dom, this.options)
-      // 文本框内默认内容可解析HTML详情看官网
-      this.quill.clipboard.dangerouslyPasteHTML(0, this.value)
-
-      this.quill.on('selection-change', () => {
-        // 我的理解为光标每落在编辑器上将执行
-        if (this.quill.getSelection()) {
-          const { index, length } = this.quill.getSelection()
-          Object.assign(this, {
-            indexCursor: index, // 字符在编辑器的下标
-            lengthCursor: length// 选中的字符长度
-          })
-        }
-      })
+    onEditorBlur(quill) {
+      console.log('editor blur!', this.content)
+    },
+    onEditorFocus(quill) {
+      console.log('editor focus!', quill)
+    },
+    onEditorReady(quill) {
+      console.log('editor ready!', quill)
+    },
+    onEditorChange({ quill, html, text }) {
+      console.log('editor change!', quill, html, text)
+      this.content = html
     }
   }
 }
